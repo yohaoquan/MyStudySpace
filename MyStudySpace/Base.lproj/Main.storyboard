@@ -1,24 +1,186 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Onboarding Screen-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="OnboardingScreen" customModule="MyStudySpace" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iL4-D1-r8b" customClass="onboardingView" customModule="MyStudySpace" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="bNU-v0-iS0"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="EYC-vu-rCg"/>
+                                </connections>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bTq-pj-rFW">
+                                <rect key="frame" x="104" y="675" width="210" height="22"/>
+                                <color key="tintColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <state key="normal" title=" Login to MyLearningSpace" image="person" catalog="system">
+                                    <color key="titleColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                </state>
+                                <connections>
+                                    <segue destination="YAt-oD-72m" kind="presentation" id="MZF-Ai-SZT"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="bTq-pj-rFW" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="104" id="0Pa-6l-9Ei"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="top" secondItem="iL4-D1-r8b" secondAttribute="top" constant="44" id="5xo-iB-f88"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="bTq-pj-rFW" secondAttribute="trailing" symbolic="YES" id="6jT-BJ-i4e"/>
+                            <constraint firstItem="bTq-pj-rFW" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="631" id="PTX-A9-mej"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="iL4-D1-r8b" secondAttribute="trailing" id="YEA-Vg-wzC"/>
+                            <constraint firstItem="iL4-D1-r8b" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" constant="34" id="YSh-RJ-bM4"/>
+                            <constraint firstItem="iL4-D1-r8b" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="xZT-gn-VZs"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="loginBtn" destination="bTq-pj-rFW" id="8mn-Rq-FEA"/>
+                        <outlet property="onboardingView" destination="iL4-D1-r8b" id="yIs-no-IRp"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="137.94642857142856"/>
+        </scene>
+        <!--home-->
+        <scene sceneID="IJd-WP-cbZ">
+            <objects>
+                <viewController storyboardIdentifier="HomeVC" title="home" id="YBJ-2I-45f" customClass="HomeVC" customModule="MyStudySpace" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="bp7-y5-tuL">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This is HomeVC. Login was successful" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8ir-bt-LJ2">
+                                <rect key="frame" x="45" y="246" width="324" height="123"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="8ir-bt-LJ2" firstAttribute="top" secondItem="Jh2-Dm-iCX" secondAttribute="top" constant="202" id="FfW-Vo-bBP"/>
+                            <constraint firstItem="8ir-bt-LJ2" firstAttribute="centerX" secondItem="bp7-y5-tuL" secondAttribute="centerX" id="kc1-jT-hy9"/>
+                            <constraint firstItem="Jh2-Dm-iCX" firstAttribute="bottom" secondItem="8ir-bt-LJ2" secondAttribute="bottom" constant="493" id="lDn-Ol-UaH"/>
+                            <constraint firstItem="8ir-bt-LJ2" firstAttribute="leading" secondItem="Jh2-Dm-iCX" secondAttribute="leading" constant="45" id="vSi-Pi-t9Q"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Jh2-Dm-iCX"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="vEw-XH-rEH"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dqw-zq-tB1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1867" y="138"/>
+        </scene>
+        <!--Item 2-->
+        <scene sceneID="CPk-4G-RLX">
+            <objects>
+                <viewController id="ahW-ao-LYi" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="fP3-yi-rME">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="O4T-7q-fY9"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item 2" id="2SQ-No-MRg"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="I8E-T7-E1u" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3435" y="694"/>
+        </scene>
+        <!--Item 1-->
+        <scene sceneID="RWp-3N-yBX">
+            <objects>
+                <viewController id="iho-qp-Afp" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Nfp-Hy-f7b">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="VVA-l8-ySt"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item 1" id="Kkj-Hu-RU9"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FGg-GV-vF1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3435" y="46"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="Bxc-VE-Fj1">
+            <objects>
+                <tabBarController id="gHP-2b-9Bd" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Yyf-l0-UTT">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="iho-qp-Afp" kind="relationship" relationship="viewControllers" id="KMT-lL-50q"/>
+                        <segue destination="ahW-ao-LYi" kind="relationship" relationship="viewControllers" id="CY6-zH-J0S"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PAi-eX-aui" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2515" y="371"/>
+        </scene>
+        <!--Login-->
+        <scene sceneID="YfN-0Q-HwT">
+            <objects>
+                <viewController id="uFc-Xc-aYQ" customClass="WebLoginVC" customModule="MyStudySpace" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="v3O-Tf-dFY">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="4VM-RN-VNp"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Login" id="4vJ-2a-a1j">
+                        <barButtonItem key="leftBarButtonItem" style="done" systemItem="cancel" id="K1w-hj-pc9">
+                            <connections>
+                                <action selector="cancel:" destination="uFc-Xc-aYQ" id="nIH-YN-Cbm"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <segue destination="MM9-Zy-xrJ" kind="unwind" identifier="returnToOnboarding" unwindAction="webLoginReturnedWithSegue:" id="Cec-eW-Ylf"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aQ7-5o-fVj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="MM9-Zy-xrJ" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="959" y="939"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="E0o-rB-knO">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="YAt-oD-72m" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="5Jd-1A-XAf">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="uFc-Xc-aYQ" kind="relationship" relationship="rootViewController" id="GrC-UA-bch"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rZw-Ph-tsc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="138" y="939"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="person" catalog="system" width="128" height="117"/>
+    </resources>
 </document>
