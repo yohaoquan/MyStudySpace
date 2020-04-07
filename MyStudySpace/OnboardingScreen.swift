@@ -10,9 +10,8 @@ import UIKit
 import paper_onboarding
 
 class OnboardingScreen: UIViewController, UINavigationControllerDelegate {
-    
     var login_successful = false
-    
+    var loginState: LoginState!
     @IBOutlet weak var loginBtn: UIButton!
     @IBOutlet weak var onboardingView: onboardingView!
     
@@ -20,7 +19,22 @@ class OnboardingScreen: UIViewController, UINavigationControllerDelegate {
         super.viewDidLoad()
         loginBtn.isHidden = true
         self.navigationController?.delegate = self
-        onboardingView.currentIndex(2, animated: true)
+//        onboardingView.currentIndex(2, animated: true) // Skip to the login button
+        
+
+        _ = LoginHelper()
+        LoginHelper.sharedInstance.loginState = LoginState()
+        LoginHelper.sharedInstance.loadLoginState()
+        loginState = LoginHelper.sharedInstance.loginState
+
+        print("isLoggedin = "+String(describing: loginState.isLoggedIn))
+        if loginState.isLoggedIn {
+            print("if statement ran")
+            let story = UIStoryboard(name: "Main", bundle:nil)
+            let vc = story.instantiateViewController(withIdentifier: "HomeVC") as! HomeVC
+            UIApplication.shared.windows.first?.rootViewController = vc
+            UIApplication.shared.windows.first?.makeKeyAndVisible()
+        }
     }
 
     
@@ -28,7 +42,7 @@ class OnboardingScreen: UIViewController, UINavigationControllerDelegate {
         print("returned")
         let origVC = segue.source as! WebLoginVC
         if origVC.login_successful {
-            let homeVC = self.storyboard?.instantiateViewController(identifier: "HomeVC") as! HomeVC
+            let homeVC = self.storyboard?.instantiateViewController(identifier: "HomeVC")
             self.view.window?.rootViewController = homeVC
             self.view.window?.makeKeyAndVisible()
         }

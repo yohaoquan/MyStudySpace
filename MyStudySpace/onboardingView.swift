@@ -7,7 +7,8 @@
 //
 
 import UIKit
+import paper_onboarding
 
-class onboardingView: PodsDummy_paper_onboarding {
-
+class onboardingView: PaperOnboarding {
+    
 }

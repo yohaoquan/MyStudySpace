@@ -10,8 +10,17 @@ import UIKit
 
 class WebLoginVC: UIViewController {
     var login_successful = true
+    var loginState: LoginState!
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        loginState = LoginHelper.sharedInstance.loginState
+        
+        
+        loginState.isLoggedIn = true;
+        loginState.userId = ""
+        loginState.userKey = ""
+        LoginHelper.sharedInstance.saveLoginState()
         self.performSegue(withIdentifier: "returnToOnboarding", sender: self)
     
         
