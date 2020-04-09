@@ -8,9 +8,45 @@
 
 /* Begin PBXBuildFile section */
 		79F20F089F7B6899BB8AF467 /* Pods_MyStudySpace.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 618D792B338BB6159CCC258A /* Pods_MyStudySpace.framework */; };
+		9333953F243D8AD60064CF09 /* MainPageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9333953E243D8AD60064CF09 /* MainPageVC.swift */; };
+		93339562243D8B3A0064CF09 /* CardPartTableViewCardController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93339541243D8B340064CF09 /* CardPartTableViewCardController.swift */; };
+		93339563243D8B3A0064CF09 /* CardPartPagedViewCardController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93339542243D8B340064CF09 /* CardPartPagedViewCardController.swift */; };
+		93339564243D8B3A0064CF09 /* CardPartHistogramCardController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93339543243D8B340064CF09 /* CardPartHistogramCardController.swift */; };
+		93339565243D8B3A0064CF09 /* CardPartSeparatorViewCardController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93339544243D8B340064CF09 /* CardPartSeparatorViewCardController.swift */; };
+		93339566243D8B3A0064CF09 /* CardPartTitleDescriptionViewCardController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93339545243D8B340064CF09 /* CardPartTitleDescriptionViewCardController.swift */; };
+		93339567243D8B3A0064CF09 /* CardPartImageViewCardController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93339546243D8B350064CF09 /* CardPartImageViewCardController.swift */; };
+		93339568243D8B3A0064CF09 /* CardPartStackViewCardController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93339547243D8B350064CF09 /* CardPartStackViewCardController.swift */; };
+		93339569243D8B3A0064CF09 /* CardPartButtonViewCardController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93339548243D8B350064CF09 /* CardPartButtonViewCardController.swift */; };
+		9333956A243D8B3A0064CF09 /* CardPartTextViewCardController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93339549243D8B350064CF09 /* CardPartTextViewCardController.swift */; };
+		9333956B243D8B3A0064CF09 /* CardPartProgressBarViewCardController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9333954A243D8B350064CF09 /* CardPartProgressBarViewCardController.swift */; };
+		9333956C243D8B3A0064CF09 /* CardPartRoundedStackViewCardController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9333954B243D8B360064CF09 /* CardPartRoundedStackViewCardController.swift */; };
+		9333956D243D8B3A0064CF09 /* CardPartOrientedViewCardController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9333954C243D8B360064CF09 /* CardPartOrientedViewCardController.swift */; };
+		9333956E243D8B3A0064CF09 /* CardPartMultiSliderViewCardController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9333954D243D8B360064CF09 /* CardPartMultiSliderViewCardController.swift */; };
+		9333956F243D8B3A0064CF09 /* CardPartTitleViewCardController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9333954E243D8B360064CF09 /* CardPartTitleViewCardController.swift */; };
+		93339570243D8B3A0064CF09 /* CardPartIconLabelCardController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9333954F243D8B360064CF09 /* CardPartIconLabelCardController.swift */; };
+		93339571243D8B3A0064CF09 /* CardPartCenteredViewCardController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93339550243D8B360064CF09 /* CardPartCenteredViewCardController.swift */; };
+		93339572243D8B3A0064CF09 /* CardPartBottomSheetCardController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93339551243D8B370064CF09 /* CardPartBottomSheetCardController.swift */; };
+		93339573243D8B3A0064CF09 /* CardPartConfettiViewCardController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93339552243D8B370064CF09 /* CardPartConfettiViewCardController.swift */; };
+		93339574243D8B3A0064CF09 /* StateCardController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93339553243D8B370064CF09 /* StateCardController.swift */; };
+		93339575243D8B3A0064CF09 /* CardPartSwitchViewCardController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93339554243D8B370064CF09 /* CardPartSwitchViewCardController.swift */; };
+		93339576243D8B3A0064CF09 /* CardParthCustomMarginsCardController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93339555243D8B370064CF09 /* CardParthCustomMarginsCardController.swift */; };
+		93339577243D8B3A0064CF09 /* CardPartSliderViewCardController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93339556243D8B380064CF09 /* CardPartSliderViewCardController.swift */; };
+		93339578243D8B3A0064CF09 /* ThemedCardController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93339557243D8B380064CF09 /* ThemedCardController.swift */; };
+		93339579243D8B3A0064CF09 /* TitleCardController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93339558243D8B380064CF09 /* TitleCardController.swift */; };
+		9333957A243D8B3A0064CF09 /* CardPartAttributedTextViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93339559243D8B380064CF09 /* CardPartAttributedTextViewController.swift */; };
+		9333957B243D8B3A0064CF09 /* CardPartPillLabelCardController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9333955A243D8B380064CF09 /* CardPartPillLabelCardController.swift */; };
+		9333957C243D8B3A0064CF09 /* CardPartBarViewCardController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9333955B243D8B380064CF09 /* CardPartBarViewCardController.swift */; };
+		9333957D243D8B3A0064CF09 /* ReactiveCardController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9333955C243D8B390064CF09 /* ReactiveCardController.swift */; };
+		9333957E243D8B3A0064CF09 /* CardPartMapViewCardController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9333955D243D8B390064CF09 /* CardPartMapViewCardController.swift */; };
+		9333957F243D8B3A0064CF09 /* CardPartTextFieldCardController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9333955E243D8B390064CF09 /* CardPartTextFieldCardController.swift */; };
+		93339580243D8B3A0064CF09 /* CardPartRadioButtonCardController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9333955F243D8B390064CF09 /* CardPartRadioButtonCardController.swift */; };
+		93339581243D8B3A0064CF09 /* CardPartCollectionViewCardController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93339560243D8B390064CF09 /* CardPartCollectionViewCardController.swift */; };
+		93339582243D8B3A0064CF09 /* CardPartBorderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93339561243D8B3A0064CF09 /* CardPartBorderViewController.swift */; };
 		9350F209243BB74000F7E882 /* onboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9350F208243BB74000F7E882 /* onboardingView.swift */; };
 		9350F20B243BDBC600F7E882 /* WebLoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9350F20A243BDBC600F7E882 /* WebLoginVC.swift */; };
 		9350F20D243BE1D000F7E882 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9350F20C243BE1D000F7E882 /* HomeVC.swift */; };
+		93A547FE243C3211000423D1 /* CoursesList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93A547FD243C3211000423D1 /* CoursesList.swift */; };
+		93A54800243C324A000423D1 /* CoursesListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93A547FF243C324A000423D1 /* CoursesListCell.swift */; };
 		93B33212243BF27A0036D9BA /* LoginHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93B33211243BF27A0036D9BA /* LoginHelper.swift */; };
 		93C20ABD243BB2CB00FFB8D8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93C20ABC243BB2CB00FFB8D8 /* AppDelegate.swift */; };
 		93C20ABF243BB2CB00FFB8D8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93C20ABE243BB2CB00FFB8D8 /* SceneDelegate.swift */; };
@@ -22,9 +58,45 @@
 
 /* Begin PBXFileReference section */
 		618D792B338BB6159CCC258A /* Pods_MyStudySpace.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyStudySpace.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9333953E243D8AD60064CF09 /* MainPageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPageVC.swift; sourceTree = "<group>"; };
+		93339541243D8B340064CF09 /* CardPartTableViewCardController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardPartTableViewCardController.swift; sourceTree = "<group>"; };
+		93339542243D8B340064CF09 /* CardPartPagedViewCardController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardPartPagedViewCardController.swift; sourceTree = "<group>"; };
+		93339543243D8B340064CF09 /* CardPartHistogramCardController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardPartHistogramCardController.swift; sourceTree = "<group>"; };
+		93339544243D8B340064CF09 /* CardPartSeparatorViewCardController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardPartSeparatorViewCardController.swift; sourceTree = "<group>"; };
+		93339545243D8B340064CF09 /* CardPartTitleDescriptionViewCardController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardPartTitleDescriptionViewCardController.swift; sourceTree = "<group>"; };
+		93339546243D8B350064CF09 /* CardPartImageViewCardController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardPartImageViewCardController.swift; sourceTree = "<group>"; };
+		93339547243D8B350064CF09 /* CardPartStackViewCardController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardPartStackViewCardController.swift; sourceTree = "<group>"; };
+		93339548243D8B350064CF09 /* CardPartButtonViewCardController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardPartButtonViewCardController.swift; sourceTree = "<group>"; };
+		93339549243D8B350064CF09 /* CardPartTextViewCardController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardPartTextViewCardController.swift; sourceTree = "<group>"; };
+		9333954A243D8B350064CF09 /* CardPartProgressBarViewCardController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardPartProgressBarViewCardController.swift; sourceTree = "<group>"; };
+		9333954B243D8B360064CF09 /* CardPartRoundedStackViewCardController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardPartRoundedStackViewCardController.swift; sourceTree = "<group>"; };
+		9333954C243D8B360064CF09 /* CardPartOrientedViewCardController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardPartOrientedViewCardController.swift; sourceTree = "<group>"; };
+		9333954D243D8B360064CF09 /* CardPartMultiSliderViewCardController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardPartMultiSliderViewCardController.swift; sourceTree = "<group>"; };
+		9333954E243D8B360064CF09 /* CardPartTitleViewCardController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardPartTitleViewCardController.swift; sourceTree = "<group>"; };
+		9333954F243D8B360064CF09 /* CardPartIconLabelCardController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardPartIconLabelCardController.swift; sourceTree = "<group>"; };
+		93339550243D8B360064CF09 /* CardPartCenteredViewCardController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardPartCenteredViewCardController.swift; sourceTree = "<group>"; };
+		93339551243D8B370064CF09 /* CardPartBottomSheetCardController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardPartBottomSheetCardController.swift; sourceTree = "<group>"; };
+		93339552243D8B370064CF09 /* CardPartConfettiViewCardController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardPartConfettiViewCardController.swift; sourceTree = "<group>"; };
+		93339553243D8B370064CF09 /* StateCardController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StateCardController.swift; sourceTree = "<group>"; };
+		93339554243D8B370064CF09 /* CardPartSwitchViewCardController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardPartSwitchViewCardController.swift; sourceTree = "<group>"; };
+		93339555243D8B370064CF09 /* CardParthCustomMarginsCardController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardParthCustomMarginsCardController.swift; sourceTree = "<group>"; };
+		93339556243D8B380064CF09 /* CardPartSliderViewCardController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardPartSliderViewCardController.swift; sourceTree = "<group>"; };
+		93339557243D8B380064CF09 /* ThemedCardController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThemedCardController.swift; sourceTree = "<group>"; };
+		93339558243D8B380064CF09 /* TitleCardController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TitleCardController.swift; sourceTree = "<group>"; };
+		93339559243D8B380064CF09 /* CardPartAttributedTextViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardPartAttributedTextViewController.swift; sourceTree = "<group>"; };
+		9333955A243D8B380064CF09 /* CardPartPillLabelCardController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardPartPillLabelCardController.swift; sourceTree = "<group>"; };
+		9333955B243D8B380064CF09 /* CardPartBarViewCardController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardPartBarViewCardController.swift; sourceTree = "<group>"; };
+		9333955C243D8B390064CF09 /* ReactiveCardController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReactiveCardController.swift; sourceTree = "<group>"; };
+		9333955D243D8B390064CF09 /* CardPartMapViewCardController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardPartMapViewCardController.swift; sourceTree = "<group>"; };
+		9333955E243D8B390064CF09 /* CardPartTextFieldCardController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardPartTextFieldCardController.swift; sourceTree = "<group>"; };
+		9333955F243D8B390064CF09 /* CardPartRadioButtonCardController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardPartRadioButtonCardController.swift; sourceTree = "<group>"; };
+		93339560243D8B390064CF09 /* CardPartCollectionViewCardController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardPartCollectionViewCardController.swift; sourceTree = "<group>"; };
+		93339561243D8B3A0064CF09 /* CardPartBorderViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardPartBorderViewController.swift; sourceTree = "<group>"; };
 		9350F208243BB74000F7E882 /* onboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = onboardingView.swift; sourceTree = "<group>"; };
 		9350F20A243BDBC600F7E882 /* WebLoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebLoginVC.swift; sourceTree = "<group>"; };
 		9350F20C243BE1D000F7E882 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
+		93A547FD243C3211000423D1 /* CoursesList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoursesList.swift; sourceTree = "<group>"; };
+		93A547FF243C324A000423D1 /* CoursesListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoursesListCell.swift; sourceTree = "<group>"; };
 		93B33211243BF27A0036D9BA /* LoginHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginHelper.swift; sourceTree = "<group>"; };
 		93C20AB9243BB2CB00FFB8D8 /* MyStudySpace.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyStudySpace.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		93C20ABC243BB2CB00FFB8D8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -67,6 +139,46 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		93339540243D8AEB0064CF09 /* Cards */ = {
+			isa = PBXGroup;
+			children = (
+				93339559243D8B380064CF09 /* CardPartAttributedTextViewController.swift */,
+				9333955B243D8B380064CF09 /* CardPartBarViewCardController.swift */,
+				93339561243D8B3A0064CF09 /* CardPartBorderViewController.swift */,
+				93339551243D8B370064CF09 /* CardPartBottomSheetCardController.swift */,
+				93339548243D8B350064CF09 /* CardPartButtonViewCardController.swift */,
+				93339550243D8B360064CF09 /* CardPartCenteredViewCardController.swift */,
+				93339560243D8B390064CF09 /* CardPartCollectionViewCardController.swift */,
+				93339552243D8B370064CF09 /* CardPartConfettiViewCardController.swift */,
+				93339555243D8B370064CF09 /* CardParthCustomMarginsCardController.swift */,
+				93339543243D8B340064CF09 /* CardPartHistogramCardController.swift */,
+				9333954F243D8B360064CF09 /* CardPartIconLabelCardController.swift */,
+				93339546243D8B350064CF09 /* CardPartImageViewCardController.swift */,
+				9333955D243D8B390064CF09 /* CardPartMapViewCardController.swift */,
+				9333954D243D8B360064CF09 /* CardPartMultiSliderViewCardController.swift */,
+				9333954C243D8B360064CF09 /* CardPartOrientedViewCardController.swift */,
+				93339542243D8B340064CF09 /* CardPartPagedViewCardController.swift */,
+				9333955A243D8B380064CF09 /* CardPartPillLabelCardController.swift */,
+				9333954A243D8B350064CF09 /* CardPartProgressBarViewCardController.swift */,
+				9333955F243D8B390064CF09 /* CardPartRadioButtonCardController.swift */,
+				9333954B243D8B360064CF09 /* CardPartRoundedStackViewCardController.swift */,
+				93339544243D8B340064CF09 /* CardPartSeparatorViewCardController.swift */,
+				93339556243D8B380064CF09 /* CardPartSliderViewCardController.swift */,
+				93339547243D8B350064CF09 /* CardPartStackViewCardController.swift */,
+				93339554243D8B370064CF09 /* CardPartSwitchViewCardController.swift */,
+				93339541243D8B340064CF09 /* CardPartTableViewCardController.swift */,
+				9333955E243D8B390064CF09 /* CardPartTextFieldCardController.swift */,
+				93339549243D8B350064CF09 /* CardPartTextViewCardController.swift */,
+				93339545243D8B340064CF09 /* CardPartTitleDescriptionViewCardController.swift */,
+				9333954E243D8B360064CF09 /* CardPartTitleViewCardController.swift */,
+				9333955C243D8B390064CF09 /* ReactiveCardController.swift */,
+				93339553243D8B370064CF09 /* StateCardController.swift */,
+				93339557243D8B380064CF09 /* ThemedCardController.swift */,
+				93339558243D8B380064CF09 /* TitleCardController.swift */,
+			);
+			path = Cards;
+			sourceTree = "<group>";
+		};
 		93B33210243BF1BC0036D9BA /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
@@ -96,11 +208,15 @@
 		93C20ABB243BB2CB00FFB8D8 /* MyStudySpace */ = {
 			isa = PBXGroup;
 			children = (
+				93339540243D8AEB0064CF09 /* Cards */,
 				93B33210243BF1BC0036D9BA /* Helpers */,
 				93C20ABC243BB2CB00FFB8D8 /* AppDelegate.swift */,
 				93C20ABE243BB2CB00FFB8D8 /* SceneDelegate.swift */,
 				93C20AC0243BB2CB00FFB8D8 /* OnboardingScreen.swift */,
 				93C20AC2243BB2CB00FFB8D8 /* Main.storyboard */,
+				9333953E243D8AD60064CF09 /* MainPageVC.swift */,
+				93A547FF243C324A000423D1 /* CoursesListCell.swift */,
+				93A547FD243C3211000423D1 /* CoursesList.swift */,
 				9350F20C243BE1D000F7E882 /* HomeVC.swift */,
 				9350F208243BB74000F7E882 /* onboardingView.swift */,
 				93C20AC5243BB2CC00FFB8D8 /* Assets.xcassets */,
@@ -226,13 +342,49 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				93339576243D8B3A0064CF09 /* CardParthCustomMarginsCardController.swift in Sources */,
 				9350F20B243BDBC600F7E882 /* WebLoginVC.swift in Sources */,
 				9350F20D243BE1D000F7E882 /* HomeVC.swift in Sources */,
+				93339574243D8B3A0064CF09 /* StateCardController.swift in Sources */,
+				9333957B243D8B3A0064CF09 /* CardPartPillLabelCardController.swift in Sources */,
+				93339566243D8B3A0064CF09 /* CardPartTitleDescriptionViewCardController.swift in Sources */,
+				9333956D243D8B3A0064CF09 /* CardPartOrientedViewCardController.swift in Sources */,
+				9333956F243D8B3A0064CF09 /* CardPartTitleViewCardController.swift in Sources */,
 				93C20AC1243BB2CB00FFB8D8 /* OnboardingScreen.swift in Sources */,
+				9333957E243D8B3A0064CF09 /* CardPartMapViewCardController.swift in Sources */,
+				9333956C243D8B3A0064CF09 /* CardPartRoundedStackViewCardController.swift in Sources */,
 				9350F209243BB74000F7E882 /* onboardingView.swift in Sources */,
+				93339568243D8B3A0064CF09 /* CardPartStackViewCardController.swift in Sources */,
+				93A547FE243C3211000423D1 /* CoursesList.swift in Sources */,
+				93339569243D8B3A0064CF09 /* CardPartButtonViewCardController.swift in Sources */,
+				93339562243D8B3A0064CF09 /* CardPartTableViewCardController.swift in Sources */,
+				9333957F243D8B3A0064CF09 /* CardPartTextFieldCardController.swift in Sources */,
+				93339577243D8B3A0064CF09 /* CardPartSliderViewCardController.swift in Sources */,
+				9333957C243D8B3A0064CF09 /* CardPartBarViewCardController.swift in Sources */,
 				93B33212243BF27A0036D9BA /* LoginHelper.swift in Sources */,
+				9333956B243D8B3A0064CF09 /* CardPartProgressBarViewCardController.swift in Sources */,
+				93339581243D8B3A0064CF09 /* CardPartCollectionViewCardController.swift in Sources */,
+				93339578243D8B3A0064CF09 /* ThemedCardController.swift in Sources */,
+				9333956E243D8B3A0064CF09 /* CardPartMultiSliderViewCardController.swift in Sources */,
+				9333956A243D8B3A0064CF09 /* CardPartTextViewCardController.swift in Sources */,
+				93339580243D8B3A0064CF09 /* CardPartRadioButtonCardController.swift in Sources */,
+				93339582243D8B3A0064CF09 /* CardPartBorderViewController.swift in Sources */,
+				93339575243D8B3A0064CF09 /* CardPartSwitchViewCardController.swift in Sources */,
+				93339563243D8B3A0064CF09 /* CardPartPagedViewCardController.swift in Sources */,
+				9333957D243D8B3A0064CF09 /* ReactiveCardController.swift in Sources */,
+				93339571243D8B3A0064CF09 /* CardPartCenteredViewCardController.swift in Sources */,
+				93339572243D8B3A0064CF09 /* CardPartBottomSheetCardController.swift in Sources */,
+				93339570243D8B3A0064CF09 /* CardPartIconLabelCardController.swift in Sources */,
+				9333953F243D8AD60064CF09 /* MainPageVC.swift in Sources */,
+				93339573243D8B3A0064CF09 /* CardPartConfettiViewCardController.swift in Sources */,
+				93A54800243C324A000423D1 /* CoursesListCell.swift in Sources */,
+				93339579243D8B3A0064CF09 /* TitleCardController.swift in Sources */,
 				93C20ABD243BB2CB00FFB8D8 /* AppDelegate.swift in Sources */,
+				93339565243D8B3A0064CF09 /* CardPartSeparatorViewCardController.swift in Sources */,
+				93339567243D8B3A0064CF09 /* CardPartImageViewCardController.swift in Sources */,
+				9333957A243D8B3A0064CF09 /* CardPartAttributedTextViewController.swift in Sources */,
 				93C20ABF243BB2CB00FFB8D8 /* SceneDelegate.swift in Sources */,
+				93339564243D8B3A0064CF09 /* CardPartHistogramCardController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -380,6 +532,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Z8EC5FNESD;
 				INFOPLIST_FILE = MyStudySpace/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -399,6 +552,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Z8EC5FNESD;
 				INFOPLIST_FILE = MyStudySpace/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

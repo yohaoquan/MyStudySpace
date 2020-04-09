@@ -1,16 +1,49 @@
 PODS:
+  - BlockiesSwift (0.1.2)
+  - CardParts (2.29.0):
+    - RxCocoa (~> 4.5)
+    - RxDataSources (~> 3.1)
+    - RxGesture (~> 2.2)
+    - RxSwift (~> 4.5)
+  - Differentiator (3.1.0)
   - paper-onboarding (6.1.4)
+  - RxCocoa (4.5.0):
+    - RxSwift (>= 4.4.2, ~> 4.4)
+  - RxDataSources (3.1.0):
+    - Differentiator (~> 3.0)
+    - RxCocoa (~> 4.0)
+    - RxSwift (~> 4.0)
+  - RxGesture (2.2.0):
+    - RxCocoa (~> 4.5)
+    - RxSwift (~> 4.5)
+  - RxSwift (4.5.0)
 
 DEPENDENCIES:
+  - BlockiesSwift
+  - CardParts
   - paper-onboarding
 
 SPEC REPOS:
   trunk:
+    - BlockiesSwift
+    - CardParts
+    - Differentiator
     - paper-onboarding
+    - RxCocoa
+    - RxDataSources
+    - RxGesture
+    - RxSwift
 
 SPEC CHECKSUMS:
+  BlockiesSwift: 22d8d56dd187e6bfd16cb8c8fbd4fd4896c3e65d
+  CardParts: b0e4edb0722a4e71f14a78acdebbb47aa2f1ca71
+  Differentiator: be49ca3408f0ecfc761e4c7763d20c62be01b9ad
   paper-onboarding: d3f16416e6f42add686117e8b32bfffaad899a79
+  RxCocoa: cbf70265dc65a981d4ac982e513c10cf23df24a0
+  RxDataSources: a843bad90c29817f5923ec8163f4af2de084ceb3
+  RxGesture: c1b7bf17166b0ef9d642a9510f8bac5785f18990
+  RxSwift: f172070dfd1a93d70a9ab97a5a01166206e1c575
 
-PODFILE CHECKSUM: 5d537d4a6f65d10e6f8d5f8b95a9398a6dcaf225
+PODFILE CHECKSUM: 6f7c3a87cf18206b445ab0d39414b623204ad6dd
 
 COCOAPODS: 1.9.1

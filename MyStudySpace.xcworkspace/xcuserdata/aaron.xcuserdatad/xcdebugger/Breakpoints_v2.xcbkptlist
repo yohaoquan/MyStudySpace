@@ -20,5 +20,113 @@
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "ECFD1E6C-12F2-47BB-B9F7-44BAE93C2500"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MyStudySpace/CoursesListCell.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "13"
+            endingLineNumber = "13"
+            landmarkName = "unknown"
+            landmarkType = "0">
+            <Locations>
+               <Location
+                  uuid = "ECFD1E6C-12F2-47BB-B9F7-44BAE93C2500 - 1e99db59913e222c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MyStudySpace.CoursesListCell.bgp.getter : Swift.Optional&lt;__C.UIImageView&gt;"
+                  moduleName = "MyStudySpace"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/aaron/Documents/Courses/CP469/MyStudySpace/MyStudySpace/MyStudySpace/CoursesListCell.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "88">
+               </Location>
+               <Location
+                  uuid = "ECFD1E6C-12F2-47BB-B9F7-44BAE93C2500 - 4ec8488b92983620"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MyStudySpace.CoursesListCell.bgp.setter : Swift.Optional&lt;__C.UIImageView&gt;"
+                  moduleName = "MyStudySpace"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/aaron/Documents/Courses/CP469/MyStudySpace/MyStudySpace/MyStudySpace/CoursesListCell.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "155">
+               </Location>
+               <Location
+                  uuid = "ECFD1E6C-12F2-47BB-B9F7-44BAE93C2500 - a8c7aec813c8f11"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MyStudySpace.CoursesListCell.bgp.modify : Swift.Optional&lt;__C.UIImageView&gt;"
+                  moduleName = "MyStudySpace"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/aaron/Documents/Courses/CP469/MyStudySpace/MyStudySpace/MyStudySpace/CoursesListCell.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "65">
+               </Location>
+               <Location
+                  uuid = "ECFD1E6C-12F2-47BB-B9F7-44BAE93C2500 - 2d7e1de7e3bd5333"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MyStudySpace.CoursesListCell.bgp.modify : Swift.Optional&lt;__C.UIImageView&gt; with unmangled suffix &quot;.resume.0&quot;"
+                  moduleName = "MyStudySpace"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/aaron/Documents/Courses/CP469/MyStudySpace/MyStudySpace/MyStudySpace/CoursesListCell.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "80">
+               </Location>
+               <Location
+                  uuid = "ECFD1E6C-12F2-47BB-B9F7-44BAE93C2500 - 5db44b376e7a8b9d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MyStudySpace.CoursesListCell.init(style: __C.UITableViewCellStyle, reuseIdentifier: Swift.Optional&lt;Swift.String&gt;) -&gt; MyStudySpace.CoursesListCell"
+                  moduleName = "MyStudySpace"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/aaron/Documents/Courses/CP469/MyStudySpace/MyStudySpace/MyStudySpace/CoursesListCell.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "181">
+               </Location>
+               <Location
+                  uuid = "ECFD1E6C-12F2-47BB-B9F7-44BAE93C2500 - c68606ac2b543fbc"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MyStudySpace.CoursesListCell.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;MyStudySpace.CoursesListCell&gt;"
+                  moduleName = "MyStudySpace"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/aaron/Documents/Courses/CP469/MyStudySpace/MyStudySpace/MyStudySpace/CoursesListCell.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "119">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
    </Breakpoints>
 </Bucket>
