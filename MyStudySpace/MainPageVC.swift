@@ -9,6 +9,7 @@
 
 import UIKit
 import CardParts
+import RxCocoa//added
 
 class MainPageVC: CardsViewController {
     
@@ -16,6 +17,7 @@ class MainPageVC: CardsViewController {
         CardPartsMintTheme().apply()
         super.init(coder: coder)
     }
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -41,7 +43,6 @@ class MainPageVC: CardsViewController {
 //            ThemedCardController(title: "Themed"),
 //            ThemedCardController(title: "Cards!")
         ]
-        
         loadCards(cards: cards)
     }
 }

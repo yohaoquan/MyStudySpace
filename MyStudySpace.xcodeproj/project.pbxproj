@@ -54,6 +54,8 @@
 		93C20AC4243BB2CB00FFB8D8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 93C20AC2243BB2CB00FFB8D8 /* Main.storyboard */; };
 		93C20AC6243BB2CC00FFB8D8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 93C20AC5243BB2CC00FFB8D8 /* Assets.xcassets */; };
 		93C20AC9243BB2CC00FFB8D8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 93C20AC7243BB2CC00FFB8D8 /* LaunchScreen.storyboard */; };
+		A8B7DE842443BED8002A3D11 /* SettingTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8B7DE832443BED7002A3D11 /* SettingTableViewController.swift */; };
+		A8B7DE862443C5EE002A3D11 /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8B7DE852443C5EE002A3D11 /* AboutViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -106,6 +108,8 @@
 		93C20AC5243BB2CC00FFB8D8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		93C20AC8243BB2CC00FFB8D8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		93C20ACA243BB2CC00FFB8D8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A8B7DE832443BED7002A3D11 /* SettingTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingTableViewController.swift; sourceTree = "<group>"; };
+		A8B7DE852443C5EE002A3D11 /* AboutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
 		D3632DC430160B06D1F1EBB8 /* Pods-MyStudySpace.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyStudySpace.release.xcconfig"; path = "Target Support Files/Pods-MyStudySpace/Pods-MyStudySpace.release.xcconfig"; sourceTree = "<group>"; };
 		F9D9E31704487FEE0C0D0DF4 /* Pods-MyStudySpace.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyStudySpace.debug.xcconfig"; path = "Target Support Files/Pods-MyStudySpace/Pods-MyStudySpace.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -214,6 +218,8 @@
 				93C20ABE243BB2CB00FFB8D8 /* SceneDelegate.swift */,
 				93C20AC0243BB2CB00FFB8D8 /* OnboardingScreen.swift */,
 				93C20AC2243BB2CB00FFB8D8 /* Main.storyboard */,
+				A8B7DE852443C5EE002A3D11 /* AboutViewController.swift */,
+				A8B7DE832443BED7002A3D11 /* SettingTableViewController.swift */,
 				9333953E243D8AD60064CF09 /* MainPageVC.swift */,
 				93A547FF243C324A000423D1 /* CoursesListCell.swift */,
 				93A547FD243C3211000423D1 /* CoursesList.swift */,
@@ -345,6 +351,7 @@
 				93339576243D8B3A0064CF09 /* CardParthCustomMarginsCardController.swift in Sources */,
 				9350F20B243BDBC600F7E882 /* WebLoginVC.swift in Sources */,
 				9350F20D243BE1D000F7E882 /* HomeVC.swift in Sources */,
+				A8B7DE862443C5EE002A3D11 /* AboutViewController.swift in Sources */,
 				93339574243D8B3A0064CF09 /* StateCardController.swift in Sources */,
 				9333957B243D8B3A0064CF09 /* CardPartPillLabelCardController.swift in Sources */,
 				93339566243D8B3A0064CF09 /* CardPartTitleDescriptionViewCardController.swift in Sources */,
@@ -381,6 +388,7 @@
 				93339579243D8B3A0064CF09 /* TitleCardController.swift in Sources */,
 				93C20ABD243BB2CB00FFB8D8 /* AppDelegate.swift in Sources */,
 				93339565243D8B3A0064CF09 /* CardPartSeparatorViewCardController.swift in Sources */,
+				A8B7DE842443BED8002A3D11 /* SettingTableViewController.swift in Sources */,
 				93339567243D8B3A0064CF09 /* CardPartImageViewCardController.swift in Sources */,
 				9333957A243D8B3A0064CF09 /* CardPartAttributedTextViewController.swift in Sources */,
 				93C20ABF243BB2CB00FFB8D8 /* SceneDelegate.swift in Sources */,

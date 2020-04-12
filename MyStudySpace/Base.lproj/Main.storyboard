@@ -59,7 +59,7 @@
         <!--Setting Table View Controller-->
         <scene sceneID="YFb-zz-6xI">
             <objects>
-                <tableViewController id="BjJ-o1-L13" userLabel="Setting Table View Controller" sceneMemberID="viewController">
+                <tableViewController title="Setting Table View Controller" id="BjJ-o1-L13" userLabel="Setting Table View Controller" customClass="SettingTableViewController" customModule="MyStudySpace" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="oHN-oD-lNR">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -87,9 +87,6 @@
                                                     <state key="normal" title="User information">
                                                         <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     </state>
-                                                    <connections>
-                                                        <segue destination="1bt-0a-9v0" kind="push" id="GTH-b6-112"/>
-                                                    </connections>
                                                 </button>
                                             </subviews>
                                             <constraints>
@@ -161,7 +158,7 @@
                                                         <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     </state>
                                                     <connections>
-                                                        <segue destination="28T-1h-nVA" kind="push" id="B4e-cu-Yhe"/>
+                                                        <segue destination="HHP-hU-eza" kind="presentation" modalPresentationStyle="overFullScreen" modalTransitionStyle="crossDissolve" id="rUo-a7-kUe"/>
                                                     </connections>
                                                 </button>
                                             </subviews>
@@ -196,9 +193,6 @@
                                                     <state key="normal" title="Contact Us">
                                                         <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     </state>
-                                                    <connections>
-                                                        <segue destination="WSP-Pd-T3d" kind="push" id="ExJ-x1-CtK"/>
-                                                    </connections>
                                                 </button>
                                             </subviews>
                                             <constraints>
@@ -278,10 +272,10 @@
             </objects>
             <point key="canvasLocation" x="3980" y="1355"/>
         </scene>
-        <!--Good Morning, Aaron-->
+        <!--Good Morning Table view controller-->
         <scene sceneID="RWp-3N-yBX">
             <objects>
-                <viewController id="iho-qp-Afp" customClass="MainPageVC" customModule="MyStudySpace" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Good Morning Table view controller" id="iho-qp-Afp" customClass="MainPageVC" customModule="MyStudySpace" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Nfp-Hy-f7b">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -293,6 +287,19 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FGg-GV-vF1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3979.7101449275365" y="-260.49107142857144"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="SCI-Ci-F4K">
+            <objects>
+                <navigationController id="w0L-Xu-AYZ" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="8x5-ce-Sx4">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="h4f-s0-CWt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="6830" y="11"/>
         </scene>
         <!--UserIn View Controller-->
         <scene sceneID="nvU-cP-dMN">
@@ -310,6 +317,19 @@
             </objects>
             <point key="canvasLocation" x="7600" y="11"/>
         </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Co2-jr-wjF">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GEf-9q-cpn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <navigationController id="BE3-Ng-F1N" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="8CP-2u-5kP">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                </navigationController>
+            </objects>
+            <point key="canvasLocation" x="6829" y="1490"/>
+        </scene>
         <!--Contact View Controller-->
         <scene sceneID="QQM-3e-aVw">
             <objects>
@@ -326,26 +346,62 @@
             </objects>
             <point key="canvasLocation" x="7600" y="1490"/>
         </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="9kF-Ti-4lL">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IUq-ni-poz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <navigationController id="HHP-hU-eza" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="n1h-jo-z56"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="1d4-PS-ooH">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="28T-1h-nVA" kind="relationship" relationship="rootViewController" id="XYt-E6-CMM"/>
+                    </connections>
+                </navigationController>
+            </objects>
+            <point key="canvasLocation" x="6829" y="757"/>
+        </scene>
         <!--About View Controller-->
         <scene sceneID="EES-Xx-sSt">
             <objects>
-                <viewController id="28T-1h-nVA" userLabel="About View Controller" sceneMemberID="viewController">
+                <viewController id="28T-1h-nVA" userLabel="About View Controller" customClass="AboutViewController" customModule="MyStudySpace" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="LIq-xR-IjU">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7TJ-q1-MT2">
+                                <rect key="frame" x="21" y="18" width="54" height="42"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <state key="normal" title="Back"/>
+                                <connections>
+                                    <action selector="goBackToSTVC_Btn:" destination="28T-1h-nVA" eventType="touchUpInside" id="Mhp-Nc-Ays"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="Pw9-CO-avl"/>
                     </view>
-                    <navigationItem key="navigationItem" id="50R-cy-Wof"/>
+                    <navigationItem key="navigationItem" id="50R-cy-Wof">
+                        <barButtonItem key="leftBarButtonItem" style="plain" systemItem="cancel" id="gOA-PQ-mqf">
+                            <connections>
+                                <action selector="goBackToSTVC_Btn:" destination="28T-1h-nVA" id="UZJ-f0-FWH"/>
+                                <segue destination="7Zq-wj-8zx" kind="unwind" identifier="unwindSegueToSTVC" unwindAction="unwindToSTVCWithSegue:" id="Li5-GU-dd1"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XCL-cL-KVO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="7Zq-wj-8zx" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="7600" y="757"/>
         </scene>
-        <!--Courses-->
+        <!--Course Table View Controller-->
         <scene sceneID="fzj-Mt-XCE">
             <objects>
-                <tableViewController id="efb-k6-tvn" customClass="CoursesList" customModule="MyStudySpace" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController title="Course Table View Controller" id="efb-k6-tvn" customClass="CoursesList" customModule="MyStudySpace" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="120" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="Ws6-e7-AtS">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
