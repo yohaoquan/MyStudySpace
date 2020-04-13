@@ -8,7 +8,7 @@
 
 import UIKit
 
-class SettingTableViewController: UITableViewController {
+class SettingTableVC: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,9 +23,6 @@ class SettingTableViewController: UITableViewController {
     @IBAction func unwindToSTVC(segue: UIStoryboardSegue) {
     }
     
-    @IBAction func gotoAVC_btn(_ sender: Any) {
-        performSegue(withIdentifier: "unwindSegueToAVC", sender: self)
-    }
     
     // MARK: - Table view data source
 

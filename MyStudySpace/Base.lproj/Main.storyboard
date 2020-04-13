@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Data Source-->
+        <!--Onboarding Screen-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="OnboardingScreen" customModule="MyStudySpace" customModuleProvider="target" sceneMemberID="viewController">
@@ -59,7 +59,7 @@
         <!--Setting Table View Controller-->
         <scene sceneID="YFb-zz-6xI">
             <objects>
-                <tableViewController title="Setting Table View Controller" id="BjJ-o1-L13" userLabel="Setting Table View Controller" customClass="SettingTableViewController" customModule="MyStudySpace" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController title="Setting Table View Controller" id="BjJ-o1-L13" userLabel="Setting Table View Controller" customClass="SettingTableVC" customModule="MyStudySpace" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="oHN-oD-lNR">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -193,6 +193,9 @@
                                                     <state key="normal" title="Contact Us">
                                                         <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     </state>
+                                                    <connections>
+                                                        <segue destination="BE3-Ng-F1N" kind="presentation" modalPresentationStyle="overFullScreen" modalTransitionStyle="crossDissolve" id="7dJ-VN-Qys"/>
+                                                    </connections>
                                                 </button>
                                             </subviews>
                                             <constraints>
@@ -299,7 +302,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="h4f-s0-CWt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="6830" y="11"/>
+            <point key="canvasLocation" x="6829" y="-84"/>
         </scene>
         <!--UserIn View Controller-->
         <scene sceneID="nvU-cP-dMN">
@@ -315,41 +318,65 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OzA-d5-KHN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="7600" y="11"/>
+            <point key="canvasLocation" x="7600" y="-84"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Co2-jr-wjF">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="GEf-9q-cpn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <navigationController id="BE3-Ng-F1N" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="8CP-2u-5kP">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
+                    <connections>
+                        <segue destination="WSP-Pd-T3d" kind="relationship" relationship="rootViewController" id="Hf3-e9-lOd"/>
+                    </connections>
                 </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GEf-9q-cpn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="6829" y="1490"/>
+            <point key="canvasLocation" x="6829" y="1749"/>
         </scene>
         <!--Contact View Controller-->
         <scene sceneID="QQM-3e-aVw">
             <objects>
-                <viewController id="WSP-Pd-T3d" userLabel="Contact View Controller" sceneMemberID="viewController">
+                <viewController id="WSP-Pd-T3d" userLabel="Contact View Controller" customClass="ContactUsVC" customModule="MyStudySpace" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="qKx-Be-mPD">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8eK-zO-PyN">
+                                <rect key="frame" x="348" y="122" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="goToAFromCBtn:" destination="WSP-Pd-T3d" eventType="touchUpInside" id="imV-Qa-sIZ"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="Def-0f-hJm"/>
                     </view>
-                    <navigationItem key="navigationItem" id="us9-y8-Dwj"/>
+                    <navigationItem key="navigationItem" id="us9-y8-Dwj">
+                        <barButtonItem key="leftBarButtonItem" image="back" style="plain" id="ENJ-OJ-qVc">
+                            <color key="tintColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                            <connections>
+                                <action selector="goBackToSTCV_Btn:" destination="WSP-Pd-T3d" id="00j-QJ-d5s"/>
+                                <segue destination="5gB-pp-gUG" kind="unwind" identifier="unwindSeugue" unwindAction="unwindToSTVCWithSegue:" id="u3u-z6-jQa"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <segue destination="HHP-hU-eza" kind="presentation" identifier="goToAFromCSeague" modalPresentationStyle="overFullScreen" modalTransitionStyle="crossDissolve" id="UDy-iR-3Rc"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Mra-kE-y6L" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="5gB-pp-gUG" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="7600" y="1490"/>
+            <point key="canvasLocation" x="7600" y="1749"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="9kF-Ti-4lL">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="IUq-ni-poz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <navigationController id="HHP-hU-eza" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="n1h-jo-z56"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="1d4-PS-ooH">
@@ -360,43 +387,141 @@
                         <segue destination="28T-1h-nVA" kind="relationship" relationship="rootViewController" id="XYt-E6-CMM"/>
                     </connections>
                 </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IUq-ni-poz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="6829" y="757"/>
         </scene>
         <!--About View Controller-->
         <scene sceneID="EES-Xx-sSt">
             <objects>
-                <viewController id="28T-1h-nVA" userLabel="About View Controller" customClass="AboutViewController" customModule="MyStudySpace" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="28T-1h-nVA" userLabel="About View Controller" customClass="AboutVC" customModule="MyStudySpace" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="LIq-xR-IjU">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="1200"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7TJ-q1-MT2">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7TJ-q1-MT2">
                                 <rect key="frame" x="21" y="18" width="54" height="42"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <state key="normal" title="Back"/>
                                 <connections>
                                     <action selector="goBackToSTVC_Btn:" destination="28T-1h-nVA" eventType="touchUpInside" id="Mhp-Nc-Ays"/>
                                 </connections>
                             </button>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="faf-XV-t8d">
+                                <rect key="frame" x="0.0" y="88" width="414" height="1078"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="op2-GL-AIb">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="1078"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="laurier" translatesAutoresizingMaskIntoConstraints="NO" id="Xoj-gW-upX">
+                                                <rect key="frame" x="87" y="8" width="240" height="128"/>
+                                            </imageView>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0C9-vM-CrA">
+                                                <rect key="frame" x="8" y="153" width="66" height="66"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="66" id="LXF-ma-yQn"/>
+                                                    <constraint firstAttribute="height" constant="66" id="XyG-oo-9lF"/>
+                                                </constraints>
+                                                <state key="normal" title="golden_hawk" image="golden_hawk">
+                                                    <color key="titleColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="goldenHawkLinkBtn:" destination="28T-1h-nVA" eventType="touchUpInside" id="R9k-7d-zIM"/>
+                                                </connections>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cfz-2l-KoL">
+                                                <rect key="frame" x="32" y="298" width="350" height="698"/>
+                                                <mutableString key="text">Here at MyStudySpace, we want to make everything easy and efficient.
+
+MyStudySpace is an application that lets you easily find your lecture note, view your grades, and find the link that you need quickly. MystudySpace will help you skip a lot of steps when you are trying to find your notes or grades or the schedule of the courses. After you log in, you do not need to go to content for the notes or grades anymore; we will have the direct button that could bring you to the result you want in one-click.
+
+This application is not perfect. We are always finding a way to be better. If golden hawks find errors or bugs, you could find us at "Setting - Contact us," we are happy to have the error report from you, and these reports will help us to improve MyStudySpace. </mutableString>
+                                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AyG-HZ-xV0">
+                                                <rect key="frame" x="153" y="1002" width="113" height="41"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                                <state key="normal" title="Contact us">
+                                                    <color key="titleColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="goToCFromABtn:" destination="28T-1h-nVA" eventType="touchUpInside" id="b7Y-JN-ChA"/>
+                                                </connections>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="About" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rdv-QF-qpD">
+                                                <rect key="frame" x="155" y="171" width="104" height="48"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="Rdv-QF-qpD" firstAttribute="leading" secondItem="op2-GL-AIb" secondAttribute="leading" constant="155" id="02U-es-ide"/>
+                                            <constraint firstItem="AyG-HZ-xV0" firstAttribute="top" secondItem="cfz-2l-KoL" secondAttribute="bottom" constant="6" id="8PN-MG-jQu"/>
+                                            <constraint firstAttribute="trailing" secondItem="Xoj-gW-upX" secondAttribute="trailing" constant="87" id="HUo-lM-OXV"/>
+                                            <constraint firstAttribute="bottom" secondItem="AyG-HZ-xV0" secondAttribute="bottom" constant="35" id="HbN-rR-Bio"/>
+                                            <constraint firstAttribute="trailing" secondItem="AyG-HZ-xV0" secondAttribute="trailing" constant="148" id="K7O-pv-Yyx"/>
+                                            <constraint firstItem="Rdv-QF-qpD" firstAttribute="centerX" secondItem="op2-GL-AIb" secondAttribute="centerX" id="Msq-Im-qd8"/>
+                                            <constraint firstItem="Xoj-gW-upX" firstAttribute="leading" secondItem="op2-GL-AIb" secondAttribute="leading" constant="87" id="Q9X-RH-pH2"/>
+                                            <constraint firstItem="cfz-2l-KoL" firstAttribute="centerX" secondItem="op2-GL-AIb" secondAttribute="centerX" id="U3v-ug-JFk"/>
+                                            <constraint firstAttribute="trailing" secondItem="Rdv-QF-qpD" secondAttribute="trailing" constant="155" id="VaQ-Th-Mpi"/>
+                                            <constraint firstAttribute="trailing" secondItem="cfz-2l-KoL" secondAttribute="trailing" constant="32" id="WAd-hL-qdG"/>
+                                            <constraint firstAttribute="bottom" secondItem="Xoj-gW-upX" secondAttribute="bottom" constant="942" id="aHx-2i-FT1"/>
+                                            <constraint firstItem="Xoj-gW-upX" firstAttribute="top" secondItem="op2-GL-AIb" secondAttribute="top" constant="8" id="c5C-Bt-aKQ"/>
+                                            <constraint firstItem="AyG-HZ-xV0" firstAttribute="top" secondItem="cfz-2l-KoL" secondAttribute="bottom" constant="6" id="crx-0m-xbV"/>
+                                            <constraint firstItem="cfz-2l-KoL" firstAttribute="top" secondItem="op2-GL-AIb" secondAttribute="top" constant="298" id="gV8-CS-duI"/>
+                                            <constraint firstItem="cfz-2l-KoL" firstAttribute="leading" secondItem="op2-GL-AIb" secondAttribute="leading" constant="32" id="kgZ-gv-V6v"/>
+                                            <constraint firstItem="Rdv-QF-qpD" firstAttribute="top" secondItem="op2-GL-AIb" secondAttribute="top" constant="171" id="lpu-JJ-rpc"/>
+                                            <constraint firstAttribute="height" constant="1078" id="qc4-Vz-vIz"/>
+                                            <constraint firstAttribute="bottom" secondItem="cfz-2l-KoL" secondAttribute="bottom" constant="82" id="qoQ-Zi-LVh"/>
+                                            <constraint firstAttribute="bottom" secondItem="Rdv-QF-qpD" secondAttribute="bottom" constant="859" id="vVy-kR-jdX"/>
+                                            <constraint firstItem="AyG-HZ-xV0" firstAttribute="leading" secondItem="op2-GL-AIb" secondAttribute="leading" constant="153" id="wtB-hz-Bzz"/>
+                                            <constraint firstItem="Xoj-gW-upX" firstAttribute="centerX" secondItem="op2-GL-AIb" secondAttribute="centerX" id="zJA-RF-7PQ"/>
+                                            <constraint firstAttribute="width" constant="414" id="zsT-mz-OTt"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="op2-GL-AIb" firstAttribute="top" secondItem="faf-XV-t8d" secondAttribute="top" id="1Dv-Bd-gMy"/>
+                                    <constraint firstItem="op2-GL-AIb" firstAttribute="leading" secondItem="faf-XV-t8d" secondAttribute="leading" id="UIh-6f-zNo"/>
+                                    <constraint firstAttribute="bottom" secondItem="op2-GL-AIb" secondAttribute="bottom" id="k25-hg-tbI"/>
+                                    <constraint firstAttribute="trailing" secondItem="op2-GL-AIb" secondAttribute="trailing" id="oOp-HC-fk6"/>
+                                </constraints>
+                            </scrollView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="faf-XV-t8d" firstAttribute="top" secondItem="7TJ-q1-MT2" secondAttribute="bottom" constant="28" id="2qE-5I-srK"/>
+                            <constraint firstItem="0C9-vM-CrA" firstAttribute="top" secondItem="Pw9-CO-avl" secondAttribute="top" constant="153" id="53v-47-tGc"/>
+                            <constraint firstItem="faf-XV-t8d" firstAttribute="top" secondItem="Pw9-CO-avl" secondAttribute="top" id="DgM-gb-eS2"/>
+                            <constraint firstItem="faf-XV-t8d" firstAttribute="leading" secondItem="LIq-xR-IjU" secondAttribute="leading" id="HID-GV-u3Z"/>
+                            <constraint firstItem="7TJ-q1-MT2" firstAttribute="leading" secondItem="LIq-xR-IjU" secondAttribute="leadingMargin" constant="1" id="RE0-gE-gRo"/>
+                            <constraint firstItem="faf-XV-t8d" firstAttribute="bottom" secondItem="Pw9-CO-avl" secondAttribute="bottom" id="W29-nA-b4o"/>
+                            <constraint firstAttribute="trailing" secondItem="faf-XV-t8d" secondAttribute="trailing" id="abl-zw-NKc"/>
+                            <constraint firstItem="0C9-vM-CrA" firstAttribute="leading" secondItem="Pw9-CO-avl" secondAttribute="leading" constant="8" id="asN-ba-Ct7"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="Pw9-CO-avl"/>
                     </view>
                     <navigationItem key="navigationItem" id="50R-cy-Wof">
-                        <barButtonItem key="leftBarButtonItem" style="plain" systemItem="cancel" id="gOA-PQ-mqf">
+                        <barButtonItem key="leftBarButtonItem" title="back" image="back" style="plain" id="gOA-PQ-mqf">
+                            <color key="tintColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
                             <connections>
                                 <action selector="goBackToSTVC_Btn:" destination="28T-1h-nVA" id="UZJ-f0-FWH"/>
                                 <segue destination="7Zq-wj-8zx" kind="unwind" identifier="unwindSegueToSTVC" unwindAction="unwindToSTVCWithSegue:" id="Li5-GU-dd1"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <size key="freeformSize" width="414" height="1200"/>
+                    <connections>
+                        <segue destination="BE3-Ng-F1N" kind="presentation" identifier="goToCFromASeague" modalPresentationStyle="overFullScreen" modalTransitionStyle="crossDissolve" id="FTF-ib-6P1"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XCL-cL-KVO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="7Zq-wj-8zx" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="7600" y="757"/>
+            <point key="canvasLocation" x="7600.0000000000009" y="756.69642857142856"/>
         </scene>
         <!--Course Table View Controller-->
         <scene sceneID="fzj-Mt-XCE">
@@ -573,10 +698,17 @@
             <point key="canvasLocation" x="3069.5652173913045" y="1354.6875"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="UDy-iR-3Rc"/>
+        <segue reference="FTF-ib-6P1"/>
+    </inferredMetricsTieBreakers>
     <resources>
-        <image name="gear" catalog="system" width="64" height="58"/>
-        <image name="house.fill" catalog="system" width="64" height="52"/>
-        <image name="person" catalog="system" width="64" height="58"/>
-        <image name="person.3.fill" catalog="system" width="71" height="34"/>
+        <image name="back" width="128" height="128"/>
+        <image name="gear" catalog="system" width="128" height="119"/>
+        <image name="golden_hawk" width="1015" height="1000"/>
+        <image name="house.fill" catalog="system" width="128" height="106"/>
+        <image name="laurier" width="457" height="134"/>
+        <image name="person" catalog="system" width="128" height="117"/>
+        <image name="person.3.fill" catalog="system" width="128" height="61"/>
     </resources>
 </document>

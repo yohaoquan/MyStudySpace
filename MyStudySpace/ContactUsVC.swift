@@ -1,5 +1,5 @@
 //
-//  AboutViewController.swift
+//  ContactUsVC.swift
 //  MyStudySpace
 //
 //  Created by Xiaohu He on 2020-04-12.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class AboutViewController: UIViewController {
+class ContactUsVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -16,13 +16,15 @@ class AboutViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
+    @IBAction func goToAFromCBtn(_ sender: Any) {
+       performSegue(withIdentifier: "goToAFromCSeague", sender: self)
+    }
     
-    
-    @IBAction func goBackToSTVC_Btn(_ sender: Any) {
+    @IBAction func goBackToSTCV_Btn(_ sender: Any) {
         performSegue(withIdentifier: "unwindSegueToSTVC", sender: self)
     }
     
-    @IBAction func unwindToAVC(segue:UIStoryboardSegue){ }
+
     /*
     // MARK: - Navigation
 
