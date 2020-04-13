@@ -54,8 +54,9 @@
 		93C20AC4243BB2CB00FFB8D8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 93C20AC2243BB2CB00FFB8D8 /* Main.storyboard */; };
 		93C20AC6243BB2CC00FFB8D8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 93C20AC5243BB2CC00FFB8D8 /* Assets.xcassets */; };
 		93C20AC9243BB2CC00FFB8D8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 93C20AC7243BB2CC00FFB8D8 /* LaunchScreen.storyboard */; };
-		A8B7DE842443BED8002A3D11 /* SettingTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8B7DE832443BED7002A3D11 /* SettingTableViewController.swift */; };
-		A8B7DE862443C5EE002A3D11 /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8B7DE852443C5EE002A3D11 /* AboutViewController.swift */; };
+		A8B7DE842443BED8002A3D11 /* SettingTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8B7DE832443BED7002A3D11 /* SettingTableVC.swift */; };
+		A8B7DE882443FF10002A3D11 /* ContactUsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8B7DE872443FF10002A3D11 /* ContactUsVC.swift */; };
+		A8B7DE8E244401AC002A3D11 /* AboutVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8B7DE8D244401AC002A3D11 /* AboutVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -108,8 +109,9 @@
 		93C20AC5243BB2CC00FFB8D8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		93C20AC8243BB2CC00FFB8D8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		93C20ACA243BB2CC00FFB8D8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A8B7DE832443BED7002A3D11 /* SettingTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingTableViewController.swift; sourceTree = "<group>"; };
-		A8B7DE852443C5EE002A3D11 /* AboutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
+		A8B7DE832443BED7002A3D11 /* SettingTableVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingTableVC.swift; sourceTree = "<group>"; };
+		A8B7DE872443FF10002A3D11 /* ContactUsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactUsVC.swift; sourceTree = "<group>"; };
+		A8B7DE8D244401AC002A3D11 /* AboutVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutVC.swift; sourceTree = "<group>"; };
 		D3632DC430160B06D1F1EBB8 /* Pods-MyStudySpace.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyStudySpace.release.xcconfig"; path = "Target Support Files/Pods-MyStudySpace/Pods-MyStudySpace.release.xcconfig"; sourceTree = "<group>"; };
 		F9D9E31704487FEE0C0D0DF4 /* Pods-MyStudySpace.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyStudySpace.debug.xcconfig"; path = "Target Support Files/Pods-MyStudySpace/Pods-MyStudySpace.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -215,11 +217,12 @@
 				93339540243D8AEB0064CF09 /* Cards */,
 				93B33210243BF1BC0036D9BA /* Helpers */,
 				93C20ABC243BB2CB00FFB8D8 /* AppDelegate.swift */,
+				A8B7DE8D244401AC002A3D11 /* AboutVC.swift */,
 				93C20ABE243BB2CB00FFB8D8 /* SceneDelegate.swift */,
 				93C20AC0243BB2CB00FFB8D8 /* OnboardingScreen.swift */,
 				93C20AC2243BB2CB00FFB8D8 /* Main.storyboard */,
-				A8B7DE852443C5EE002A3D11 /* AboutViewController.swift */,
-				A8B7DE832443BED7002A3D11 /* SettingTableViewController.swift */,
+				A8B7DE872443FF10002A3D11 /* ContactUsVC.swift */,
+				A8B7DE832443BED7002A3D11 /* SettingTableVC.swift */,
 				9333953E243D8AD60064CF09 /* MainPageVC.swift */,
 				93A547FF243C324A000423D1 /* CoursesListCell.swift */,
 				93A547FD243C3211000423D1 /* CoursesList.swift */,
@@ -351,10 +354,10 @@
 				93339576243D8B3A0064CF09 /* CardParthCustomMarginsCardController.swift in Sources */,
 				9350F20B243BDBC600F7E882 /* WebLoginVC.swift in Sources */,
 				9350F20D243BE1D000F7E882 /* HomeVC.swift in Sources */,
-				A8B7DE862443C5EE002A3D11 /* AboutViewController.swift in Sources */,
 				93339574243D8B3A0064CF09 /* StateCardController.swift in Sources */,
 				9333957B243D8B3A0064CF09 /* CardPartPillLabelCardController.swift in Sources */,
 				93339566243D8B3A0064CF09 /* CardPartTitleDescriptionViewCardController.swift in Sources */,
+				A8B7DE8E244401AC002A3D11 /* AboutVC.swift in Sources */,
 				9333956D243D8B3A0064CF09 /* CardPartOrientedViewCardController.swift in Sources */,
 				9333956F243D8B3A0064CF09 /* CardPartTitleViewCardController.swift in Sources */,
 				93C20AC1243BB2CB00FFB8D8 /* OnboardingScreen.swift in Sources */,
@@ -383,12 +386,13 @@
 				93339572243D8B3A0064CF09 /* CardPartBottomSheetCardController.swift in Sources */,
 				93339570243D8B3A0064CF09 /* CardPartIconLabelCardController.swift in Sources */,
 				9333953F243D8AD60064CF09 /* MainPageVC.swift in Sources */,
+				A8B7DE882443FF10002A3D11 /* ContactUsVC.swift in Sources */,
 				93339573243D8B3A0064CF09 /* CardPartConfettiViewCardController.swift in Sources */,
 				93A54800243C324A000423D1 /* CoursesListCell.swift in Sources */,
 				93339579243D8B3A0064CF09 /* TitleCardController.swift in Sources */,
 				93C20ABD243BB2CB00FFB8D8 /* AppDelegate.swift in Sources */,
 				93339565243D8B3A0064CF09 /* CardPartSeparatorViewCardController.swift in Sources */,
-				A8B7DE842443BED8002A3D11 /* SettingTableViewController.swift in Sources */,
+				A8B7DE842443BED8002A3D11 /* SettingTableVC.swift in Sources */,
 				93339567243D8B3A0064CF09 /* CardPartImageViewCardController.swift in Sources */,
 				9333957A243D8B3A0064CF09 /* CardPartAttributedTextViewController.swift in Sources */,
 				93C20ABF243BB2CB00FFB8D8 /* SceneDelegate.swift in Sources */,
