@@ -24,7 +24,15 @@ class ContactUsVC: UIViewController {
         performSegue(withIdentifier: "unwindSegueToSTVC", sender: self)
     }
     
-
+    @IBAction func goToProfessorLinkBtn(_ sender: Any) {
+        openUrl(urlStr: "https://www.wlu.ca/academics/faculties/faculty-of-science/faculty-profiles/chinh-t-hoang/index.html")
+    }
+    
+    func openUrl(urlStr:String!) {
+        if let url = URL(string:urlStr), !url.absoluteString.isEmpty {
+            UIApplication.shared.open(url, options: [:], completionHandler: nil)
+        }
+    }
     /*
     // MARK: - Navigation
 

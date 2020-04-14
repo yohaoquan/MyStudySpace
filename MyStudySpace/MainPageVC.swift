@@ -9,7 +9,6 @@
 
 import UIKit
 import CardParts
-import RxCocoa//added
 
 class MainPageVC: CardsViewController {
     

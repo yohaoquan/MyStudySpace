@@ -24,7 +24,6 @@ class AboutVC: UIViewController {
     }
     
     func openUrl(urlStr:String!) {
-        
         if let url = URL(string:urlStr), !url.absoluteString.isEmpty {
             UIApplication.shared.open(url, options: [:], completionHandler: nil)
         }
