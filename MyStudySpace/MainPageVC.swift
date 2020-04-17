@@ -17,6 +17,7 @@ class MainPageVC: CardsViewController {
         super.init(coder: coder)
     }
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         var greetings = ""
@@ -41,7 +42,6 @@ class MainPageVC: CardsViewController {
 //            ThemedCardController(title: "Themed"),
 //            ThemedCardController(title: "Cards!")
         ]
-        
         loadCards(cards: cards)
     }
 }
