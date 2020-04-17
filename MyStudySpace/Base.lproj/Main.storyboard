@@ -27,7 +27,8 @@
                                 <rect key="frame" x="2" y="675" width="410" height="22"/>
                                 <color key="tintColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                 <state key="normal" title=" Login to MyLearningSpace" image="person" catalog="system">
-                                    <color key="titleColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                    <color key="titleColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <color key="titleShadowColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                 </state>
                                 <connections>
                                     <segue destination="YAt-oD-72m" kind="presentation" id="MZF-Ai-SZT"/>
@@ -84,29 +85,12 @@
                                             </subviews>
                                         </tableViewCellContentView>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="detailDisclosureButton" indentationWidth="10" id="b3c-YY-K0W">
-                                        <rect key="frame" x="0.0" y="99" width="414" height="43.5"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="b3c-YY-K0W" id="AK5-7Z-xta">
-                                            <rect key="frame" x="0.0" y="0.0" width="351" height="43.5"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Log Out" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ops-q9-xNb">
-                                                    <rect key="frame" x="20" y="11" width="70" height="24"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                            </subviews>
-                                        </tableViewCellContentView>
-                                    </tableViewCell>
                                 </cells>
                             </tableViewSection>
                             <tableViewSection headerTitle="Basic setting" id="z53-Bo-Akt">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="yTu-1e-5i6">
-                                        <rect key="frame" x="0.0" y="198.5" width="414" height="43.5"/>
+                                        <rect key="frame" x="0.0" y="155" width="414" height="43.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="yTu-1e-5i6" id="4vw-f3-jc4">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
@@ -126,7 +110,7 @@
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="fgZ-qo-pMJ">
-                                        <rect key="frame" x="0.0" y="242" width="414" height="43.5"/>
+                                        <rect key="frame" x="0.0" y="198.5" width="414" height="43.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="fgZ-qo-pMJ" id="J4N-It-p5s">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
@@ -144,6 +128,27 @@
                                         <connections>
                                             <segue destination="BE3-Ng-F1N" kind="presentation" modalPresentationStyle="overFullScreen" modalTransitionStyle="crossDissolve" id="22Z-B6-Uoi"/>
                                         </connections>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                            <tableViewSection headerTitle="Log Out" id="Mc6-dk-YPS">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="BWa-z0-eAb">
+                                        <rect key="frame" x="0.0" y="298" width="414" height="43.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="BWa-z0-eAb" id="pt8-ym-Oeh">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Log Out" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ops-q9-xNb">
+                                                    <rect key="frame" x="20" y="10" width="70" height="24"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
                                     </tableViewCell>
                                 </cells>
                             </tableViewSection>
@@ -569,11 +574,11 @@ This application is not perfect. We are always finding a way to be better. If go
         <scene sceneID="YfN-0Q-HwT">
             <objects>
                 <viewController id="uFc-Xc-aYQ" customClass="WebLoginVC" customModule="MyStudySpace" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="v3O-Tf-dFY">
+                    <view key="view" contentMode="scaleToFill" id="j3y-hW-jyn">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <viewLayoutGuide key="safeArea" id="4VM-RN-VNp"/>
+                        <viewLayoutGuide key="safeArea" id="8WF-r4-FBJ"/>
                     </view>
                     <navigationItem key="navigationItem" title="Login" id="4vJ-2a-a1j">
                         <barButtonItem key="leftBarButtonItem" style="done" systemItem="cancel" id="K1w-hj-pc9">
@@ -589,13 +594,14 @@ This application is not perfect. We are always finding a way to be better. If go
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aQ7-5o-fVj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="MM9-Zy-xrJ" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="959" y="939"/>
+            <point key="canvasLocation" x="957.97101449275374" y="938.83928571428567"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="E0o-rB-knO">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="YAt-oD-72m" sceneMemberID="viewController">
                     <toolbarItems/>
+                    <navigationItem key="navigationItem" id="Q0l-Su-X9J"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="5Jd-1A-XAf">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
                         <autoresizingMask key="autoresizingMask"/>
