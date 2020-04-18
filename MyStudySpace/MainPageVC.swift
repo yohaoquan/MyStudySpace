@@ -32,12 +32,13 @@ class MainPageVC: CardsViewController {
             greetings = "Good Evening"
         }
         self.navigationItem.title = greetings + ", Aaron"
-        
+        self.view.backgroundColor = .systemBackground
         // Comment out one of the loadCard functions to change cards and/or their order
         let cards: [CardPartsViewController] = [
             TitleCardController(title: " "),
             
-            ThemedCardController(title: "Welcome to MyStudySpace!")
+            ThemedCardController(title: "Welcome to MyStudySpace!"),
+            HomeLinksCardController()
 //            ThemedCardController(title: "Are"),
 //            ThemedCardController(title: "Themed"),
 //            ThemedCardController(title: "Cards!")
