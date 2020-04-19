@@ -64,7 +64,7 @@ class OnboardingScreen: UIViewController, UINavigationControllerDelegate {
     
     @IBAction func webLoginReturned(segue: UIStoryboardSegue){
         print("returned")
-        let origVC = segue.source as! NewWebLoginVC
+        let origVC = segue.source as! WebLoginVC
         if loginState.isLoggedIn {
             let homeVC = self.storyboard?.instantiateViewController(identifier: "HomeVC")
             self.view.window?.rootViewController = homeVC
@@ -116,7 +116,7 @@ extension OnboardingScreen: PaperOnboardingDataSource {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         var nav = segue.destination as! UINavigationController
-        let dest = nav.viewControllers.first as! NewWebLoginVC
+        let dest = nav.viewControllers.first as! WebLoginVC
         dest.url = self.login_url
     }
     

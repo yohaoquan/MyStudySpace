@@ -2,9 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:/Users/aaron/Documents/Courses/CP469/MyStudySpace/MyStudySpace/MyStudySpace/NewWebLoginVC.swift">
-   </FileRef>
-   <FileRef
       location = "group:MyStudySpace.xcodeproj">
    </FileRef>
    <FileRef

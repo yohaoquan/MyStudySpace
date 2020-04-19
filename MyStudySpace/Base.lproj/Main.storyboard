@@ -613,7 +613,7 @@ This application is not perfect. We are always finding a way to be better. If go
         <!--Login-->
         <scene sceneID="YfN-0Q-HwT">
             <objects>
-                <viewController id="uFc-Xc-aYQ" customClass="NewWebLoginVC" customModule="MyStudySpace" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="uFc-Xc-aYQ" customClass="WebLoginVC" customModule="MyStudySpace" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="j3y-hW-jyn">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>

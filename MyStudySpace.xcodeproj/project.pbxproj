@@ -43,7 +43,6 @@
 		93339581243D8B3A0064CF09 /* CardPartCollectionViewCardController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93339560243D8B390064CF09 /* CardPartCollectionViewCardController.swift */; };
 		93339582243D8B3A0064CF09 /* CardPartBorderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93339561243D8B3A0064CF09 /* CardPartBorderViewController.swift */; };
 		9350F209243BB74000F7E882 /* onboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9350F208243BB74000F7E882 /* onboardingView.swift */; };
-		9350F20B243BDBC600F7E882 /* WebLoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9350F20A243BDBC600F7E882 /* WebLoginVC.swift */; };
 		9350F20D243BE1D000F7E882 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9350F20C243BE1D000F7E882 /* HomeVC.swift */; };
 		93A547FE243C3211000423D1 /* CoursesList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93A547FD243C3211000423D1 /* CoursesList.swift */; };
 		93A54800243C324A000423D1 /* CoursesListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93A547FF243C324A000423D1 /* CoursesListCell.swift */; };
@@ -54,7 +53,7 @@
 		93C20AC4243BB2CB00FFB8D8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 93C20AC2243BB2CB00FFB8D8 /* Main.storyboard */; };
 		93C20AC6243BB2CC00FFB8D8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 93C20AC5243BB2CC00FFB8D8 /* Assets.xcassets */; };
 		93C20AC9243BB2CC00FFB8D8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 93C20AC7243BB2CC00FFB8D8 /* LaunchScreen.storyboard */; };
-		93C84081244C34A10041B58D /* NewWebLoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93C84080244C34A10041B58D /* NewWebLoginVC.swift */; };
+		93C84081244C34A10041B58D /* WebLoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93C84080244C34A10041B58D /* WebLoginVC.swift */; };
 		93C84083244C3D020041B58D /* ResponseStructs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93C84082244C3D020041B58D /* ResponseStructs.swift */; };
 		A8B7DE842443BED8002A3D11 /* SettingTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8B7DE832443BED7002A3D11 /* SettingTableVC.swift */; };
 		A8B7DE882443FF10002A3D11 /* ContactUsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8B7DE872443FF10002A3D11 /* ContactUsVC.swift */; };
@@ -100,7 +99,6 @@
 		93339560243D8B390064CF09 /* CardPartCollectionViewCardController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardPartCollectionViewCardController.swift; sourceTree = "<group>"; };
 		93339561243D8B3A0064CF09 /* CardPartBorderViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardPartBorderViewController.swift; sourceTree = "<group>"; };
 		9350F208243BB74000F7E882 /* onboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = onboardingView.swift; sourceTree = "<group>"; };
-		9350F20A243BDBC600F7E882 /* WebLoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebLoginVC.swift; sourceTree = "<group>"; };
 		9350F20C243BE1D000F7E882 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
 		93A547FD243C3211000423D1 /* CoursesList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoursesList.swift; sourceTree = "<group>"; };
 		93A547FF243C324A000423D1 /* CoursesListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoursesListCell.swift; sourceTree = "<group>"; };
@@ -113,7 +111,7 @@
 		93C20AC5243BB2CC00FFB8D8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		93C20AC8243BB2CC00FFB8D8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		93C20ACA243BB2CC00FFB8D8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		93C84080244C34A10041B58D /* NewWebLoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = NewWebLoginVC.swift; path = /Users/aaron/Documents/Courses/CP469/MyStudySpace/MyStudySpace/MyStudySpace/NewWebLoginVC.swift; sourceTree = "<absolute>"; };
+		93C84080244C34A10041B58D /* WebLoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = WebLoginVC.swift; path = /Users/aaron/Documents/Courses/CP469/MyStudySpace/MyStudySpace/MyStudySpace/WebLoginVC.swift; sourceTree = "<absolute>"; };
 		93C84082244C3D020041B58D /* ResponseStructs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseStructs.swift; sourceTree = "<group>"; };
 		A8B7DE832443BED7002A3D11 /* SettingTableVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingTableVC.swift; sourceTree = "<group>"; };
 		A8B7DE872443FF10002A3D11 /* ContactUsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactUsVC.swift; sourceTree = "<group>"; };
@@ -242,8 +240,7 @@
 				93C20AC5243BB2CC00FFB8D8 /* Assets.xcassets */,
 				93C20AC7243BB2CC00FFB8D8 /* LaunchScreen.storyboard */,
 				93C20ACA243BB2CC00FFB8D8 /* Info.plist */,
-				9350F20A243BDBC600F7E882 /* WebLoginVC.swift */,
-				93C84080244C34A10041B58D /* NewWebLoginVC.swift */,
+				93C84080244C34A10041B58D /* WebLoginVC.swift */,
 			);
 			path = MyStudySpace;
 			sourceTree = "<group>";
@@ -364,7 +361,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				93339576243D8B3A0064CF09 /* CardParthCustomMarginsCardController.swift in Sources */,
-				9350F20B243BDBC600F7E882 /* WebLoginVC.swift in Sources */,
 				9350F20D243BE1D000F7E882 /* HomeVC.swift in Sources */,
 				93339574243D8B3A0064CF09 /* StateCardController.swift in Sources */,
 				9333957B243D8B3A0064CF09 /* CardPartPillLabelCardController.swift in Sources */,
@@ -382,7 +378,7 @@
 				93339569243D8B3A0064CF09 /* CardPartButtonViewCardController.swift in Sources */,
 				93339562243D8B3A0064CF09 /* CardPartTableViewCardController.swift in Sources */,
 				9333957F243D8B3A0064CF09 /* CardPartTextFieldCardController.swift in Sources */,
-				93C84081244C34A10041B58D /* NewWebLoginVC.swift in Sources */,
+				93C84081244C34A10041B58D /* WebLoginVC.swift in Sources */,
 				93339577243D8B3A0064CF09 /* CardPartSliderViewCardController.swift in Sources */,
 				9333957C243D8B3A0064CF09 /* CardPartBarViewCardController.swift in Sources */,
 				93B33212243BF27A0036D9BA /* LoginHelper.swift in Sources */,
