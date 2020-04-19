@@ -16,9 +16,8 @@ class AboutVC: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-    @IBAction func goToCFromABtn(_ sender: Any) {
-        performSegue(withIdentifier: "goToCFromASeague", sender: self)
-    }
+    @IBOutlet weak var contactUsBtn: UIButton!
+    
     @IBAction func goldenHawkLinkBtn(_ sender: Any) {
         openUrl(urlStr: "http://wlu.ca")
     }
@@ -27,10 +26,6 @@ class AboutVC: UIViewController {
         if let url = URL(string:urlStr), !url.absoluteString.isEmpty {
             UIApplication.shared.open(url, options: [:], completionHandler: nil)
         }
-    }
-    
-    @IBAction func goBackToSTVC_Btn(_ sender: Any) {
-        performSegue(withIdentifier: "unwindSegueToSTVC", sender: self)
     }
     
     /*

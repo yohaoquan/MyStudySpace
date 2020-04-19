@@ -95,6 +95,7 @@ extension ThemedCardController: ShadowCardTrait {
     func shadowOpacity() -> Float {
         return 0.9
     }
+    
 }
 
 extension ThemedCardController: RoundedCardTrait {

@@ -12,17 +12,10 @@ class ContactUsVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        self.navigationController?.interactivePopGestureRecognizer?.isEnabled = true
         // Do any additional setup after loading the view.
     }
-    
-    @IBAction func goToAFromCBtn(_ sender: Any) {
-       performSegue(withIdentifier: "goToAFromCSeague", sender: self)
-    }
-    
-    @IBAction func goBackToSTCV_Btn(_ sender: Any) {
-        performSegue(withIdentifier: "unwindSegueToSTVC", sender: self)
-    }
+    @IBOutlet weak var AboutBtn: UIButton!
     
     @IBAction func goToProfessorLinkBtn(_ sender: Any) {
         openUrl(urlStr: "https://www.wlu.ca/academics/faculties/faculty-of-science/faculty-profiles/chinh-t-hoang/index.html")
