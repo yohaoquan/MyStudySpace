@@ -57,6 +57,9 @@
 		A8B7DE842443BED8002A3D11 /* SettingTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8B7DE832443BED7002A3D11 /* SettingTableVC.swift */; };
 		A8B7DE882443FF10002A3D11 /* ContactUsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8B7DE872443FF10002A3D11 /* ContactUsVC.swift */; };
 		A8B7DE8E244401AC002A3D11 /* AboutVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8B7DE8D244401AC002A3D11 /* AboutVC.swift */; };
+		A8E5770D244A332700AEDE8B /* CourseMainPageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8E5770C244A332700AEDE8B /* CourseMainPageVC.swift */; };
+		A8E5770F244A48D000AEDE8B /* HomeLinksCardController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8E5770E244A48D000AEDE8B /* HomeLinksCardController.swift */; };
+		A8E57711244B9B5900AEDE8B /* CourseMainPageTableViewVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8E57710244B9B5900AEDE8B /* CourseMainPageTableViewVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -112,6 +115,9 @@
 		A8B7DE832443BED7002A3D11 /* SettingTableVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingTableVC.swift; sourceTree = "<group>"; };
 		A8B7DE872443FF10002A3D11 /* ContactUsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactUsVC.swift; sourceTree = "<group>"; };
 		A8B7DE8D244401AC002A3D11 /* AboutVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutVC.swift; sourceTree = "<group>"; };
+		A8E5770C244A332700AEDE8B /* CourseMainPageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseMainPageVC.swift; sourceTree = "<group>"; };
+		A8E5770E244A48D000AEDE8B /* HomeLinksCardController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeLinksCardController.swift; sourceTree = "<group>"; };
+		A8E57710244B9B5900AEDE8B /* CourseMainPageTableViewVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseMainPageTableViewVC.swift; sourceTree = "<group>"; };
 		D3632DC430160B06D1F1EBB8 /* Pods-MyStudySpace.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyStudySpace.release.xcconfig"; path = "Target Support Files/Pods-MyStudySpace/Pods-MyStudySpace.release.xcconfig"; sourceTree = "<group>"; };
 		F9D9E31704487FEE0C0D0DF4 /* Pods-MyStudySpace.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyStudySpace.debug.xcconfig"; path = "Target Support Files/Pods-MyStudySpace/Pods-MyStudySpace.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -179,6 +185,8 @@
 				9333954E243D8B360064CF09 /* CardPartTitleViewCardController.swift */,
 				9333955C243D8B390064CF09 /* ReactiveCardController.swift */,
 				93339553243D8B370064CF09 /* StateCardController.swift */,
+				A8E57710244B9B5900AEDE8B /* CourseMainPageTableViewVC.swift */,
+				A8E5770E244A48D000AEDE8B /* HomeLinksCardController.swift */,
 				93339557243D8B380064CF09 /* ThemedCardController.swift */,
 				93339558243D8B380064CF09 /* TitleCardController.swift */,
 			);
@@ -221,6 +229,7 @@
 				93C20ABE243BB2CB00FFB8D8 /* SceneDelegate.swift */,
 				93C20AC0243BB2CB00FFB8D8 /* OnboardingScreen.swift */,
 				93C20AC2243BB2CB00FFB8D8 /* Main.storyboard */,
+				A8E5770C244A332700AEDE8B /* CourseMainPageVC.swift */,
 				A8B7DE872443FF10002A3D11 /* ContactUsVC.swift */,
 				A8B7DE832443BED7002A3D11 /* SettingTableVC.swift */,
 				9333953E243D8AD60064CF09 /* MainPageVC.swift */,
@@ -383,11 +392,13 @@
 				93339563243D8B3A0064CF09 /* CardPartPagedViewCardController.swift in Sources */,
 				9333957D243D8B3A0064CF09 /* ReactiveCardController.swift in Sources */,
 				93339571243D8B3A0064CF09 /* CardPartCenteredViewCardController.swift in Sources */,
+				A8E5770F244A48D000AEDE8B /* HomeLinksCardController.swift in Sources */,
 				93339572243D8B3A0064CF09 /* CardPartBottomSheetCardController.swift in Sources */,
 				93339570243D8B3A0064CF09 /* CardPartIconLabelCardController.swift in Sources */,
 				9333953F243D8AD60064CF09 /* MainPageVC.swift in Sources */,
 				A8B7DE882443FF10002A3D11 /* ContactUsVC.swift in Sources */,
 				93339573243D8B3A0064CF09 /* CardPartConfettiViewCardController.swift in Sources */,
+				A8E5770D244A332700AEDE8B /* CourseMainPageVC.swift in Sources */,
 				93A54800243C324A000423D1 /* CoursesListCell.swift in Sources */,
 				93339579243D8B3A0064CF09 /* TitleCardController.swift in Sources */,
 				93C20ABD243BB2CB00FFB8D8 /* AppDelegate.swift in Sources */,
@@ -396,6 +407,7 @@
 				93339567243D8B3A0064CF09 /* CardPartImageViewCardController.swift in Sources */,
 				9333957A243D8B3A0064CF09 /* CardPartAttributedTextViewController.swift in Sources */,
 				93C20ABF243BB2CB00FFB8D8 /* SceneDelegate.swift in Sources */,
+				A8E57711244B9B5900AEDE8B /* CourseMainPageTableViewVC.swift in Sources */,
 				93339564243D8B3A0064CF09 /* CardPartHistogramCardController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

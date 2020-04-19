@@ -1,14 +1,14 @@
 //
-//  AboutViewController.swift
+//  CourseMainPageVC.swift
 //  MyStudySpace
 //
-//  Created by Xiaohu He on 2020-04-12.
+//  Created by Xiaohu He on 2020-04-17.
 //  Copyright © 2020 Haoquan you. All rights reserved.
 //
 
 import UIKit
 
-class AboutVC: UIViewController {
+class CourseMainPageVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -16,16 +16,8 @@ class AboutVC: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-    @IBOutlet weak var contactUsBtn: UIButton!
-    
-    @IBAction func goldenHawkLinkBtn(_ sender: Any) {
-        openUrl(urlStr: "http://wlu.ca")
-    }
-    
-    func openUrl(urlStr:String!) {
-        if let url = URL(string:urlStr), !url.absoluteString.isEmpty {
-            UIApplication.shared.open(url, options: [:], completionHandler: nil)
-        }
+    @IBAction func goBackFromCMPBtn(_ sender: Any) {
+        performSegue(withIdentifier: "unwindSegueToCMP", sender: self)
     }
     
     /*
