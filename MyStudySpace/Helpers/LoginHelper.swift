@@ -46,7 +46,6 @@ class LoginState: NSObject, NSCoding {
     
 }
 
-
 class LoginHelper {
     static let sharedInstance = LoginHelper()
     let fileName = "MyStudySpace.loginState"
