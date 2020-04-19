@@ -14,9 +14,9 @@
             filePath = "MyStudySpace/OnboardingScreen.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "32"
-            endingLineNumber = "32"
-            landmarkName = "viewDidLoad()"
+            startingLineNumber = "81"
+            endingLineNumber = "81"
+            landmarkName = "onboardingItemsCount()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -124,6 +124,82 @@
                   startingLineNumber = "13"
                   endingLineNumber = "13"
                   offsetFromSymbolStart = "119">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "80C76DF3-AE2A-42F1-BB5B-ABFF39825FCC"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MyStudySpace/WebLoginVC.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "49"
+            endingLineNumber = "49"
+            landmarkName = "webView(_:didStartProvisionalNavigation:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "F0C1C227-CF65-4732-BCA6-08EADAB79E8E"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MyStudySpace/WebLoginVC.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "70"
+            endingLineNumber = "70"
+            landmarkName = "webView(_:didFinish:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.SymbolicBreakpoint">
+         <BreakpointContent
+            uuid = "66E73B9B-151D-46B7-91CF-E4FF63B70E58"
+            shouldBeEnabled = "Yes"
+            nameForDebugger = "Layout"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            symbolName = "UIViewAlertForUnsatisfiableConstraints"
+            moduleName = "">
+            <Actions>
+               <BreakpointActionProxy
+                  ActionExtensionID = "Xcode.BreakpointAction.DebuggerCommand">
+                  <ActionContent
+                     consoleCommand = "expr -l objc++ -O -- [[UIWindow keyWindow] _autolayoutTrace]">
+                  </ActionContent>
+               </BreakpointActionProxy>
+               <BreakpointActionProxy
+                  ActionExtensionID = "Xcode.BreakpointAction.DebuggerCommand">
+                  <ActionContent
+                     consoleCommand = "(lldb) expr ((UIView *)0x7f9ea3d43410).backgroundColor = [UIColor redColor]">
+                  </ActionContent>
+               </BreakpointActionProxy>
+               <BreakpointActionProxy
+                  ActionExtensionID = "Xcode.BreakpointAction.DebuggerCommand">
+                  <ActionContent
+                     consoleCommand = "(UICachedDeviceRGBColor *) $1 = 0x00007f9ea3d43410">
+                  </ActionContent>
+               </BreakpointActionProxy>
+            </Actions>
+            <Locations>
+               <Location
+                  uuid = "66E73B9B-151D-46B7-91CF-E4FF63B70E58 - ba3ad5676a792f38"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "UIViewAlertForUnsatisfiableConstraints"
+                  moduleName = "UIKitCore"
+                  usesParentBreakpointCondition = "Yes"
+                  offsetFromSymbolStart = "0">
                </Location>
             </Locations>
          </BreakpointContent>

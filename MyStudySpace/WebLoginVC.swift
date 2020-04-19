@@ -56,6 +56,7 @@ class WebLoginVC: UIViewController, WKNavigationDelegate {
             loginState.userKey = ""
 
             LoginHelper.sharedInstance.saveLoginState()
+            self.performSegue(withIdentifier: "returnToOnboarding", sender: self)
             
         }
         
@@ -75,9 +76,9 @@ class WebLoginVC: UIViewController, WKNavigationDelegate {
             loginState.isLoggedIn = true;
             loginState.userId = ""
             loginState.userKey = ""
-
-            LoginHelper.sharedInstance.saveLoginState()
             
+            LoginHelper.sharedInstance.saveLoginState()
+            self.performSegue(withIdentifier: "returnToOnboarding", sender: self)
         }
 
     }

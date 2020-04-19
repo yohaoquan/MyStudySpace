@@ -2,7 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -164,10 +164,10 @@
             </objects>
             <point key="canvasLocation" x="3980" y="1355"/>
         </scene>
-        <!--Good Morning Table view controller-->
+        <!--Home View Controller-->
         <scene sceneID="RWp-3N-yBX">
             <objects>
-                <viewController title="Good Morning Table view controller" id="iho-qp-Afp" customClass="MainPageVC" customModule="MyStudySpace" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Good Morning Table view controller" id="iho-qp-Afp" userLabel="Home View Controller" customClass="MainPageVC" customModule="MyStudySpace" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Nfp-Hy-f7b">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -331,8 +331,8 @@ hexx2400@mylaurier.ca</string>
                         <viewLayoutGuide key="safeArea" id="Def-0f-hJm"/>
                     </view>
                     <navigationItem key="navigationItem" id="us9-y8-Dwj">
-                        <barButtonItem key="leftBarButtonItem" image="back" style="plain" id="ENJ-OJ-qVc">
-                            <color key="tintColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                        <barButtonItem key="leftBarButtonItem" image="Back" style="plain" id="ENJ-OJ-qVc">
+                            <color key="tintColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                             <connections>
                                 <action selector="goBackToSTCV_Btn:" destination="WSP-Pd-T3d" id="00j-QJ-d5s"/>
                                 <segue destination="5gB-pp-gUG" kind="unwind" identifier="unwindSeugue" unwindAction="unwindToSTVCWithSegue:" id="u3u-z6-jQa"/>
@@ -347,6 +347,47 @@ hexx2400@mylaurier.ca</string>
                 <exit id="5gB-pp-gUG" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="7600.0000000000009" y="1748.4375"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="LWm-wE-Nb3">
+            <objects>
+                <navigationController id="W3K-ih-ygP" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="KMj-q5-rGm">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="7iq-wi-SwR" kind="relationship" relationship="rootViewController" id="KQ6-DA-9cS"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pON-m0-KtM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4865" y="475"/>
+        </scene>
+        <!--CourseMainPage View Controlelr-->
+        <scene sceneID="33l-7U-7WM">
+            <objects>
+                <viewController title="CourseMainPage View Controlelr" id="7iq-wi-SwR" customClass="CourseMainPageVC" customModule="MyStudySpace" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="E3j-BU-yDX">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="gX5-yo-wTe"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="tIN-Yi-MHg">
+                        <barButtonItem key="leftBarButtonItem" image="Back" style="plain" id="inz-Lw-2qh">
+                            <color key="tintColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <connections>
+                                <action selector="goBackFromCMPBtn:" destination="7iq-wi-SwR" id="8if-Fg-e6y"/>
+                                <segue destination="z7d-ME-eaP" kind="unwind" identifier="unwindSeaguetoCMP" unwindAction="unwindToClsitWithSegue:" id="3bq-Uy-FNl"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7zh-DA-KNA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="z7d-ME-eaP" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="5751" y="475"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="9kF-Ti-4lL">
@@ -432,21 +473,18 @@ This application is not perfect. We are always finding a way to be better. If go
                                             </label>
                                         </subviews>
                                         <constraints>
-                                            <constraint firstItem="Rdv-QF-qpD" firstAttribute="leading" secondItem="op2-GL-AIb" secondAttribute="leading" constant="155" id="02U-es-ide"/>
                                             <constraint firstItem="AyG-HZ-xV0" firstAttribute="top" secondItem="cfz-2l-KoL" secondAttribute="bottom" constant="6" id="8PN-MG-jQu"/>
                                             <constraint firstAttribute="trailing" secondItem="Xoj-gW-upX" secondAttribute="trailing" constant="87" id="HUo-lM-OXV"/>
                                             <constraint firstAttribute="bottom" secondItem="AyG-HZ-xV0" secondAttribute="bottom" constant="35" id="HbN-rR-Bio"/>
-                                            <constraint firstAttribute="trailing" secondItem="AyG-HZ-xV0" secondAttribute="trailing" constant="148" id="K7O-pv-Yyx"/>
+                                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="AyG-HZ-xV0" secondAttribute="trailing" symbolic="YES" id="K7O-pv-Yyx"/>
                                             <constraint firstItem="Rdv-QF-qpD" firstAttribute="centerX" secondItem="op2-GL-AIb" secondAttribute="centerX" id="Msq-Im-qd8"/>
                                             <constraint firstItem="Xoj-gW-upX" firstAttribute="leading" secondItem="op2-GL-AIb" secondAttribute="leading" constant="87" id="Q9X-RH-pH2"/>
                                             <constraint firstItem="cfz-2l-KoL" firstAttribute="centerX" secondItem="op2-GL-AIb" secondAttribute="centerX" id="U3v-ug-JFk"/>
-                                            <constraint firstAttribute="trailing" secondItem="Rdv-QF-qpD" secondAttribute="trailing" constant="155" id="VaQ-Th-Mpi"/>
                                             <constraint firstAttribute="trailing" secondItem="cfz-2l-KoL" secondAttribute="trailing" constant="32" id="WAd-hL-qdG"/>
                                             <constraint firstAttribute="bottom" secondItem="Xoj-gW-upX" secondAttribute="bottom" constant="942" id="aHx-2i-FT1"/>
                                             <constraint firstItem="Xoj-gW-upX" firstAttribute="top" secondItem="op2-GL-AIb" secondAttribute="top" constant="8" id="c5C-Bt-aKQ"/>
                                             <constraint firstItem="AyG-HZ-xV0" firstAttribute="top" secondItem="cfz-2l-KoL" secondAttribute="bottom" constant="6" id="crx-0m-xbV"/>
                                             <constraint firstItem="cfz-2l-KoL" firstAttribute="top" secondItem="op2-GL-AIb" secondAttribute="top" constant="298" id="gV8-CS-duI"/>
-                                            <constraint firstItem="cfz-2l-KoL" firstAttribute="leading" secondItem="op2-GL-AIb" secondAttribute="leading" constant="32" id="kgZ-gv-V6v"/>
                                             <constraint firstItem="Rdv-QF-qpD" firstAttribute="top" secondItem="op2-GL-AIb" secondAttribute="top" constant="171" id="lpu-JJ-rpc"/>
                                             <constraint firstAttribute="height" constant="1078" id="qc4-Vz-vIz"/>
                                             <constraint firstAttribute="bottom" secondItem="cfz-2l-KoL" secondAttribute="bottom" constant="82" id="qoQ-Zi-LVh"/>
@@ -469,6 +507,7 @@ This application is not perfect. We are always finding a way to be better. If go
                         <constraints>
                             <constraint firstItem="faf-XV-t8d" firstAttribute="top" secondItem="7TJ-q1-MT2" secondAttribute="bottom" constant="28" id="2qE-5I-srK"/>
                             <constraint firstItem="0C9-vM-CrA" firstAttribute="top" secondItem="Pw9-CO-avl" secondAttribute="top" constant="153" id="53v-47-tGc"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="7TJ-q1-MT2" secondAttribute="trailing" constant="20" symbolic="YES" id="CmM-F6-oeO"/>
                             <constraint firstItem="faf-XV-t8d" firstAttribute="top" secondItem="Pw9-CO-avl" secondAttribute="top" id="DgM-gb-eS2"/>
                             <constraint firstItem="faf-XV-t8d" firstAttribute="leading" secondItem="LIq-xR-IjU" secondAttribute="leading" id="HID-GV-u3Z"/>
                             <constraint firstItem="7TJ-q1-MT2" firstAttribute="leading" secondItem="LIq-xR-IjU" secondAttribute="leadingMargin" constant="1" id="RE0-gE-gRo"/>
@@ -479,8 +518,8 @@ This application is not perfect. We are always finding a way to be better. If go
                         <viewLayoutGuide key="safeArea" id="Pw9-CO-avl"/>
                     </view>
                     <navigationItem key="navigationItem" id="50R-cy-Wof">
-                        <barButtonItem key="leftBarButtonItem" title="back" image="back" style="plain" id="gOA-PQ-mqf">
-                            <color key="tintColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                        <barButtonItem key="leftBarButtonItem" title="back" image="Back" style="plain" id="gOA-PQ-mqf">
+                            <color key="tintColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                             <connections>
                                 <action selector="goBackToSTVC_Btn:" destination="28T-1h-nVA" id="UZJ-f0-FWH"/>
                                 <segue destination="7Zq-wj-8zx" kind="unwind" identifier="unwindSegueToSTVC" unwindAction="unwindToSTVCWithSegue:" id="Li5-GU-dd1"/>
@@ -537,6 +576,7 @@ This application is not perfect. We are always finding a way to be better. If go
                                 <connections>
                                     <outlet property="bgp" destination="SYU-8H-FFr" id="seS-Kf-nQk"/>
                                     <outlet property="coursename" destination="Kdi-Tk-FmP" id="RcL-ml-a9p"/>
+                                    <segue destination="W3K-ih-ygP" kind="presentation" modalPresentationStyle="overFullScreen" id="4EC-Te-4Fa"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -573,7 +613,7 @@ This application is not perfect. We are always finding a way to be better. If go
         <!--Login-->
         <scene sceneID="YfN-0Q-HwT">
             <objects>
-                <viewController id="uFc-Xc-aYQ" customClass="WebLoginVC" customModule="MyStudySpace" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="uFc-Xc-aYQ" customClass="NewWebLoginVC" customModule="MyStudySpace" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="j3y-hW-jyn">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -619,7 +659,9 @@ This application is not perfect. We are always finding a way to be better. If go
         <scene sceneID="Xpu-Eq-WVA">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="p9r-a2-rEb" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Courses" image="person.3.fill" catalog="system" selectedImage="person.3.fill" id="OnA-Sa-qvc"/>
+                    <tabBarItem key="tabBarItem" title="Courses" image="work" selectedImage="work" id="OnA-Sa-qvc">
+                        <color key="badgeColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                    </tabBarItem>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="1la-bQ-Fz1">
                         <rect key="frame" x="0.0" y="44" width="414" height="96"/>
@@ -638,7 +680,9 @@ This application is not perfect. We are always finding a way to be better. If go
         <scene sceneID="OWv-B3-uPp">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="1lh-s5-eIw" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Main" image="house.fill" catalog="system" selectedImage="house.fill" id="Kkj-Hu-RU9"/>
+                    <tabBarItem key="tabBarItem" title="Main" image="home" selectedImage="home" id="Kkj-Hu-RU9">
+                        <color key="badgeColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                    </tabBarItem>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="ChU-ch-PuS">
                         <rect key="frame" x="0.0" y="44" width="414" height="96"/>
@@ -657,7 +701,9 @@ This application is not perfect. We are always finding a way to be better. If go
         <scene sceneID="Xtx-kI-7EJ">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="TQc-qp-xpV" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Settings" image="gear" catalog="system" selectedImage="gear" id="2SQ-No-MRg"/>
+                    <tabBarItem key="tabBarItem" title="Settings" image="setting" selectedImage="setting" id="2SQ-No-MRg">
+                        <color key="badgeColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                    </tabBarItem>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="fUD-gh-Fuk">
                         <rect key="frame" x="0.0" y="44" width="414" height="96"/>
@@ -674,19 +720,19 @@ This application is not perfect. We are always finding a way to be better. If go
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="4N3-HS-uAB"/>
-        <segue reference="22Z-B6-Uoi"/>
+        <segue reference="UDy-iR-3Rc"/>
+        <segue reference="FTF-ib-6P1"/>
     </inferredMetricsTieBreakers>
     <resources>
-        <image name="back" width="128" height="128"/>
-        <image name="gear" catalog="system" width="128" height="119"/>
+        <image name="Back" width="128" height="128"/>
         <image name="golden_hawk" width="1015" height="1000"/>
         <image name="haoquan" width="883" height="883"/>
-        <image name="house.fill" catalog="system" width="128" height="106"/>
+        <image name="home" width="32" height="32"/>
         <image name="laurier" width="457" height="134"/>
         <image name="person" catalog="system" width="128" height="117"/>
-        <image name="person.3.fill" catalog="system" width="128" height="61"/>
         <image name="professor" width="288" height="288"/>
+        <image name="setting" width="32" height="32"/>
+        <image name="work" width="32" height="32"/>
         <image name="xiaohu" width="540" height="540"/>
     </resources>
 </document>

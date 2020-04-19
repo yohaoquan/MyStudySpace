@@ -54,9 +54,13 @@
 		93C20AC4243BB2CB00FFB8D8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 93C20AC2243BB2CB00FFB8D8 /* Main.storyboard */; };
 		93C20AC6243BB2CC00FFB8D8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 93C20AC5243BB2CC00FFB8D8 /* Assets.xcassets */; };
 		93C20AC9243BB2CC00FFB8D8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 93C20AC7243BB2CC00FFB8D8 /* LaunchScreen.storyboard */; };
+		93C84081244C34A10041B58D /* NewWebLoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93C84080244C34A10041B58D /* NewWebLoginVC.swift */; };
+		93C84083244C3D020041B58D /* ResponseStructs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93C84082244C3D020041B58D /* ResponseStructs.swift */; };
 		A8B7DE842443BED8002A3D11 /* SettingTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8B7DE832443BED7002A3D11 /* SettingTableVC.swift */; };
 		A8B7DE882443FF10002A3D11 /* ContactUsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8B7DE872443FF10002A3D11 /* ContactUsVC.swift */; };
 		A8B7DE8E244401AC002A3D11 /* AboutVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8B7DE8D244401AC002A3D11 /* AboutVC.swift */; };
+		A8E5770D244A332700AEDE8B /* CourseMainPageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8E5770C244A332700AEDE8B /* CourseMainPageVC.swift */; };
+		A8E5770F244A48D000AEDE8B /* HomeLinksCardController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8E5770E244A48D000AEDE8B /* HomeLinksCardController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -109,9 +113,13 @@
 		93C20AC5243BB2CC00FFB8D8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		93C20AC8243BB2CC00FFB8D8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		93C20ACA243BB2CC00FFB8D8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		93C84080244C34A10041B58D /* NewWebLoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = NewWebLoginVC.swift; path = /Users/aaron/Documents/Courses/CP469/MyStudySpace/MyStudySpace/MyStudySpace/NewWebLoginVC.swift; sourceTree = "<absolute>"; };
+		93C84082244C3D020041B58D /* ResponseStructs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseStructs.swift; sourceTree = "<group>"; };
 		A8B7DE832443BED7002A3D11 /* SettingTableVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingTableVC.swift; sourceTree = "<group>"; };
 		A8B7DE872443FF10002A3D11 /* ContactUsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactUsVC.swift; sourceTree = "<group>"; };
 		A8B7DE8D244401AC002A3D11 /* AboutVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutVC.swift; sourceTree = "<group>"; };
+		A8E5770C244A332700AEDE8B /* CourseMainPageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseMainPageVC.swift; sourceTree = "<group>"; };
+		A8E5770E244A48D000AEDE8B /* HomeLinksCardController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeLinksCardController.swift; sourceTree = "<group>"; };
 		D3632DC430160B06D1F1EBB8 /* Pods-MyStudySpace.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyStudySpace.release.xcconfig"; path = "Target Support Files/Pods-MyStudySpace/Pods-MyStudySpace.release.xcconfig"; sourceTree = "<group>"; };
 		F9D9E31704487FEE0C0D0DF4 /* Pods-MyStudySpace.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyStudySpace.debug.xcconfig"; path = "Target Support Files/Pods-MyStudySpace/Pods-MyStudySpace.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -179,6 +187,7 @@
 				9333954E243D8B360064CF09 /* CardPartTitleViewCardController.swift */,
 				9333955C243D8B390064CF09 /* ReactiveCardController.swift */,
 				93339553243D8B370064CF09 /* StateCardController.swift */,
+				A8E5770E244A48D000AEDE8B /* HomeLinksCardController.swift */,
 				93339557243D8B380064CF09 /* ThemedCardController.swift */,
 				93339558243D8B380064CF09 /* TitleCardController.swift */,
 			);
@@ -189,6 +198,7 @@
 			isa = PBXGroup;
 			children = (
 				93B33211243BF27A0036D9BA /* LoginHelper.swift */,
+				93C84082244C3D020041B58D /* ResponseStructs.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -219,19 +229,21 @@
 				93C20ABC243BB2CB00FFB8D8 /* AppDelegate.swift */,
 				A8B7DE8D244401AC002A3D11 /* AboutVC.swift */,
 				93C20ABE243BB2CB00FFB8D8 /* SceneDelegate.swift */,
-				93C20AC0243BB2CB00FFB8D8 /* OnboardingScreen.swift */,
 				93C20AC2243BB2CB00FFB8D8 /* Main.storyboard */,
+				A8E5770C244A332700AEDE8B /* CourseMainPageVC.swift */,
 				A8B7DE872443FF10002A3D11 /* ContactUsVC.swift */,
 				A8B7DE832443BED7002A3D11 /* SettingTableVC.swift */,
 				9333953E243D8AD60064CF09 /* MainPageVC.swift */,
 				93A547FF243C324A000423D1 /* CoursesListCell.swift */,
 				93A547FD243C3211000423D1 /* CoursesList.swift */,
 				9350F20C243BE1D000F7E882 /* HomeVC.swift */,
+				93C20AC0243BB2CB00FFB8D8 /* OnboardingScreen.swift */,
 				9350F208243BB74000F7E882 /* onboardingView.swift */,
 				93C20AC5243BB2CC00FFB8D8 /* Assets.xcassets */,
 				93C20AC7243BB2CC00FFB8D8 /* LaunchScreen.storyboard */,
 				93C20ACA243BB2CC00FFB8D8 /* Info.plist */,
 				9350F20A243BDBC600F7E882 /* WebLoginVC.swift */,
+				93C84080244C34A10041B58D /* NewWebLoginVC.swift */,
 			);
 			path = MyStudySpace;
 			sourceTree = "<group>";
@@ -356,6 +368,7 @@
 				9350F20D243BE1D000F7E882 /* HomeVC.swift in Sources */,
 				93339574243D8B3A0064CF09 /* StateCardController.swift in Sources */,
 				9333957B243D8B3A0064CF09 /* CardPartPillLabelCardController.swift in Sources */,
+				93C84083244C3D020041B58D /* ResponseStructs.swift in Sources */,
 				93339566243D8B3A0064CF09 /* CardPartTitleDescriptionViewCardController.swift in Sources */,
 				A8B7DE8E244401AC002A3D11 /* AboutVC.swift in Sources */,
 				9333956D243D8B3A0064CF09 /* CardPartOrientedViewCardController.swift in Sources */,
@@ -369,6 +382,7 @@
 				93339569243D8B3A0064CF09 /* CardPartButtonViewCardController.swift in Sources */,
 				93339562243D8B3A0064CF09 /* CardPartTableViewCardController.swift in Sources */,
 				9333957F243D8B3A0064CF09 /* CardPartTextFieldCardController.swift in Sources */,
+				93C84081244C34A10041B58D /* NewWebLoginVC.swift in Sources */,
 				93339577243D8B3A0064CF09 /* CardPartSliderViewCardController.swift in Sources */,
 				9333957C243D8B3A0064CF09 /* CardPartBarViewCardController.swift in Sources */,
 				93B33212243BF27A0036D9BA /* LoginHelper.swift in Sources */,
@@ -383,11 +397,13 @@
 				93339563243D8B3A0064CF09 /* CardPartPagedViewCardController.swift in Sources */,
 				9333957D243D8B3A0064CF09 /* ReactiveCardController.swift in Sources */,
 				93339571243D8B3A0064CF09 /* CardPartCenteredViewCardController.swift in Sources */,
+				A8E5770F244A48D000AEDE8B /* HomeLinksCardController.swift in Sources */,
 				93339572243D8B3A0064CF09 /* CardPartBottomSheetCardController.swift in Sources */,
 				93339570243D8B3A0064CF09 /* CardPartIconLabelCardController.swift in Sources */,
 				9333953F243D8AD60064CF09 /* MainPageVC.swift in Sources */,
 				A8B7DE882443FF10002A3D11 /* ContactUsVC.swift in Sources */,
 				93339573243D8B3A0064CF09 /* CardPartConfettiViewCardController.swift in Sources */,
+				A8E5770D244A332700AEDE8B /* CourseMainPageVC.swift in Sources */,
 				93A54800243C324A000423D1 /* CoursesListCell.swift in Sources */,
 				93339579243D8B3A0064CF09 /* TitleCardController.swift in Sources */,
 				93C20ABD243BB2CB00FFB8D8 /* AppDelegate.swift in Sources */,
