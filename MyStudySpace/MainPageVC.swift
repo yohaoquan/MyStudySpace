@@ -20,6 +20,7 @@ class MainPageVC: CardsViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        let loginState = LoginHelper.sharedInstance.loginState!
         var greetings = ""
         let date = Date()
         let calendar = Calendar.current
@@ -31,17 +32,35 @@ class MainPageVC: CardsViewController {
         } else {
             greetings = "Good Evening"
         }
-        self.navigationItem.title = greetings + ", Aaron"
-        self.view.backgroundColor = .systemBackground
+        self.navigationItem.title = greetings + ", " + loginState.userInfo.FirstName
+        let queue = DispatchQueue.global(qos: DispatchQoS.QoSClass.default)
+        queue.async {
+            
+            let group = DispatchGroup()
+            queue.async(group: group) {
+                refreshNameAndCourses()
+            }
+            group.notify(queue: queue) { // we want to be notified only when both background tasks are completed
+                DispatchQueue.main.async {
+                    self.navigationItem.title = greetings + ", " + loginState.userInfo.FirstName
+                }
+                
+            } //group.notify
+        }//queue.async
+        
+        
+        
+        
+        
         // Comment out one of the loadCard functions to change cards and/or their order
         let cards: [CardPartsViewController] = [
             TitleCardController(title: " "),
             
             ThemedCardController(title: "Welcome to MyStudySpace!"),
             HomeLinksCardController()
-//            ThemedCardController(title: "Are"),
-//            ThemedCardController(title: "Themed"),
-//            ThemedCardController(title: "Cards!")
+            //            ThemedCardController(title: "Are"),
+            //            ThemedCardController(title: "Themed"),
+            //            ThemedCardController(title: "Cards!")
         ]
         loadCards(cards: cards)
     }

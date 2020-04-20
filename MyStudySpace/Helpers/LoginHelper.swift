@@ -7,20 +7,20 @@
 //
 
 import Foundation
-
+import Network
 
 class LoginState: NSObject, NSCoding {
-
     
+    var isOnline = false
     var isLoggedIn = false
     var userId = ""
     var userKey = ""
-    let AppId = "MCHLKRukvOZMCV1hchcsgg"
-    let AppKey = "OextryfmALGx0PbknzAbdg"
-    let callbackURL = "devcop.brightspace.com"
+    var userInfo = WhoamiResponse(Identifier: "", FirstName: "", LastName: "", UniqueName: "", ProfileIdentifier: "")
     let isLoggedInKey = "isLoggedIn"
     let userIdKey = "userId"
     let userKeyKey = "userKey"
+    let userInfoKey = "userInfoKey"
+    
     
     init(userId: String, userKey: String) {
         self.isLoggedIn = true
@@ -35,6 +35,7 @@ class LoginState: NSObject, NSCoding {
         coder.encode(isLoggedIn, forKey: isLoggedInKey)
         coder.encode(userId, forKey: userIdKey)
         coder.encode(userKey, forKey: userKeyKey)
+        coder.encode(try! JSONEncoder().encode(userInfo), forKey: userInfoKey)
     }
     
     required convenience init?(coder: NSCoder) {
@@ -42,6 +43,13 @@ class LoginState: NSObject, NSCoding {
         isLoggedIn = (coder.decodeBool(forKey: isLoggedInKey))
         userId = (coder.decodeObject(forKey: userIdKey) as! String)
         userKey = (coder.decodeObject(forKey: userKeyKey) as! String)
+        let infodata = coder.decodeObject(forKey: userInfoKey)
+        if infodata != nil {
+            userInfo = try! JSONDecoder().decode(WhoamiResponse.self, from: infodata as! Data)
+        }else{
+            userInfo = WhoamiResponse(Identifier: "", FirstName: "", LastName: "", UniqueName: "", ProfileIdentifier: "")
+        }
+        
     }
     
 }
@@ -51,6 +59,21 @@ class LoginHelper {
     let fileName = "MyStudySpace.loginState"
     private let rootKey = "rootKey"
     var loginState : LoginState?
+    
+    func startMonitorNetworkState(){
+        let monitor = NWPathMonitor()
+        monitor.pathUpdateHandler = { path in
+            if path.status == .satisfied {
+                LoginHelper.sharedInstance.loginState!.isOnline = true
+            } else {
+                LoginHelper.sharedInstance.loginState!.isOnline = false
+            }
+            
+            print(path.isExpensive)
+        }
+        let queue = DispatchQueue(label: "Monitor")
+        monitor.start(queue: queue)
+    }
     func dataFilePath() -> String {
         let paths = NSSearchPathForDirectoriesInDomains(
             FileManager.SearchPathDirectory.documentDirectory,
@@ -79,5 +102,5 @@ class LoginHelper {
         archiver.finishEncoding()
         data.write(toFile: filePath, atomically: true)
     }
-
+    
 }

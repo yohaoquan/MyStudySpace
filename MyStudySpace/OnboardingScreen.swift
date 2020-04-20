@@ -27,10 +27,11 @@ class OnboardingScreen: UIViewController, UINavigationControllerDelegate {
         _ = LoginHelper()
         LoginHelper.sharedInstance.loginState = LoginState()
         LoginHelper.sharedInstance.loadLoginState()
+        LoginHelper.sharedInstance.startMonitorNetworkState()
         loginState = LoginHelper.sharedInstance.loginState
         
+        
         if loginState.isLoggedIn {
-            print("if statement ran")
             let story = UIStoryboard(name: "Main", bundle:nil)
             let vc = story.instantiateViewController(withIdentifier: "HomeVC") as! HomeVC
             UIApplication.shared.windows.first?.rootViewController = vc
@@ -42,7 +43,7 @@ class OnboardingScreen: UIViewController, UINavigationControllerDelegate {
                     if let data = data {
                         do {
                             print("Got link!")
-                            let res = try JSONDecoder().decode(Response.self, from: data)
+                            let res = try JSONDecoder().decode(URLResponse.self, from: data)
                             self.login_url = res.url
                             DispatchQueue.main.async {
                                 UIApplication.shared.isNetworkActivityIndicatorVisible = false

@@ -42,10 +42,9 @@ class WebLoginVC: UIViewController, WKNavigationDelegate {
             if let info = error._userInfo as? [String: Any] {
                 if let urlString = info["NSErrorFailingURLStringKey"] as? String {
                     if urlString.contains("http://pulse.brightspace.com/android/"){
-                        urlString.split(separator: "?")[1].split(separator: "&")
                         loginState.isLoggedIn = true;
-                        loginState.userId = String(urlString.split(separator: "?")[1].split(separator: "&")[0])
-                        loginState.userKey = String(urlString.split(separator: "?")[1].split(separator: "&")[1])
+                        loginState.userId = String(urlString.split(separator: "?")[1].split(separator: "&")[0].split(separator: "=")[1])
+                        loginState.userKey = String(urlString.split(separator: "?")[1].split(separator: "&")[1].split(separator: "=")[1])
                         print("Got id: " + loginState.userId)
                         print("Got key: " + loginState.userKey)
                         LoginHelper.sharedInstance.saveLoginState()

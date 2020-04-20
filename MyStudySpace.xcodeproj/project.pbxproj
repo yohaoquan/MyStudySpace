@@ -54,7 +54,8 @@
 		93C20AC6243BB2CC00FFB8D8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 93C20AC5243BB2CC00FFB8D8 /* Assets.xcassets */; };
 		93C20AC9243BB2CC00FFB8D8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 93C20AC7243BB2CC00FFB8D8 /* LaunchScreen.storyboard */; };
 		93C84081244C34A10041B58D /* WebLoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93C84080244C34A10041B58D /* WebLoginVC.swift */; };
-		93C84083244C3D020041B58D /* ResponseStructs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93C84082244C3D020041B58D /* ResponseStructs.swift */; };
+		93C84083244C3D020041B58D /* ResponseHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93C84082244C3D020041B58D /* ResponseHelpers.swift */; };
+		93E40B3F244D137000A6612B /* UserInfoHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93E40B3E244D137000A6612B /* UserInfoHelpers.swift */; };
 		A8B7DE842443BED8002A3D11 /* SettingTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8B7DE832443BED7002A3D11 /* SettingTableVC.swift */; };
 		A8B7DE882443FF10002A3D11 /* ContactUsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8B7DE872443FF10002A3D11 /* ContactUsVC.swift */; };
 		A8B7DE8E244401AC002A3D11 /* AboutVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8B7DE8D244401AC002A3D11 /* AboutVC.swift */; };
@@ -113,7 +114,8 @@
 		93C20AC8243BB2CC00FFB8D8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		93C20ACA243BB2CC00FFB8D8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		93C84080244C34A10041B58D /* WebLoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = WebLoginVC.swift; path = /Users/aaron/Documents/Courses/CP469/MyStudySpace/MyStudySpace/MyStudySpace/WebLoginVC.swift; sourceTree = "<absolute>"; };
-		93C84082244C3D020041B58D /* ResponseStructs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseStructs.swift; sourceTree = "<group>"; };
+		93C84082244C3D020041B58D /* ResponseHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseHelpers.swift; sourceTree = "<group>"; };
+		93E40B3E244D137000A6612B /* UserInfoHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoHelpers.swift; sourceTree = "<group>"; };
 		A8B7DE832443BED7002A3D11 /* SettingTableVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingTableVC.swift; sourceTree = "<group>"; };
 		A8B7DE872443FF10002A3D11 /* ContactUsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactUsVC.swift; sourceTree = "<group>"; };
 		A8B7DE8D244401AC002A3D11 /* AboutVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutVC.swift; sourceTree = "<group>"; };
@@ -199,7 +201,8 @@
 			isa = PBXGroup;
 			children = (
 				93B33211243BF27A0036D9BA /* LoginHelper.swift */,
-				93C84082244C3D020041B58D /* ResponseStructs.swift */,
+				93C84082244C3D020041B58D /* ResponseHelpers.swift */,
+				93E40B3E244D137000A6612B /* UserInfoHelpers.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -367,7 +370,7 @@
 				9350F20D243BE1D000F7E882 /* HomeVC.swift in Sources */,
 				93339574243D8B3A0064CF09 /* StateCardController.swift in Sources */,
 				9333957B243D8B3A0064CF09 /* CardPartPillLabelCardController.swift in Sources */,
-				93C84083244C3D020041B58D /* ResponseStructs.swift in Sources */,
+				93C84083244C3D020041B58D /* ResponseHelpers.swift in Sources */,
 				93339566243D8B3A0064CF09 /* CardPartTitleDescriptionViewCardController.swift in Sources */,
 				A8B7DE8E244401AC002A3D11 /* AboutVC.swift in Sources */,
 				9333956D243D8B3A0064CF09 /* CardPartOrientedViewCardController.swift in Sources */,
@@ -411,6 +414,7 @@
 				93339567243D8B3A0064CF09 /* CardPartImageViewCardController.swift in Sources */,
 				9333957A243D8B3A0064CF09 /* CardPartAttributedTextViewController.swift in Sources */,
 				93C20ABF243BB2CB00FFB8D8 /* SceneDelegate.swift in Sources */,
+				93E40B3F244D137000A6612B /* UserInfoHelpers.swift in Sources */,
 				A8E57711244B9B5900AEDE8B /* CourseMainPageTableViewVC.swift in Sources */,
 				93339564243D8B3A0064CF09 /* CardPartHistogramCardController.swift in Sources */,
 			);

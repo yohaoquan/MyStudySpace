@@ -327,7 +327,7 @@ hexx2400@mylaurier.ca</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7zh-DA-KNA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5597" y="-1341"/>
+            <point key="canvasLocation" x="5199" y="475"/>
         </scene>
         <!--About View Controller-->
         <scene sceneID="EES-Xx-sSt">
@@ -363,7 +363,7 @@ This application is not perfect. We are always finding a way to be better. If go
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0C9-vM-CrA">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0C9-vM-CrA">
                                                 <rect key="frame" x="32" y="233" width="66" height="66"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="66" id="LXF-ma-yQn"/>
@@ -434,18 +434,18 @@ This application is not perfect. We are always finding a way to be better. If go
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="reuseIdentifier" rowHeight="120" id="8Gy-jp-OTi" customClass="CoursesListCell" customModule="MyStudySpace" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="reuseIdentifier" rowHeight="120" id="8Gy-jp-OTi" customClass="CoursesListCell" customModule="MyStudySpace" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="414" height="120"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="8Gy-jp-OTi" id="r1n-73-201">
-                                    <rect key="frame" x="0.0" y="0.0" width="383" height="120"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="120"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.75" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="SYU-8H-FFr">
-                                            <rect key="frame" x="0.0" y="0.0" width="383" height="120"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="120"/>
                                         </imageView>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Haoquan You - CP317 - Extensibility Test" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kdi-Tk-FmP">
-                                            <rect key="frame" x="20" y="41" width="343" height="38"/>
+                                            <rect key="frame" x="20" y="41" width="374" height="38"/>
                                             <fontDescription key="fontDescription" type="system" weight="light" pointSize="32"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
