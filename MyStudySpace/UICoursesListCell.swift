@@ -9,10 +9,11 @@
 import UIKit
 import BlockiesSwift
 
-class CoursesListCell: UITableViewCell {
+class UICoursesListCell: UITableViewCell {
     @IBOutlet weak var bgp: UIImageView!
     @IBOutlet weak var coursename: UILabel!
     var cName = ""
+    var orgunit = OrgUnit(id: 0, type: nil, name: "", code: "")
     override func awakeFromNib() {
         super.awakeFromNib()
     }

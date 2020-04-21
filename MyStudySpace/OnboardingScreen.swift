@@ -30,6 +30,7 @@ class OnboardingScreen: UIViewController, UINavigationControllerDelegate {
         LoginHelper.sharedInstance.startMonitorNetworkState()
         loginState = LoginHelper.sharedInstance.loginState
         
+        _ = EnrollmentsHelper()
         
         if loginState.isLoggedIn {
             let story = UIStoryboard(name: "Main", bundle:nil)

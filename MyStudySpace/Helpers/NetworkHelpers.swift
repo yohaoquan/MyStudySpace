@@ -35,3 +35,23 @@ func convertJSONToDictionary(data: Data) -> [String: Any]? {
 }
 
 
+
+enum HTTPRequestType {
+    case GET
+    case POST
+}
+
+func generateURLForRoute(route: String, method:HTTPRequestType) -> URL? {
+    if LoginHelper.sharedInstance.loginState!.isLoggedIn {
+        var url = URLComponents(string: "https://aaronyoo.myfirewall.org/getPageUrl.php")!
+        
+        url.queryItems = [
+            URLQueryItem(name: "userId", value: LoginHelper.sharedInstance.loginState?.userId),
+            URLQueryItem(name: "userKey", value: LoginHelper.sharedInstance.loginState?.userKey),
+            URLQueryItem(name: "method", value: method == HTTPRequestType.GET ? "get" : "post"),
+            URLQueryItem(name: "route", value: route)
+        ]
+        return url.url
+    }
+    return nil
+}

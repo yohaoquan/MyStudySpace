@@ -33,12 +33,15 @@ class MainPageVC: CardsViewController {
             greetings = "Good Evening"
         }
         self.navigationItem.title = greetings + ", " + loginState.userInfo.FirstName
-        let queue = DispatchQueue.global(qos: DispatchQoS.QoSClass.default)
+        let queue = DispatchQueue.global(qos: .default)
         queue.async {
             
             let group = DispatchGroup()
             queue.async(group: group) {
-                refreshNameAndCourses()
+                refreshName()
+            }
+            queue.async {
+                refreshCourses()
             }
             group.notify(queue: queue) { // we want to be notified only when both background tasks are completed
                 DispatchQueue.main.async {
@@ -47,10 +50,6 @@ class MainPageVC: CardsViewController {
                 
             } //group.notify
         }//queue.async
-        
-        
-        
-        
         
         // Comment out one of the loadCard functions to change cards and/or their order
         let cards: [CardPartsViewController] = [

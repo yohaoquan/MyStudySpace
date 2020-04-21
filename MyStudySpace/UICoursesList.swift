@@ -1,5 +1,5 @@
 //
-//  CoursesList.swift
+//  UICoursesList.swift
 //  MyStudySpace
 //
 //  Created by Aaron You on 4/6/20.
@@ -9,7 +9,8 @@
 import UIKit
 
 
-class CoursesList: UITableViewController {
+class UICoursesList: UITableViewController {
+    @IBOutlet weak var spinner: UIActivityIndicatorView!
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -21,6 +22,26 @@ class CoursesList: UITableViewController {
         
         
     }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        self.spinner.isHidden = false
+        self.spinner.startAnimating()
+        let queue = DispatchQueue.global(qos: .default)
+        queue.async {
+            let group = DispatchGroup()
+            queue.async(group: group) {
+                refreshCourses()
+            }
+            group.notify(queue: queue) { // we want to be notified only when both background tasks are completed
+                DispatchQueue.main.async {
+                    self.tableView.reloadData()
+                    self.spinner.stopAnimating()
+                    self.spinner.isHidden = true
+                }
+                
+            } //group.notify
+        }//queue.async
+    }
 
     // MARK: - Table view data source
 
@@ -31,16 +52,15 @@ class CoursesList: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 10
+        return EnrollmentsHelper.sharedInstance.enrollments.Items.count
     }
 
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath) as! CoursesListCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath) as! UICoursesListCell
 
-        cell.cName = ["Haoquan You - CP317 - Extensibility Test",
-        "PP-201-OC2 - Reasoning and Argumentation",
-        "CP-469-CP-669-A - iPhone Application Programming - CP469-669.202001"][indexPath.row % 3]
+        cell.cName = EnrollmentsHelper.sharedInstance.enrollments.Items[indexPath.row].OrgUnit.Name
+        cell.orgunit = EnrollmentsHelper.sharedInstance.enrollments.Items[indexPath.row].OrgUnit
         cell.updateCell()
         cell.bgp.backgroundColor = [#colorLiteral(red: 0.7725490196, green: 0.8196078431, blue: 0.9215686275, alpha: 0.7040327905),#colorLiteral(red: 0.6730698529, green: 0.747124183, blue: 0.9294117647, alpha: 0.7036751761),#colorLiteral(red: 0.7058823529, green: 0.7764705882, blue: 0.9294117647, alpha: 0.6987786092),#colorLiteral(red: 0.7529411765, green: 0.8039215686, blue: 0.9294117647, alpha: 0.7041703345)][indexPath.row % 4]
 
@@ -86,14 +106,17 @@ class CoursesList: UITableViewController {
     }
     */
 
-    /*
+    
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destination.
         // Pass the selected object to the new view controller.
+        let selected = self.tableView.cellForRow(at: self.tableView!.indexPathForSelectedRow!) as! UICoursesListCell
+        let dest = segue.destination as! CourseMainPageVC
+        dest.orgUnit = selected.orgunit
     }
-    */
+    
 
 }
