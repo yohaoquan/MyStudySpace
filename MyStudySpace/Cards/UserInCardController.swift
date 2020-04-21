@@ -1,15 +1,15 @@
 //
-//  NoteCardController.swift
+//  UserInCardController.swift
 //  MyStudySpace
 //
-//  Created by Xiaohu He on 2020-04-20.
+//  Created by Xiaohu He on 2020-04-21.
 //  Copyright © 2020 Haoquan you. All rights reserved.
 //
 
 import Foundation
 import CardParts
 
-class NoteCardController: CardPartsViewController {
+class UserInCardController: CardPartsViewController {
     
     let possibleGradientColors: [UIColor] = [
         UIColor(red: 181.0 / 255.0, green: 152.0 / 255.0, blue: 235.0 / 255.0, alpha: 1.0),
@@ -39,15 +39,12 @@ class NoteCardController: CardPartsViewController {
     convenience init(title: String) {
         self.init(nibName: nil, bundle: nil)
         self._title = title
-
-
     }
     
     override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
         super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
-        self.cardTapped() {
-            print("NoteTapped")
-            self.parent!.performSegue(withIdentifier: "goToNoteFromCMPSegue", sender: self)
+        self.cardTapped {
+            print("UserTapped")
         }
     }
     
@@ -58,32 +55,31 @@ class NoteCardController: CardPartsViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let spacer = CardPartSpacerView(height: 30.0)
+        let spacer = CardPartSpacerView(height: 10.0)
 
+        
         let titleCP = CardPartTextView(type: .header)
         titleCP.text = self._title
         titleCP.textAlignment = .center
         titleCP.textColor = .white
         
+        let firstName = LoginHelper.sharedInstance.loginState!.userInfo.FirstName
+        let lastName = LoginHelper.sharedInstance.loginState!.userInfo.LastName
+        let iD = LoginHelper.sharedInstance.loginState!.userInfo.Identifier
+        let Uni = LoginHelper.sharedInstance.loginState!.userInfo.UniqueName
+        
         let descriptionCP = CardPartTextView(type: .normal)
-        descriptionCP.text = "Course Notes"
+        descriptionCP.text = firstName + " " + lastName + "\n" + iD + "\n" + Uni
         descriptionCP.textColor = .white
         descriptionCP.textAlignment = .center
         descriptionCP.font = UIFont.systemFont(ofSize: 40, weight: .bold)
         setupCardParts([spacer, titleCP, descriptionCP])
         
-        view.addConstraint(NSLayoutConstraint(item: view!, attribute: .height, relatedBy: .equal, toItem: nil, attribute: .notAnAttribute, multiplier: 1, constant: 150))
-    }
-    
-}
-
-func openUrl(urlStr:String!) {
-    if let url = URL(string:urlStr), !url.absoluteString.isEmpty {
-        UIApplication.shared.open(url, options: [:], completionHandler: nil)
+        view.addConstraint(NSLayoutConstraint(item: view!, attribute: .height, relatedBy: .equal, toItem: nil, attribute: .notAnAttribute, multiplier: 1, constant: 230))
     }
 }
 
-extension NoteCardController: ShadowCardTrait {
+extension UserInCardController: ShadowCardTrait {
     func shadowOffset() -> CGSize {
         return CGSize(width: 10.0, height: 10.0)
     }
@@ -101,13 +97,13 @@ extension NoteCardController: ShadowCardTrait {
     }
 }
 
-extension NoteCardController: RoundedCardTrait {
+extension UserInCardController: RoundedCardTrait {
     func cornerRadius() -> CGFloat {
         return 10.0
     }
 }
 
-extension NoteCardController: GradientCardTrait {
+extension UserInCardController: GradientCardTrait {
     func gradientColors() -> [UIColor] {
         
         let color1: UIColor = self.possibleGradientColors[Int(arc4random_uniform(UInt32(self.possibleGradientColors.count)))]
