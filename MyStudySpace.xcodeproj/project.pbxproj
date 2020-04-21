@@ -48,7 +48,7 @@
 		93A54800243C324A000423D1 /* UICoursesListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93A547FF243C324A000423D1 /* UICoursesListCell.swift */; };
 		93B33212243BF27A0036D9BA /* LoginHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93B33211243BF27A0036D9BA /* LoginHelper.swift */; };
 		93BAEDDC244E5D7100156FA7 /* EnrollmentsHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93BAEDDB244E5D7100156FA7 /* EnrollmentsHelpers.swift */; };
-		93BAEDDE244E62A700156FA7 /* CoursesHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93BAEDDD244E62A700156FA7 /* CoursesHelper.swift */; };
+		93BAEDDE244E62A700156FA7 /* GradesHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93BAEDDD244E62A700156FA7 /* GradesHelper.swift */; };
 		93BAEDE0244E6B6A00156FA7 /* UIHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93BAEDDF244E6B6A00156FA7 /* UIHelpers.swift */; };
 		93C20ABD243BB2CB00FFB8D8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93C20ABC243BB2CB00FFB8D8 /* AppDelegate.swift */; };
 		93C20ABF243BB2CB00FFB8D8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93C20ABE243BB2CB00FFB8D8 /* SceneDelegate.swift */; };
@@ -56,8 +56,12 @@
 		93C20AC4243BB2CB00FFB8D8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 93C20AC2243BB2CB00FFB8D8 /* Main.storyboard */; };
 		93C20AC6243BB2CC00FFB8D8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 93C20AC5243BB2CC00FFB8D8 /* Assets.xcassets */; };
 		93C20AC9243BB2CC00FFB8D8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 93C20AC7243BB2CC00FFB8D8 /* LaunchScreen.storyboard */; };
-		93C84081244C34A10041B58D /* WebLoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93C84080244C34A10041B58D /* WebLoginVC.swift */; };
 		93C84083244C3D020041B58D /* NetworkHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93C84082244C3D020041B58D /* NetworkHelpers.swift */; };
+		93DC35D1244E9F4D00D702EC /* NoteCardController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93DC35D0244E9F4D00D702EC /* NoteCardController.swift */; };
+		93DC35D4244E9F5C00D702EC /* DueCardController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93DC35D2244E9F5C00D702EC /* DueCardController.swift */; };
+		93DC35D5244E9F5C00D702EC /* MarkCardController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93DC35D3244E9F5C00D702EC /* MarkCardController.swift */; };
+		93DC35D7244E9F7F00D702EC /* WebLoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93DC35D6244E9F7E00D702EC /* WebLoginVC.swift */; };
+		93DC35D9244EAA7C00D702EC /* UIGradeItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93DC35D8244EAA7C00D702EC /* UIGradeItemCell.swift */; };
 		93E40B3F244D137000A6612B /* UserInfoHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93E40B3E244D137000A6612B /* UserInfoHelpers.swift */; };
 		93FAD763244E962300B2F263 /* UICalcTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93FAD762244E962300B2F263 /* UICalcTableView.swift */; };
 		A8B7DE842443BED8002A3D11 /* SettingTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8B7DE832443BED7002A3D11 /* SettingTableVC.swift */; };
@@ -109,7 +113,7 @@
 		93A547FF243C324A000423D1 /* UICoursesListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UICoursesListCell.swift; sourceTree = "<group>"; };
 		93B33211243BF27A0036D9BA /* LoginHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginHelper.swift; sourceTree = "<group>"; };
 		93BAEDDB244E5D7100156FA7 /* EnrollmentsHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnrollmentsHelpers.swift; sourceTree = "<group>"; };
-		93BAEDDD244E62A700156FA7 /* CoursesHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoursesHelper.swift; sourceTree = "<group>"; };
+		93BAEDDD244E62A700156FA7 /* GradesHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradesHelper.swift; sourceTree = "<group>"; };
 		93BAEDDF244E6B6A00156FA7 /* UIHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIHelpers.swift; sourceTree = "<group>"; };
 		93C20AB9243BB2CB00FFB8D8 /* MyStudySpace.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyStudySpace.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		93C20ABC243BB2CB00FFB8D8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -119,8 +123,12 @@
 		93C20AC5243BB2CC00FFB8D8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		93C20AC8243BB2CC00FFB8D8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		93C20ACA243BB2CC00FFB8D8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		93C84080244C34A10041B58D /* WebLoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = WebLoginVC.swift; path = /Users/xiaohuhe/CP469/MyStudySpace/MyStudySpace/WebLoginVC.swift; sourceTree = "<absolute>"; };
 		93C84082244C3D020041B58D /* NetworkHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkHelpers.swift; sourceTree = "<group>"; };
+		93DC35D0244E9F4D00D702EC /* NoteCardController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoteCardController.swift; sourceTree = "<group>"; };
+		93DC35D2244E9F5C00D702EC /* DueCardController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DueCardController.swift; sourceTree = "<group>"; };
+		93DC35D3244E9F5C00D702EC /* MarkCardController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MarkCardController.swift; sourceTree = "<group>"; };
+		93DC35D6244E9F7E00D702EC /* WebLoginVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebLoginVC.swift; sourceTree = "<group>"; };
+		93DC35D8244EAA7C00D702EC /* UIGradeItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIGradeItemCell.swift; sourceTree = "<group>"; };
 		93E40B3E244D137000A6612B /* UserInfoHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoHelpers.swift; sourceTree = "<group>"; };
 		93FAD762244E962300B2F263 /* UICalcTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UICalcTableView.swift; sourceTree = "<group>"; };
 		A8B7DE832443BED7002A3D11 /* SettingTableVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingTableVC.swift; sourceTree = "<group>"; };
@@ -164,6 +172,9 @@
 		93339540243D8AEB0064CF09 /* Cards */ = {
 			isa = PBXGroup;
 			children = (
+				93DC35D0244E9F4D00D702EC /* NoteCardController.swift */,
+				93DC35D2244E9F5C00D702EC /* DueCardController.swift */,
+				93DC35D3244E9F5C00D702EC /* MarkCardController.swift */,
 				93339559243D8B380064CF09 /* CardPartAttributedTextViewController.swift */,
 				9333955B243D8B380064CF09 /* CardPartBarViewCardController.swift */,
 				93339561243D8B3A0064CF09 /* CardPartBorderViewController.swift */,
@@ -196,9 +207,6 @@
 				9333955C243D8B390064CF09 /* ReactiveCardController.swift */,
 				93339553243D8B370064CF09 /* StateCardController.swift */,
 				A8E5770E244A48D000AEDE8B /* HomeLinksCardController.swift */,
-				A82DAA42244E93DE00E52CC7 /* NoteCardController.swift */,
-				A82DAA3E244E934000E52CC7 /* MarkCardController.swift */,
-				A82DAA40244E935C00E52CC7 /* DueCardController.swift */,
 				93339557243D8B380064CF09 /* ThemedCardController.swift */,
 				93339558243D8B380064CF09 /* TitleCardController.swift */,
 			);
@@ -212,7 +220,7 @@
 				93C84082244C3D020041B58D /* NetworkHelpers.swift */,
 				93E40B3E244D137000A6612B /* UserInfoHelpers.swift */,
 				93BAEDDB244E5D7100156FA7 /* EnrollmentsHelpers.swift */,
-				93BAEDDD244E62A700156FA7 /* CoursesHelper.swift */,
+				93BAEDDD244E62A700156FA7 /* GradesHelper.swift */,
 				93BAEDDF244E6B6A00156FA7 /* UIHelpers.swift */,
 			);
 			path = Helpers;
@@ -258,7 +266,7 @@
 				93C20AC5243BB2CC00FFB8D8 /* Assets.xcassets */,
 				93C20AC7243BB2CC00FFB8D8 /* LaunchScreen.storyboard */,
 				93C20ACA243BB2CC00FFB8D8 /* Info.plist */,
-				93C84080244C34A10041B58D /* WebLoginVC.swift */,
+				93DC35D6244E9F7E00D702EC /* WebLoginVC.swift */,
 			);
 			path = MyStudySpace;
 			sourceTree = "<group>";
@@ -267,6 +275,7 @@
 			isa = PBXGroup;
 			children = (
 				93FAD762244E962300B2F263 /* UICalcTableView.swift */,
+				93DC35D8244EAA7C00D702EC /* UIGradeItemCell.swift */,
 			);
 			path = "Grade Calculation Pages";
 			sourceTree = "<group>";
@@ -400,39 +409,40 @@
 				93C20AC1243BB2CB00FFB8D8 /* OnboardingScreen.swift in Sources */,
 				9333957E243D8B3A0064CF09 /* CardPartMapViewCardController.swift in Sources */,
 				9333956C243D8B3A0064CF09 /* CardPartRoundedStackViewCardController.swift in Sources */,
-				A82DAA41244E935C00E52CC7 /* DueCardController.swift in Sources */,
+				93DC35D4244E9F5C00D702EC /* DueCardController.swift in Sources */,
 				9350F209243BB74000F7E882 /* onboardingView.swift in Sources */,
 				93339568243D8B3A0064CF09 /* CardPartStackViewCardController.swift in Sources */,
 				93A547FE243C3211000423D1 /* UICoursesList.swift in Sources */,
 				93339569243D8B3A0064CF09 /* CardPartButtonViewCardController.swift in Sources */,
 				93339562243D8B3A0064CF09 /* CardPartTableViewCardController.swift in Sources */,
 				9333957F243D8B3A0064CF09 /* CardPartTextFieldCardController.swift in Sources */,
-				93C84081244C34A10041B58D /* WebLoginVC.swift in Sources */,
 				93339577243D8B3A0064CF09 /* CardPartSliderViewCardController.swift in Sources */,
-				A82DAA43244E93DF00E52CC7 /* NoteCardController.swift in Sources */,
 				9333957C243D8B3A0064CF09 /* CardPartBarViewCardController.swift in Sources */,
 				93B33212243BF27A0036D9BA /* LoginHelper.swift in Sources */,
 				9333956B243D8B3A0064CF09 /* CardPartProgressBarViewCardController.swift in Sources */,
 				93339581243D8B3A0064CF09 /* CardPartCollectionViewCardController.swift in Sources */,
-				A82DAA3F244E934000E52CC7 /* MarkCardController.swift in Sources */,
 				93339578243D8B3A0064CF09 /* ThemedCardController.swift in Sources */,
 				9333956E243D8B3A0064CF09 /* CardPartMultiSliderViewCardController.swift in Sources */,
+				93DC35D1244E9F4D00D702EC /* NoteCardController.swift in Sources */,
 				9333956A243D8B3A0064CF09 /* CardPartTextViewCardController.swift in Sources */,
 				93339580243D8B3A0064CF09 /* CardPartRadioButtonCardController.swift in Sources */,
 				93339582243D8B3A0064CF09 /* CardPartBorderViewController.swift in Sources */,
 				93339575243D8B3A0064CF09 /* CardPartSwitchViewCardController.swift in Sources */,
 				93339563243D8B3A0064CF09 /* CardPartPagedViewCardController.swift in Sources */,
+				93DC35D9244EAA7C00D702EC /* UIGradeItemCell.swift in Sources */,
 				9333957D243D8B3A0064CF09 /* ReactiveCardController.swift in Sources */,
 				93339571243D8B3A0064CF09 /* CardPartCenteredViewCardController.swift in Sources */,
 				A8E5770F244A48D000AEDE8B /* HomeLinksCardController.swift in Sources */,
 				93339572243D8B3A0064CF09 /* CardPartBottomSheetCardController.swift in Sources */,
 				93339570243D8B3A0064CF09 /* CardPartIconLabelCardController.swift in Sources */,
-				93BAEDDE244E62A700156FA7 /* CoursesHelper.swift in Sources */,
+				93BAEDDE244E62A700156FA7 /* GradesHelper.swift in Sources */,
 				9333953F243D8AD60064CF09 /* MainPageVC.swift in Sources */,
+				93DC35D5244E9F5C00D702EC /* MarkCardController.swift in Sources */,
 				A8B7DE882443FF10002A3D11 /* ContactUsVC.swift in Sources */,
 				93339573243D8B3A0064CF09 /* CardPartConfettiViewCardController.swift in Sources */,
 				A8E5770D244A332700AEDE8B /* CourseMainPageVC.swift in Sources */,
 				93A54800243C324A000423D1 /* UICoursesListCell.swift in Sources */,
+				93DC35D7244E9F7F00D702EC /* WebLoginVC.swift in Sources */,
 				93339579243D8B3A0064CF09 /* TitleCardController.swift in Sources */,
 				93C20ABD243BB2CB00FFB8D8 /* AppDelegate.swift in Sources */,
 				93339565243D8B3A0064CF09 /* CardPartSeparatorViewCardController.swift in Sources */,
@@ -442,7 +452,6 @@
 				93C20ABF243BB2CB00FFB8D8 /* SceneDelegate.swift in Sources */,
 				93E40B3F244D137000A6612B /* UserInfoHelpers.swift in Sources */,
 				93FAD763244E962300B2F263 /* UICalcTableView.swift in Sources */,
-				A8E57711244B9B5900AEDE8B /* CourseMainPageTableViewVC.swift in Sources */,
 				93339564243D8B3A0064CF09 /* CardPartHistogramCardController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

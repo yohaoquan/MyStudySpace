@@ -8,7 +8,7 @@
 
 import Foundation
 import CardParts
-
+import UIKit
 class MarkCardController: CardPartsViewController {
     
     let possibleGradientColors: [UIColor] = [
@@ -33,22 +33,24 @@ class MarkCardController: CardPartsViewController {
         UIColor(red: 255.0 / 255.0, green: 255.0 / 255.0, blue: 0.0 / 255.0, alpha: 1.0),
         UIColor(red: 240.0 / 255.0, green: 230.0 / 255.0, blue: 140.0 / 255.0, alpha: 1.0),
     ]
-
     
-    var _title: String = ""
     
-    convenience init(title: String) {
+    var orgunit = OrgUnit(id: 0, type: nil, name: "", code: "")
+    convenience init(orgunit: OrgUnit) {
         self.init(nibName: nil, bundle: nil)
-        self._title = title
-
-        self.cardTapped {
-            print("Card was tapped in .none state")
-        }
-
+        self.orgunit = orgunit
+        
+        
+        
     }
     
     override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
         super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
+        
+        self.cardTapped() {
+            print("tapped")
+            self.parent!.performSegue(withIdentifier: "toGradeCalc", sender: self)
+        }
     }
     
     required init?(coder aDecoder: NSCoder) {
@@ -59,9 +61,9 @@ class MarkCardController: CardPartsViewController {
         super.viewDidLoad()
         
         let spacer = CardPartSpacerView(height: 30.0)
-
+        
         let titleCP = CardPartTextView(type: .header)
-        titleCP.text = self._title
+        titleCP.text = ""
         titleCP.textAlignment = .center
         titleCP.textColor = .white
         
@@ -74,6 +76,8 @@ class MarkCardController: CardPartsViewController {
         
         view.addConstraint(NSLayoutConstraint(item: view!, attribute: .height, relatedBy: .equal, toItem: nil, attribute: .notAnAttribute, multiplier: 1, constant: 150))
     }
+    
+    
 }
 
 extension MarkCardController: ShadowCardTrait {

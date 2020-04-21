@@ -22,11 +22,18 @@ class CourseMainPageVC: CardsViewController {
             MarkCardController(),
             DueCardController()
         ]
-        
         loadCards(cards: cards)
     }
     
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "toGradeCalc" {
+            if let dest = segue.destination as? UICalcTableView {
+                dest.orgUnit = self.orgUnit
+            }
+        }
+    }
+
     
     /*
     // MARK: - Navigation

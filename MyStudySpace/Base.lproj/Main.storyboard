@@ -156,16 +156,16 @@
             </objects>
             <point key="canvasLocation" x="3979.7101449275365" y="1354.6875"/>
         </scene>
-        <!--Table View Controller-->
+        <!--Grade Calculation-->
         <scene sceneID="ZCk-ZY-2LK">
             <objects>
-                <tableViewController id="rO0-Y2-2XB" sceneMemberID="viewController">
+                <tableViewController id="rO0-Y2-2XB" customClass="UICalcTableView" customModule="MyStudySpace" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="agY-X2-2a4">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="100" id="ccP-es-oer">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="reuseIdentifier" rowHeight="100" id="ccP-es-oer" customClass="UIGradeItemCell" customModule="MyStudySpace" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="55.5" width="414" height="100"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ccP-es-oer" id="SKe-DR-gKN">
@@ -189,9 +189,15 @@
                                         </label>
                                         <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="fKg-Ea-2af">
                                             <rect key="frame" x="18" y="59" width="378" height="30"/>
+                                            <connections>
+                                                <action selector="SliderValueChanged:" destination="ccP-es-oer" eventType="valueChanged" id="aMg-vA-rcR"/>
+                                            </connections>
                                         </slider>
                                         <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BO8-Yn-qJd">
                                             <rect key="frame" x="347" y="20" width="51" height="31"/>
+                                            <connections>
+                                                <action selector="GradeLockStatusChanged:" destination="ccP-es-oer" eventType="valueChanged" id="Kxt-CR-Mwc"/>
+                                            </connections>
                                         </switch>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="%" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dx7-Jp-gRP">
                                             <rect key="frame" x="249" y="33" width="14" height="21"/>
@@ -203,35 +209,58 @@
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="9.5" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RyX-LL-18p">
+                                            <rect key="frame" x="101.5" y="33" width="25" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" systemColor="secondaryLabelColor" red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="/" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CcN-4c-lbq">
+                                            <rect key="frame" x="126.5" y="33" width="6" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" systemColor="secondaryLabelColor" red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10*" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AK7-Mt-8aF">
+                                            <rect key="frame" x="132.5" y="33" width="25.5" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" systemColor="secondaryLabelColor" red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
                                     </subviews>
                                     <constraints>
                                         <constraint firstItem="fKg-Ea-2af" firstAttribute="top" secondItem="Dx7-Jp-gRP" secondAttribute="bottom" constant="5" id="7D5-f9-1ff"/>
-                                        <constraint firstItem="BO8-Yn-qJd" firstAttribute="leading" secondItem="Dx7-Jp-gRP" secondAttribute="trailing" constant="84" id="7Ln-bK-sCh"/>
                                         <constraint firstItem="BO8-Yn-qJd" firstAttribute="top" secondItem="SKe-DR-gKN" secondAttribute="topMargin" constant="9" id="81s-KJ-qKp"/>
-                                        <constraint firstItem="fKg-Ea-2af" firstAttribute="top" secondItem="BO8-Yn-qJd" secondAttribute="bottom" constant="8" symbolic="YES" id="A2g-jt-Wcu"/>
+                                        <constraint firstItem="AK7-Mt-8aF" firstAttribute="leading" secondItem="CcN-4c-lbq" secondAttribute="trailing" id="FSP-23-Ltx"/>
                                         <constraint firstItem="fKg-Ea-2af" firstAttribute="centerX" secondItem="YUS-9H-RGj" secondAttribute="centerX" id="JlJ-k7-2ve"/>
+                                        <constraint firstItem="RyX-LL-18p" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="SKe-DR-gKN" secondAttribute="leading" constant="20" symbolic="YES" id="MFV-Gc-cPy"/>
                                         <constraint firstItem="rEB-mb-4tT" firstAttribute="leading" secondItem="SKe-DR-gKN" secondAttribute="leadingMargin" id="MTU-ph-WSj"/>
+                                        <constraint firstItem="YUS-9H-RGj" firstAttribute="leading" secondItem="AK7-Mt-8aF" secondAttribute="trailing" constant="8" id="Pcj-cJ-zPI"/>
                                         <constraint firstItem="fKg-Ea-2af" firstAttribute="leading" secondItem="rEB-mb-4tT" secondAttribute="leading" id="Pgk-gR-HDi"/>
+                                        <constraint firstItem="fKg-Ea-2af" firstAttribute="top" secondItem="RyX-LL-18p" secondAttribute="bottom" constant="5" id="QOM-ih-i0s"/>
                                         <constraint firstItem="YUS-9H-RGj" firstAttribute="top" secondItem="SKe-DR-gKN" secondAttribute="topMargin" id="SsZ-yf-m3z"/>
                                         <constraint firstAttribute="bottomMargin" secondItem="fKg-Ea-2af" secondAttribute="bottom" constant="1" id="VHZ-9X-1kk"/>
-                                        <constraint firstAttribute="trailingMargin" secondItem="BO8-Yn-qJd" secondAttribute="trailing" constant="-2" id="X2i-uy-1kd"/>
+                                        <constraint firstAttribute="trailing" secondItem="BO8-Yn-qJd" secondAttribute="trailing" constant="18" id="aa4-YJ-0Ac"/>
                                         <constraint firstItem="YUS-9H-RGj" firstAttribute="centerX" secondItem="SKe-DR-gKN" secondAttribute="centerX" id="adm-so-qwc"/>
-                                        <constraint firstItem="BO8-Yn-qJd" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Dx7-Jp-gRP" secondAttribute="trailing" constant="8" symbolic="YES" id="chc-In-ajt"/>
-                                        <constraint firstItem="YUS-9H-RGj" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="rEB-mb-4tT" secondAttribute="trailing" constant="8" symbolic="YES" id="dSs-P7-LwM"/>
+                                        <constraint firstItem="fKg-Ea-2af" firstAttribute="top" secondItem="CcN-4c-lbq" secondAttribute="bottom" constant="5" id="dVP-MA-vcT"/>
                                         <constraint firstItem="Dx7-Jp-gRP" firstAttribute="leading" secondItem="YUS-9H-RGj" secondAttribute="trailing" constant="1" id="i9W-q3-4jC"/>
                                         <constraint firstItem="rEB-mb-4tT" firstAttribute="top" secondItem="SKe-DR-gKN" secondAttribute="topMargin" id="mfU-2v-Fyk"/>
+                                        <constraint firstItem="fKg-Ea-2af" firstAttribute="top" secondItem="AK7-Mt-8aF" secondAttribute="bottom" constant="5" id="nCQ-VO-vn4"/>
                                         <constraint firstItem="Dx7-Jp-gRP" firstAttribute="top" secondItem="SKe-DR-gKN" secondAttribute="topMargin" constant="22" id="pX9-Uu-w3J"/>
+                                        <constraint firstItem="BO8-Yn-qJd" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Dx7-Jp-gRP" secondAttribute="trailing" constant="8" symbolic="YES" id="s31-dq-Irj"/>
                                         <constraint firstItem="BO8-Yn-qJd" firstAttribute="centerY" secondItem="YUS-9H-RGj" secondAttribute="centerY" id="t7Z-TK-uMN"/>
+                                        <constraint firstItem="YUS-9H-RGj" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="rEB-mb-4tT" secondAttribute="trailing" constant="8" symbolic="YES" id="wd6-ae-hB0"/>
+                                        <constraint firstItem="CcN-4c-lbq" firstAttribute="leading" secondItem="RyX-LL-18p" secondAttribute="trailing" id="zVh-sa-PQf"/>
                                     </constraints>
                                 </tableViewCellContentView>
-                            </tableViewCell>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="100" id="Woj-H4-bPE">
-                                <rect key="frame" x="0.0" y="155.5" width="414" height="100"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Woj-H4-bPE" id="PPp-Sp-bj6">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="100"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="gradeItemName" destination="rEB-mb-4tT" id="uiX-Lr-ois"/>
+                                    <outlet property="gradePercent" destination="YUS-9H-RGj" id="g0y-tA-QER"/>
+                                    <outlet property="gradePoint" destination="RyX-LL-18p" id="ua2-XZ-wC3"/>
+                                    <outlet property="lockSwitch" destination="BO8-Yn-qJd" id="DGy-De-eoi"/>
+                                    <outlet property="maxMarkLabel" destination="AK7-Mt-8aF" id="xyG-ZP-mrt"/>
+                                    <outlet property="slider" destination="fKg-Ea-2af" id="aKO-A7-znb"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -239,10 +268,11 @@
                             <outlet property="delegate" destination="rO0-Y2-2XB" id="00G-bV-vH6"/>
                         </connections>
                     </tableView>
+                    <navigationItem key="navigationItem" title="Grade Calculation" id="md3-9k-PAf"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="f6h-yx-Q74" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5750.7246376811599" y="2296.875"/>
+            <point key="canvasLocation" x="6307" y="772"/>
         </scene>
         <!--Home View Controller-->
         <scene sceneID="RWp-3N-yBX">
@@ -407,7 +437,7 @@ hexx2400@mylaurier.ca</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Mra-kE-y6L" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="7600.0000000000009" y="1748.4375"/>
+            <point key="canvasLocation" x="3070" y="2132"/>
         </scene>
         <!--CourseMainPage View Controlelr-->
         <scene sceneID="33l-7U-7WM">
@@ -422,6 +452,7 @@ hexx2400@mylaurier.ca</string>
                     <navigationItem key="navigationItem" title="Course Main Page" id="tIN-Yi-MHg"/>
                     <connections>
                         <segue destination="Tir-Bm-FjR" kind="push" identifier="goToNoteFromCMPSeague" id="yEG-Sb-DkP"/>
+                        <segue destination="rO0-Y2-2XB" kind="show" identifier="toGradeCalc" destinationCreationSelector="toGradeCalc" id="Jhm-jv-ae0"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7zh-DA-KNA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -522,7 +553,7 @@ This application is not perfect. We are always finding a way to be better. If go
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XCL-cL-KVO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="7600.0000000000009" y="756.69642857142856"/>
+            <point key="canvasLocation" x="3978" y="2266"/>
         </scene>
         <!--Course Table View Controller-->
         <scene sceneID="fzj-Mt-XCE">
