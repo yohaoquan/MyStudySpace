@@ -41,14 +41,14 @@ class MarkCardController: CardPartsViewController {
         self.init(nibName: nil, bundle: nil)
         self._title = title
 
-        self.cardTapped {
-            print("Card was tapped in .none state")
-        }
-
     }
     
     override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
         super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
+        self.cardTapped {
+            print("MarkTapped")
+            self.parent!.performSegue(withIdentifier: "goToMarkFromCMPSegue", sender: self)
+        }
     }
     
     required init?(coder aDecoder: NSCoder) {

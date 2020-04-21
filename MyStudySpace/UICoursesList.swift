@@ -70,6 +70,10 @@ class UICoursesList: UITableViewController {
     @IBAction func unwindToClsit(segue: UIStoryboardSegue) {
     }
     
+    @IBAction func goToMainFromCourse(_ sender: Any) {
+        performSegue(withIdentifier: "goToMainFromCourseSegue", sender: self)
+    }
+    
     
     /*
     // Override to support conditional editing of the table view.
