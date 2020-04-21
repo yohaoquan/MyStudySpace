@@ -172,6 +172,22 @@
             </objects>
             <point key="canvasLocation" x="3979.7101449275365" y="-260.49107142857144"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="QfB-Zc-PcQ">
+            <objects>
+                <viewController id="Tir-Bm-FjR" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="b1E-Ia-Ygw">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="YB3-cW-zYa"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="dTJ-ul-2oR"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ruz-6p-fPH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="6028" y="-958"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="SCI-Ci-F4K">
             <objects>
@@ -316,6 +332,9 @@ hexx2400@mylaurier.ca</string>
                         <viewLayoutGuide key="safeArea" id="gX5-yo-wTe"/>
                     </view>
                     <navigationItem key="navigationItem" title="Course Main Page" id="tIN-Yi-MHg"/>
+                    <connections>
+                        <segue destination="Tir-Bm-FjR" kind="push" identifier="goToNoteFromCMPSeague" id="yEG-Sb-DkP"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7zh-DA-KNA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

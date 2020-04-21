@@ -1,26 +1,23 @@
 //
-//  ThemedCardController.swift
-//  CardParts_Example
+//  DueCardController.swift
+//  MyStudySpace
 //
-//  Created by Roossin, Chase on 5/23/18.
-//  Copyright © 2018 Intuit. All rights reserved.
+//  Created by Xiaohu He on 2020-04-20.
+//  Copyright © 2020 Haoquan you. All rights reserved.
 //
 
 import Foundation
 import CardParts
 
-class ThemedCardController: CardPartsViewController {
-    
-//    let possibleGradientColors: [UIColor] = [
-//        UIColor(red: 181.0 / 255.0, green: 152.0 / 255.0, blue: 235.0 / 255.0, alpha: 1.0),
-//        UIColor(red: 30.0 / 255.0, green: 211.0 / 255.0, blue: 212.0 / 255.0, alpha: 1.0),
-//        UIColor(red: 63.0 / 255.0, green: 236.0 / 255.0, blue: 216.0 / 255.0, alpha: 1.0),
-//        UIColor(red: 27.0 / 255.0, green: 205.0 / 255.0, blue: 156.0 / 255.0, alpha: 1.0),
-//        UIColor(red: 10.0 / 255.0, green: 199.0 / 255.0, blue: 117.0 / 255.0, alpha: 1.0),
-//        UIColor(red: 17.0 / 255.0, green: 174.0 / 255.0, blue: 155.0 / 255.0, alpha: 1.0)
-//    ]
+class DueCardController: CardPartsViewController {
     
     let possibleGradientColors: [UIColor] = [
+        UIColor(red: 181.0 / 255.0, green: 152.0 / 255.0, blue: 235.0 / 255.0, alpha: 1.0),
+        UIColor(red: 30.0 / 255.0, green: 211.0 / 255.0, blue: 212.0 / 255.0, alpha: 1.0),
+        UIColor(red: 63.0 / 255.0, green: 236.0 / 255.0, blue: 216.0 / 255.0, alpha: 1.0),
+        UIColor(red: 27.0 / 255.0, green: 205.0 / 255.0, blue: 156.0 / 255.0, alpha: 1.0),
+        UIColor(red: 10.0 / 255.0, green: 199.0 / 255.0, blue: 117.0 / 255.0, alpha: 1.0),
+        UIColor(red: 17.0 / 255.0, green: 174.0 / 255.0, blue: 155.0 / 255.0, alpha: 1.0),
         UIColor(red: 128.0 / 255.0, green: 0.0 / 255.0, blue: 128.0 / 255.0, alpha: 1.0),
         UIColor(red: 75.0 / 255.0, green: 0.0 / 255.0, blue: 130.0 / 255.0, alpha: 1.0),
         UIColor(red: 148.0 / 255.0, green: 0.0 / 255.0, blue: 211.0 / 255.0, alpha: 1.0),
@@ -60,7 +57,7 @@ class ThemedCardController: CardPartsViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let spacer = CardPartSpacerView(height: 20.0)
+        let spacer = CardPartSpacerView(height: 10.0)
 
         
         let titleCP = CardPartTextView(type: .header)
@@ -70,16 +67,17 @@ class ThemedCardController: CardPartsViewController {
         
         
         let descriptionCP = CardPartTextView(type: .normal)
-        descriptionCP.text = "\nStart by choosing a course"
+        descriptionCP.text = "Due Date and Schedules"
         descriptionCP.textColor = .white
-        descriptionCP.font = UIFont.systemFont(ofSize: 25, weight: .bold)
+        descriptionCP.textAlignment = .center
+        descriptionCP.font = UIFont.systemFont(ofSize: 40, weight: .bold)
         setupCardParts([spacer, titleCP, descriptionCP])
         
-        view.addConstraint(NSLayoutConstraint(item: view!, attribute: .height, relatedBy: .equal, toItem: nil, attribute: .notAnAttribute, multiplier: 1, constant: 230))
+        view.addConstraint(NSLayoutConstraint(item: view!, attribute: .height, relatedBy: .equal, toItem: nil, attribute: .notAnAttribute, multiplier: 1, constant: 150))
     }
 }
 
-extension ThemedCardController: ShadowCardTrait {
+extension DueCardController: ShadowCardTrait {
     func shadowOffset() -> CGSize {
         return CGSize(width: 10.0, height: 10.0)
     }
@@ -97,13 +95,13 @@ extension ThemedCardController: ShadowCardTrait {
     }
 }
 
-extension ThemedCardController: RoundedCardTrait {
+extension DueCardController: RoundedCardTrait {
     func cornerRadius() -> CGFloat {
         return 10.0
     }
 }
 
-extension ThemedCardController: GradientCardTrait {
+extension DueCardController: GradientCardTrait {
     func gradientColors() -> [UIColor] {
         
         let color1: UIColor = self.possibleGradientColors[Int(arc4random_uniform(UInt32(self.possibleGradientColors.count)))]

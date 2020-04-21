@@ -7,19 +7,26 @@
 //
 
 import UIKit
+import CardParts
 
-class CourseMainPageVC: UIViewController {
+class CourseMainPageVC: CardsViewController {
     var orgUnit: OrgUnit?
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
         self.navigationItem.title = orgUnit?.Name
+        
+        let cards: [CardPartsViewController] = [
+            NoteCardController(),
+            MarkCardController(),
+            DueCardController()
+        ]
+        
+        loadCards(cards: cards)
     }
     
-    @IBAction func goBackFromCMPBtn(_ sender: Any) {
-        performSegue(withIdentifier: "unwindSegueToCMP", sender: self)
-    }
+    
     
     /*
     // MARK: - Navigation
