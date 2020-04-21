@@ -59,9 +59,7 @@
 		93C84081244C34A10041B58D /* WebLoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93C84080244C34A10041B58D /* WebLoginVC.swift */; };
 		93C84083244C3D020041B58D /* NetworkHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93C84082244C3D020041B58D /* NetworkHelpers.swift */; };
 		93E40B3F244D137000A6612B /* UserInfoHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93E40B3E244D137000A6612B /* UserInfoHelpers.swift */; };
-		A82DAA3F244E934000E52CC7 /* MarkCardController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A82DAA3E244E934000E52CC7 /* MarkCardController.swift */; };
-		A82DAA41244E935C00E52CC7 /* DueCardController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A82DAA40244E935C00E52CC7 /* DueCardController.swift */; };
-		A82DAA43244E93DF00E52CC7 /* NoteCardController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A82DAA42244E93DE00E52CC7 /* NoteCardController.swift */; };
+		93FAD763244E962300B2F263 /* UICalcTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93FAD762244E962300B2F263 /* UICalcTableView.swift */; };
 		A8B7DE842443BED8002A3D11 /* SettingTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8B7DE832443BED7002A3D11 /* SettingTableVC.swift */; };
 		A8B7DE882443FF10002A3D11 /* ContactUsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8B7DE872443FF10002A3D11 /* ContactUsVC.swift */; };
 		A8B7DE8E244401AC002A3D11 /* AboutVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8B7DE8D244401AC002A3D11 /* AboutVC.swift */; };
@@ -124,9 +122,7 @@
 		93C84080244C34A10041B58D /* WebLoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = WebLoginVC.swift; path = /Users/xiaohuhe/CP469/MyStudySpace/MyStudySpace/WebLoginVC.swift; sourceTree = "<absolute>"; };
 		93C84082244C3D020041B58D /* NetworkHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkHelpers.swift; sourceTree = "<group>"; };
 		93E40B3E244D137000A6612B /* UserInfoHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoHelpers.swift; sourceTree = "<group>"; };
-		A82DAA3E244E934000E52CC7 /* MarkCardController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarkCardController.swift; sourceTree = "<group>"; };
-		A82DAA40244E935C00E52CC7 /* DueCardController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DueCardController.swift; sourceTree = "<group>"; };
-		A82DAA42244E93DE00E52CC7 /* NoteCardController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteCardController.swift; sourceTree = "<group>"; };
+		93FAD762244E962300B2F263 /* UICalcTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UICalcTableView.swift; sourceTree = "<group>"; };
 		A8B7DE832443BED7002A3D11 /* SettingTableVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingTableVC.swift; sourceTree = "<group>"; };
 		A8B7DE872443FF10002A3D11 /* ContactUsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactUsVC.swift; sourceTree = "<group>"; };
 		A8B7DE8D244401AC002A3D11 /* AboutVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutVC.swift; sourceTree = "<group>"; };
@@ -243,15 +239,16 @@
 		93C20ABB243BB2CB00FFB8D8 /* MyStudySpace */ = {
 			isa = PBXGroup;
 			children = (
+				93FAD761244E87D200B2F263 /* Grade Calculation Pages */,
 				93339540243D8AEB0064CF09 /* Cards */,
 				93B33210243BF1BC0036D9BA /* Helpers */,
 				93C20ABC243BB2CB00FFB8D8 /* AppDelegate.swift */,
 				A8B7DE8D244401AC002A3D11 /* AboutVC.swift */,
 				93C20ABE243BB2CB00FFB8D8 /* SceneDelegate.swift */,
 				93C20AC2243BB2CB00FFB8D8 /* Main.storyboard */,
-				A8E5770C244A332700AEDE8B /* CourseMainPageVC.swift */,
 				A8B7DE872443FF10002A3D11 /* ContactUsVC.swift */,
 				A8B7DE832443BED7002A3D11 /* SettingTableVC.swift */,
+				A8E5770C244A332700AEDE8B /* CourseMainPageVC.swift */,
 				9333953E243D8AD60064CF09 /* MainPageVC.swift */,
 				93A547FF243C324A000423D1 /* UICoursesListCell.swift */,
 				93A547FD243C3211000423D1 /* UICoursesList.swift */,
@@ -264,6 +261,14 @@
 				93C84080244C34A10041B58D /* WebLoginVC.swift */,
 			);
 			path = MyStudySpace;
+			sourceTree = "<group>";
+		};
+		93FAD761244E87D200B2F263 /* Grade Calculation Pages */ = {
+			isa = PBXGroup;
+			children = (
+				93FAD762244E962300B2F263 /* UICalcTableView.swift */,
+			);
+			path = "Grade Calculation Pages";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -436,6 +441,8 @@
 				9333957A243D8B3A0064CF09 /* CardPartAttributedTextViewController.swift in Sources */,
 				93C20ABF243BB2CB00FFB8D8 /* SceneDelegate.swift in Sources */,
 				93E40B3F244D137000A6612B /* UserInfoHelpers.swift in Sources */,
+				93FAD763244E962300B2F263 /* UICalcTableView.swift in Sources */,
+				A8E57711244B9B5900AEDE8B /* CourseMainPageTableViewVC.swift in Sources */,
 				93339564243D8B3A0064CF09 /* CardPartHistogramCardController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
