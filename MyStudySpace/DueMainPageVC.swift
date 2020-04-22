@@ -1,46 +1,74 @@
 //
-//  UICoursesList.swift
-//  MyStudySpace
+//  DueMainPageVC.swift
+//  
 //
-//  Created by Aaron You on 4/6/20.
-//  Copyright © 2020 Haoquan you. All rights reserved.
+//  Created by Xiaohu He on 2020-04-22.
 //
 
 import UIKit
 
+class DueMainPageVC: UITableViewController {
 
-class UICoursesList: UITableViewController {
-    @IBOutlet weak var spinner: UIActivityIndicatorView!
+    var orgUnit: OrgUnit!
+    var someDueDate: [DuedateItem] = []
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem
-        
-        
-    }
-    
-    override func viewDidAppear(_ animated: Bool) {
-        self.spinner.isHidden = false
-        self.spinner.startAnimating()
         let queue = DispatchQueue.global(qos: .default)
         queue.async {
             let group = DispatchGroup()
             queue.async(group: group) {
-                refreshCourses()
+                refreshQuizzes(orgUnit: self.orgUnit)
+                refreshDrops(orgUnit: self.orgUnit)
+                let data = UserDefaults.standard.data(forKey: self.orgUnit.Name + "drop")
+                let res = try! JSONDecoder().decode([DuedateItem].self, from: data!)
+                
+                for item in res {
+                    self.someDueDate.append(DuedateItem(name:item.name, type: item.type, time:item.time))
+                }
+                self.someDueDate.sort {$0.time < $1.time}
+                let date = Date()
+                print(date)
+                var count = 0
+                for i in self.someDueDate {
+                    if (self.seperateString(time: i.time) < date) {
+                        self.someDueDate.remove(at: count)
+                    } else {
+                        count += count
+                    }
+                }
+                count = 0
+                for i in self.someDueDate {
+                    print(i.name)
+                    print(self.seperateString(time: i.time))
+                }
+                if data == nil {
+                    let empty = try! JSONEncoder().encode(Quizzes(Objects: [], Next: ""))
+                    UserDefaults.standard.set(empty, forKey: self.orgUnit.Name + "drop")
+                }
+                return
             }
             group.notify(queue: queue) { // we want to be notified only when both background tasks are completed
                 DispatchQueue.main.async {
                     self.tableView.reloadData()
-                    self.spinner.stopAnimating()
-                    self.spinner.isHidden = true
                 }
-                
             } //group.notify
         }//queue.async
+
+        // Do any additional setup after loading the view.
+    }
+    func seperateString(time: String) -> Date {
+        
+        
+        let dateFormatter = DateFormatter()
+        dateFormatter.locale = Locale(identifier: "en_US_POSIX") // set locale to reliable US_POSIX
+        let timeAfterRemovingMicroseconds = String(time.split(separator: ".")[0])+"Z"
+        dateFormatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ssZ"
+        
+        let date = dateFormatter.date(from:timeAfterRemovingMicroseconds)
+        
+        
+        return date!
     }
 
     // MARK: - Table view data source
@@ -52,29 +80,20 @@ class UICoursesList: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return EnrollmentsHelper.sharedInstance.enrollments.Items.count
+        return self.someDueDate.count
     }
 
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath) as! UICoursesListCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: "dueReuse", for: indexPath) as! DuedateCell
 
-        cell.cName = EnrollmentsHelper.sharedInstance.enrollments.Items[indexPath.row].OrgUnit.Name
-        cell.orgunit = EnrollmentsHelper.sharedInstance.enrollments.Items[indexPath.row].OrgUnit
+        cell.dateItem = self.someDueDate[indexPath.row]
         cell.updateCell()
-        cell.bgp.backgroundColor = [#colorLiteral(red: 0.7725490196, green: 0.8196078431, blue: 0.9215686275, alpha: 0.7040327905),#colorLiteral(red: 0.6730698529, green: 0.747124183, blue: 0.9294117647, alpha: 0.7036751761),#colorLiteral(red: 0.7058823529, green: 0.7764705882, blue: 0.9294117647, alpha: 0.6987786092),#colorLiteral(red: 0.7529411765, green: 0.8039215686, blue: 0.9294117647, alpha: 0.7041703345)][indexPath.row % 4]
 
         return cell
     }
     
-    @IBAction func unwindToClsit(segue: UIStoryboardSegue) {
-    }
-    
-    @IBAction func goToMainFromCourse(_ sender: Any) {
-        performSegue(withIdentifier: "goToMainFromCourseSegue", sender: self)
-    }
-    
-    
+
     /*
     // Override to support conditional editing of the table view.
     override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
@@ -110,17 +129,14 @@ class UICoursesList: UITableViewController {
     }
     */
 
-    
+    /*
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destination.
         // Pass the selected object to the new view controller.
-        let selected = self.tableView.cellForRow(at: self.tableView!.indexPathForSelectedRow!) as! UICoursesListCell
-        let dest = segue.destination as! CourseMainPageVC
-        dest.orgUnit = selected.orgunit
     }
-    
+    */
 
 }
