@@ -1,15 +1,17 @@
 {
   "images" : [
     {
-      "filename" : "4118056 - account bag briefcase business suitcase work.png",
+      "filename" : "work_25.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
+      "filename" : "work_50.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
+      "filename" : "work_75.png",
       "idiom" : "universal",
       "scale" : "3x"
     }

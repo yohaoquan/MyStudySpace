@@ -9,42 +9,15 @@
 /* Begin PBXBuildFile section */
 		79F20F089F7B6899BB8AF467 /* Pods_MyStudySpace.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 618D792B338BB6159CCC258A /* Pods_MyStudySpace.framework */; };
 		9333953F243D8AD60064CF09 /* MainPageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9333953E243D8AD60064CF09 /* MainPageVC.swift */; };
-		93339562243D8B3A0064CF09 /* CardPartTableViewCardController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93339541243D8B340064CF09 /* CardPartTableViewCardController.swift */; };
-		93339563243D8B3A0064CF09 /* CardPartPagedViewCardController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93339542243D8B340064CF09 /* CardPartPagedViewCardController.swift */; };
-		93339564243D8B3A0064CF09 /* CardPartHistogramCardController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93339543243D8B340064CF09 /* CardPartHistogramCardController.swift */; };
-		93339565243D8B3A0064CF09 /* CardPartSeparatorViewCardController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93339544243D8B340064CF09 /* CardPartSeparatorViewCardController.swift */; };
-		93339566243D8B3A0064CF09 /* CardPartTitleDescriptionViewCardController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93339545243D8B340064CF09 /* CardPartTitleDescriptionViewCardController.swift */; };
-		93339567243D8B3A0064CF09 /* CardPartImageViewCardController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93339546243D8B350064CF09 /* CardPartImageViewCardController.swift */; };
-		93339568243D8B3A0064CF09 /* CardPartStackViewCardController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93339547243D8B350064CF09 /* CardPartStackViewCardController.swift */; };
-		93339569243D8B3A0064CF09 /* CardPartButtonViewCardController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93339548243D8B350064CF09 /* CardPartButtonViewCardController.swift */; };
-		9333956A243D8B3A0064CF09 /* CardPartTextViewCardController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93339549243D8B350064CF09 /* CardPartTextViewCardController.swift */; };
-		9333956B243D8B3A0064CF09 /* CardPartProgressBarViewCardController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9333954A243D8B350064CF09 /* CardPartProgressBarViewCardController.swift */; };
-		9333956C243D8B3A0064CF09 /* CardPartRoundedStackViewCardController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9333954B243D8B360064CF09 /* CardPartRoundedStackViewCardController.swift */; };
-		9333956D243D8B3A0064CF09 /* CardPartOrientedViewCardController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9333954C243D8B360064CF09 /* CardPartOrientedViewCardController.swift */; };
-		9333956E243D8B3A0064CF09 /* CardPartMultiSliderViewCardController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9333954D243D8B360064CF09 /* CardPartMultiSliderViewCardController.swift */; };
-		9333956F243D8B3A0064CF09 /* CardPartTitleViewCardController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9333954E243D8B360064CF09 /* CardPartTitleViewCardController.swift */; };
-		93339570243D8B3A0064CF09 /* CardPartIconLabelCardController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9333954F243D8B360064CF09 /* CardPartIconLabelCardController.swift */; };
-		93339571243D8B3A0064CF09 /* CardPartCenteredViewCardController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93339550243D8B360064CF09 /* CardPartCenteredViewCardController.swift */; };
-		93339572243D8B3A0064CF09 /* CardPartBottomSheetCardController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93339551243D8B370064CF09 /* CardPartBottomSheetCardController.swift */; };
-		93339573243D8B3A0064CF09 /* CardPartConfettiViewCardController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93339552243D8B370064CF09 /* CardPartConfettiViewCardController.swift */; };
-		93339574243D8B3A0064CF09 /* StateCardController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93339553243D8B370064CF09 /* StateCardController.swift */; };
-		93339575243D8B3A0064CF09 /* CardPartSwitchViewCardController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93339554243D8B370064CF09 /* CardPartSwitchViewCardController.swift */; };
-		93339576243D8B3A0064CF09 /* CardParthCustomMarginsCardController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93339555243D8B370064CF09 /* CardParthCustomMarginsCardController.swift */; };
-		93339577243D8B3A0064CF09 /* CardPartSliderViewCardController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93339556243D8B380064CF09 /* CardPartSliderViewCardController.swift */; };
 		93339578243D8B3A0064CF09 /* ThemedCardController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93339557243D8B380064CF09 /* ThemedCardController.swift */; };
 		93339579243D8B3A0064CF09 /* TitleCardController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93339558243D8B380064CF09 /* TitleCardController.swift */; };
-		9333957A243D8B3A0064CF09 /* CardPartAttributedTextViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93339559243D8B380064CF09 /* CardPartAttributedTextViewController.swift */; };
-		9333957B243D8B3A0064CF09 /* CardPartPillLabelCardController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9333955A243D8B380064CF09 /* CardPartPillLabelCardController.swift */; };
-		9333957C243D8B3A0064CF09 /* CardPartBarViewCardController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9333955B243D8B380064CF09 /* CardPartBarViewCardController.swift */; };
-		9333957D243D8B3A0064CF09 /* ReactiveCardController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9333955C243D8B390064CF09 /* ReactiveCardController.swift */; };
-		9333957E243D8B3A0064CF09 /* CardPartMapViewCardController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9333955D243D8B390064CF09 /* CardPartMapViewCardController.swift */; };
-		9333957F243D8B3A0064CF09 /* CardPartTextFieldCardController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9333955E243D8B390064CF09 /* CardPartTextFieldCardController.swift */; };
-		93339580243D8B3A0064CF09 /* CardPartRadioButtonCardController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9333955F243D8B390064CF09 /* CardPartRadioButtonCardController.swift */; };
-		93339581243D8B3A0064CF09 /* CardPartCollectionViewCardController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93339560243D8B390064CF09 /* CardPartCollectionViewCardController.swift */; };
-		93339582243D8B3A0064CF09 /* CardPartBorderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93339561243D8B3A0064CF09 /* CardPartBorderViewController.swift */; };
 		9333D594244FAFA20008EF1F /* NotesHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9333D593244FAFA20008EF1F /* NotesHelpers.swift */; };
 		9350F209243BB74000F7E882 /* onboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9350F208243BB74000F7E882 /* onboardingView.swift */; };
 		9350F20D243BE1D000F7E882 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9350F20C243BE1D000F7E882 /* HomeVC.swift */; };
+		93A1F7AE24500A53000478F0 /* DueMainPageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93A1F7AD24500A53000478F0 /* DueMainPageVC.swift */; };
+		93A1F7B124501B02000478F0 /* NoteCardController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93A1F7AF24501B01000478F0 /* NoteCardController.swift */; };
+		93A1F7B224501B02000478F0 /* MarkCardController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93A1F7B024501B01000478F0 /* MarkCardController.swift */; };
+		93A1F7B424501CFA000478F0 /* SpacerCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93A1F7B324501CFA000478F0 /* SpacerCard.swift */; };
 		93A547FE243C3211000423D1 /* UICoursesList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93A547FD243C3211000423D1 /* UICoursesList.swift */; };
 		93A54800243C324A000423D1 /* UICoursesListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93A547FF243C324A000423D1 /* UICoursesListCell.swift */; };
 		93B33212243BF27A0036D9BA /* LoginHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93B33211243BF27A0036D9BA /* LoginHelper.swift */; };
@@ -58,9 +31,7 @@
 		93C20AC6243BB2CC00FFB8D8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 93C20AC5243BB2CC00FFB8D8 /* Assets.xcassets */; };
 		93C20AC9243BB2CC00FFB8D8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 93C20AC7243BB2CC00FFB8D8 /* LaunchScreen.storyboard */; };
 		93C84083244C3D020041B58D /* NetworkHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93C84082244C3D020041B58D /* NetworkHelpers.swift */; };
-		93DC35D1244E9F4D00D702EC /* NoteCardController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93DC35D0244E9F4D00D702EC /* NoteCardController.swift */; };
 		93DC35D4244E9F5C00D702EC /* DueCardController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93DC35D2244E9F5C00D702EC /* DueCardController.swift */; };
-		93DC35D5244E9F5C00D702EC /* MarkCardController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93DC35D3244E9F5C00D702EC /* MarkCardController.swift */; };
 		93DC35D7244E9F7F00D702EC /* WebLoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93DC35D6244E9F7E00D702EC /* WebLoginVC.swift */; };
 		93DC35D9244EAA7C00D702EC /* UIGradeItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93DC35D8244EAA7C00D702EC /* UIGradeItemCell.swift */; };
 		93E40B3F244D137000A6612B /* UserInfoHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93E40B3E244D137000A6612B /* UserInfoHelpers.swift */; };
@@ -75,7 +46,6 @@
 		A8B7DE842443BED8002A3D11 /* SettingTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8B7DE832443BED7002A3D11 /* SettingTableVC.swift */; };
 		A8B7DE882443FF10002A3D11 /* ContactUsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8B7DE872443FF10002A3D11 /* ContactUsVC.swift */; };
 		A8B7DE8E244401AC002A3D11 /* AboutVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8B7DE8D244401AC002A3D11 /* AboutVC.swift */; };
-		A8BCAFAD244FFAF8000BBE81 /* DueMainPageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8BCAFAC244FFAF8000BBE81 /* DueMainPageVC.swift */; };
 		A8BCAFB1244FFD3E000BBE81 /* DuedateCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8BCAFB0244FFD3E000BBE81 /* DuedateCell.swift */; };
 		A8E5770D244A332700AEDE8B /* CourseMainPageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8E5770C244A332700AEDE8B /* CourseMainPageVC.swift */; };
 		A8E5770F244A48D000AEDE8B /* HomeLinksCardController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8E5770E244A48D000AEDE8B /* HomeLinksCardController.swift */; };
@@ -84,42 +54,15 @@
 /* Begin PBXFileReference section */
 		618D792B338BB6159CCC258A /* Pods_MyStudySpace.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyStudySpace.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9333953E243D8AD60064CF09 /* MainPageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPageVC.swift; sourceTree = "<group>"; };
-		93339541243D8B340064CF09 /* CardPartTableViewCardController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardPartTableViewCardController.swift; sourceTree = "<group>"; };
-		93339542243D8B340064CF09 /* CardPartPagedViewCardController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardPartPagedViewCardController.swift; sourceTree = "<group>"; };
-		93339543243D8B340064CF09 /* CardPartHistogramCardController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardPartHistogramCardController.swift; sourceTree = "<group>"; };
-		93339544243D8B340064CF09 /* CardPartSeparatorViewCardController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardPartSeparatorViewCardController.swift; sourceTree = "<group>"; };
-		93339545243D8B340064CF09 /* CardPartTitleDescriptionViewCardController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardPartTitleDescriptionViewCardController.swift; sourceTree = "<group>"; };
-		93339546243D8B350064CF09 /* CardPartImageViewCardController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardPartImageViewCardController.swift; sourceTree = "<group>"; };
-		93339547243D8B350064CF09 /* CardPartStackViewCardController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardPartStackViewCardController.swift; sourceTree = "<group>"; };
-		93339548243D8B350064CF09 /* CardPartButtonViewCardController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardPartButtonViewCardController.swift; sourceTree = "<group>"; };
-		93339549243D8B350064CF09 /* CardPartTextViewCardController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardPartTextViewCardController.swift; sourceTree = "<group>"; };
-		9333954A243D8B350064CF09 /* CardPartProgressBarViewCardController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardPartProgressBarViewCardController.swift; sourceTree = "<group>"; };
-		9333954B243D8B360064CF09 /* CardPartRoundedStackViewCardController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardPartRoundedStackViewCardController.swift; sourceTree = "<group>"; };
-		9333954C243D8B360064CF09 /* CardPartOrientedViewCardController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardPartOrientedViewCardController.swift; sourceTree = "<group>"; };
-		9333954D243D8B360064CF09 /* CardPartMultiSliderViewCardController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardPartMultiSliderViewCardController.swift; sourceTree = "<group>"; };
-		9333954E243D8B360064CF09 /* CardPartTitleViewCardController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardPartTitleViewCardController.swift; sourceTree = "<group>"; };
-		9333954F243D8B360064CF09 /* CardPartIconLabelCardController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardPartIconLabelCardController.swift; sourceTree = "<group>"; };
-		93339550243D8B360064CF09 /* CardPartCenteredViewCardController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardPartCenteredViewCardController.swift; sourceTree = "<group>"; };
-		93339551243D8B370064CF09 /* CardPartBottomSheetCardController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardPartBottomSheetCardController.swift; sourceTree = "<group>"; };
-		93339552243D8B370064CF09 /* CardPartConfettiViewCardController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardPartConfettiViewCardController.swift; sourceTree = "<group>"; };
-		93339553243D8B370064CF09 /* StateCardController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StateCardController.swift; sourceTree = "<group>"; };
-		93339554243D8B370064CF09 /* CardPartSwitchViewCardController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardPartSwitchViewCardController.swift; sourceTree = "<group>"; };
-		93339555243D8B370064CF09 /* CardParthCustomMarginsCardController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardParthCustomMarginsCardController.swift; sourceTree = "<group>"; };
-		93339556243D8B380064CF09 /* CardPartSliderViewCardController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardPartSliderViewCardController.swift; sourceTree = "<group>"; };
 		93339557243D8B380064CF09 /* ThemedCardController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThemedCardController.swift; sourceTree = "<group>"; };
 		93339558243D8B380064CF09 /* TitleCardController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TitleCardController.swift; sourceTree = "<group>"; };
-		93339559243D8B380064CF09 /* CardPartAttributedTextViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardPartAttributedTextViewController.swift; sourceTree = "<group>"; };
-		9333955A243D8B380064CF09 /* CardPartPillLabelCardController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardPartPillLabelCardController.swift; sourceTree = "<group>"; };
-		9333955B243D8B380064CF09 /* CardPartBarViewCardController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardPartBarViewCardController.swift; sourceTree = "<group>"; };
-		9333955C243D8B390064CF09 /* ReactiveCardController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReactiveCardController.swift; sourceTree = "<group>"; };
-		9333955D243D8B390064CF09 /* CardPartMapViewCardController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardPartMapViewCardController.swift; sourceTree = "<group>"; };
-		9333955E243D8B390064CF09 /* CardPartTextFieldCardController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardPartTextFieldCardController.swift; sourceTree = "<group>"; };
-		9333955F243D8B390064CF09 /* CardPartRadioButtonCardController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardPartRadioButtonCardController.swift; sourceTree = "<group>"; };
-		93339560243D8B390064CF09 /* CardPartCollectionViewCardController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardPartCollectionViewCardController.swift; sourceTree = "<group>"; };
-		93339561243D8B3A0064CF09 /* CardPartBorderViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardPartBorderViewController.swift; sourceTree = "<group>"; };
 		9333D593244FAFA20008EF1F /* NotesHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesHelpers.swift; sourceTree = "<group>"; };
 		9350F208243BB74000F7E882 /* onboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = onboardingView.swift; sourceTree = "<group>"; };
 		9350F20C243BE1D000F7E882 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
+		93A1F7AD24500A53000478F0 /* DueMainPageVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DueMainPageVC.swift; sourceTree = "<group>"; };
+		93A1F7AF24501B01000478F0 /* NoteCardController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoteCardController.swift; sourceTree = "<group>"; };
+		93A1F7B024501B01000478F0 /* MarkCardController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MarkCardController.swift; sourceTree = "<group>"; };
+		93A1F7B324501CFA000478F0 /* SpacerCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpacerCard.swift; sourceTree = "<group>"; };
 		93A547FD243C3211000423D1 /* UICoursesList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UICoursesList.swift; sourceTree = "<group>"; };
 		93A547FF243C324A000423D1 /* UICoursesListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UICoursesListCell.swift; sourceTree = "<group>"; };
 		93B33211243BF27A0036D9BA /* LoginHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginHelper.swift; sourceTree = "<group>"; };
@@ -135,9 +78,7 @@
 		93C20AC8243BB2CC00FFB8D8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		93C20ACA243BB2CC00FFB8D8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		93C84082244C3D020041B58D /* NetworkHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkHelpers.swift; sourceTree = "<group>"; };
-		93DC35D0244E9F4D00D702EC /* NoteCardController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoteCardController.swift; sourceTree = "<group>"; };
 		93DC35D2244E9F5C00D702EC /* DueCardController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DueCardController.swift; sourceTree = "<group>"; };
-		93DC35D3244E9F5C00D702EC /* MarkCardController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MarkCardController.swift; sourceTree = "<group>"; };
 		93DC35D6244E9F7E00D702EC /* WebLoginVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebLoginVC.swift; sourceTree = "<group>"; };
 		93DC35D8244EAA7C00D702EC /* UIGradeItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIGradeItemCell.swift; sourceTree = "<group>"; };
 		93E40B3E244D137000A6612B /* UserInfoHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoHelpers.swift; sourceTree = "<group>"; };
@@ -147,15 +88,12 @@
 		9559FE46244FC9D00089A2F6 /* UIDetailNoteListTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIDetailNoteListTable.swift; sourceTree = "<group>"; };
 		A829F07F244EFC2000F05449 /* DueQuizHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DueQuizHelper.swift; sourceTree = "<group>"; };
 		A829F081244EFD0100F05449 /* DueDropHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DueDropHelper.swift; sourceTree = "<group>"; };
-		A82DAA3E244E934000E52CC7 /* MarkCardController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarkCardController.swift; sourceTree = "<group>"; };
 		A82DAA40244E935C00E52CC7 /* DueCardController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DueCardController.swift; sourceTree = "<group>"; };
-		A82DAA42244E93DE00E52CC7 /* NoteCardController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteCardController.swift; sourceTree = "<group>"; };
 		A82DAA44244EEC8F00E52CC7 /* UserInCardController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInCardController.swift; sourceTree = "<group>"; };
 		A82DAA46244EED5200E52CC7 /* UserMainPageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserMainPageVC.swift; sourceTree = "<group>"; };
 		A8B7DE832443BED7002A3D11 /* SettingTableVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingTableVC.swift; sourceTree = "<group>"; };
 		A8B7DE872443FF10002A3D11 /* ContactUsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactUsVC.swift; sourceTree = "<group>"; };
 		A8B7DE8D244401AC002A3D11 /* AboutVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutVC.swift; sourceTree = "<group>"; };
-		A8BCAFAC244FFAF8000BBE81 /* DueMainPageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DueMainPageVC.swift; path = /Users/xiaohuhe/CP469/MyStudySpace/MyStudySpace/DueMainPageVC.swift; sourceTree = "<absolute>"; };
 		A8BCAFB0244FFD3E000BBE81 /* DuedateCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DuedateCell.swift; sourceTree = "<group>"; };
 		A8E5770C244A332700AEDE8B /* CourseMainPageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseMainPageVC.swift; sourceTree = "<group>"; };
 		A8E5770E244A48D000AEDE8B /* HomeLinksCardController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeLinksCardController.swift; sourceTree = "<group>"; };
@@ -195,46 +133,14 @@
 		93339540243D8AEB0064CF09 /* Cards */ = {
 			isa = PBXGroup;
 			children = (
-				93DC35D0244E9F4D00D702EC /* NoteCardController.swift */,
 				93DC35D2244E9F5C00D702EC /* DueCardController.swift */,
-				93DC35D3244E9F5C00D702EC /* MarkCardController.swift */,
-				93339559243D8B380064CF09 /* CardPartAttributedTextViewController.swift */,
-				9333955B243D8B380064CF09 /* CardPartBarViewCardController.swift */,
-				93339561243D8B3A0064CF09 /* CardPartBorderViewController.swift */,
-				93339551243D8B370064CF09 /* CardPartBottomSheetCardController.swift */,
-				93339548243D8B350064CF09 /* CardPartButtonViewCardController.swift */,
-				93339550243D8B360064CF09 /* CardPartCenteredViewCardController.swift */,
-				93339560243D8B390064CF09 /* CardPartCollectionViewCardController.swift */,
-				93339552243D8B370064CF09 /* CardPartConfettiViewCardController.swift */,
-				93339555243D8B370064CF09 /* CardParthCustomMarginsCardController.swift */,
-				93339543243D8B340064CF09 /* CardPartHistogramCardController.swift */,
-				9333954F243D8B360064CF09 /* CardPartIconLabelCardController.swift */,
-				93339546243D8B350064CF09 /* CardPartImageViewCardController.swift */,
-				9333955D243D8B390064CF09 /* CardPartMapViewCardController.swift */,
-				9333954D243D8B360064CF09 /* CardPartMultiSliderViewCardController.swift */,
-				9333954C243D8B360064CF09 /* CardPartOrientedViewCardController.swift */,
-				93339542243D8B340064CF09 /* CardPartPagedViewCardController.swift */,
-				9333955A243D8B380064CF09 /* CardPartPillLabelCardController.swift */,
-				9333954A243D8B350064CF09 /* CardPartProgressBarViewCardController.swift */,
-				9333955F243D8B390064CF09 /* CardPartRadioButtonCardController.swift */,
-				9333954B243D8B360064CF09 /* CardPartRoundedStackViewCardController.swift */,
-				93339544243D8B340064CF09 /* CardPartSeparatorViewCardController.swift */,
-				93339556243D8B380064CF09 /* CardPartSliderViewCardController.swift */,
-				93339547243D8B350064CF09 /* CardPartStackViewCardController.swift */,
-				93339554243D8B370064CF09 /* CardPartSwitchViewCardController.swift */,
-				93339541243D8B340064CF09 /* CardPartTableViewCardController.swift */,
-				9333955E243D8B390064CF09 /* CardPartTextFieldCardController.swift */,
-				93339549243D8B350064CF09 /* CardPartTextViewCardController.swift */,
-				93339545243D8B340064CF09 /* CardPartTitleDescriptionViewCardController.swift */,
-				9333954E243D8B360064CF09 /* CardPartTitleViewCardController.swift */,
-				9333955C243D8B390064CF09 /* ReactiveCardController.swift */,
-				93339553243D8B370064CF09 /* StateCardController.swift */,
+				93A1F7B024501B01000478F0 /* MarkCardController.swift */,
+				93A1F7AF24501B01000478F0 /* NoteCardController.swift */,
 				A8E5770E244A48D000AEDE8B /* HomeLinksCardController.swift */,
-				A82DAA42244E93DE00E52CC7 /* NoteCardController.swift */,
-				A82DAA3E244E934000E52CC7 /* MarkCardController.swift */,
 				A82DAA40244E935C00E52CC7 /* DueCardController.swift */,
 				A82DAA44244EEC8F00E52CC7 /* UserInCardController.swift */,
 				93339557243D8B380064CF09 /* ThemedCardController.swift */,
+				93A1F7B324501CFA000478F0 /* SpacerCard.swift */,
 				93339558243D8B380064CF09 /* TitleCardController.swift */,
 			);
 			path = Cards;
@@ -313,15 +219,6 @@
 			path = "Grade Calculation Pages";
 			sourceTree = "<group>";
 		};
-		A8BCAFAF244FFD18000BBE81 /* DueDatePage */ = {
-			isa = PBXGroup;
-			children = (
-				A8BCAFAC244FFAF8000BBE81 /* DueMainPageVC.swift */,
-				A8BCAFB0244FFD3E000BBE81 /* DuedateCell.swift */,
-			);
-			path = DueDatePage;
-			sourceTree = "<group>";
-		};
 		9559FE3F244FB7AC0089A2F6 /* NoteList */ = {
 			isa = PBXGroup;
 			children = (
@@ -330,6 +227,15 @@
 				9559FE46244FC9D00089A2F6 /* UIDetailNoteListTable.swift */,
 			);
 			path = NoteList;
+			sourceTree = "<group>";
+		};
+		A8BCAFAF244FFD18000BBE81 /* DueDatePage */ = {
+			isa = PBXGroup;
+			children = (
+				93A1F7AD24500A53000478F0 /* DueMainPageVC.swift */,
+				A8BCAFB0244FFD3E000BBE81 /* DuedateCell.swift */,
+			);
+			path = DueDatePage;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -447,74 +353,44 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				93339576243D8B3A0064CF09 /* CardParthCustomMarginsCardController.swift in Sources */,
-				A8BCAFAD244FFAF8000BBE81 /* DueMainPageVC.swift in Sources */,
 				9350F20D243BE1D000F7E882 /* HomeVC.swift in Sources */,
 				9333D594244FAFA20008EF1F /* NotesHelpers.swift in Sources */,
-				93339574243D8B3A0064CF09 /* StateCardController.swift in Sources */,
 				93BAEDE0244E6B6A00156FA7 /* UIHelpers.swift in Sources */,
-				9333957B243D8B3A0064CF09 /* CardPartPillLabelCardController.swift in Sources */,
 				93C84083244C3D020041B58D /* NetworkHelpers.swift in Sources */,
-				93339566243D8B3A0064CF09 /* CardPartTitleDescriptionViewCardController.swift in Sources */,
 				93BAEDDC244E5D7100156FA7 /* EnrollmentsHelpers.swift in Sources */,
 				A8B7DE8E244401AC002A3D11 /* AboutVC.swift in Sources */,
 				A82DAA45244EEC8F00E52CC7 /* UserInCardController.swift in Sources */,
-				9333956D243D8B3A0064CF09 /* CardPartOrientedViewCardController.swift in Sources */,
 				9559FE41244FB7D00089A2F6 /* NoteList.swift in Sources */,
-				9333956F243D8B3A0064CF09 /* CardPartTitleViewCardController.swift in Sources */,
 				93C20AC1243BB2CB00FFB8D8 /* OnboardingScreen.swift in Sources */,
 				A829F082244EFD0100F05449 /* DueDropHelper.swift in Sources */,
 				A82DAA47244EED5200E52CC7 /* UserMainPageVC.swift in Sources */,
-				9333957E243D8B3A0064CF09 /* CardPartMapViewCardController.swift in Sources */,
-				9333956C243D8B3A0064CF09 /* CardPartRoundedStackViewCardController.swift in Sources */,
 				A829F080244EFC2000F05449 /* DueQuizHelper.swift in Sources */,
 				93DC35D4244E9F5C00D702EC /* DueCardController.swift in Sources */,
 				9350F209243BB74000F7E882 /* onboardingView.swift in Sources */,
-				93339568243D8B3A0064CF09 /* CardPartStackViewCardController.swift in Sources */,
 				93A547FE243C3211000423D1 /* UICoursesList.swift in Sources */,
-				93339569243D8B3A0064CF09 /* CardPartButtonViewCardController.swift in Sources */,
-				93339562243D8B3A0064CF09 /* CardPartTableViewCardController.swift in Sources */,
-				9333957F243D8B3A0064CF09 /* CardPartTextFieldCardController.swift in Sources */,
-				93339577243D8B3A0064CF09 /* CardPartSliderViewCardController.swift in Sources */,
-				9333957C243D8B3A0064CF09 /* CardPartBarViewCardController.swift in Sources */,
+				93A1F7AE24500A53000478F0 /* DueMainPageVC.swift in Sources */,
+				93A1F7B224501B02000478F0 /* MarkCardController.swift in Sources */,
+				93A1F7B124501B02000478F0 /* NoteCardController.swift in Sources */,
 				93B33212243BF27A0036D9BA /* LoginHelper.swift in Sources */,
-				9333956B243D8B3A0064CF09 /* CardPartProgressBarViewCardController.swift in Sources */,
-				93339581243D8B3A0064CF09 /* CardPartCollectionViewCardController.swift in Sources */,
 				93339578243D8B3A0064CF09 /* ThemedCardController.swift in Sources */,
-				9333956E243D8B3A0064CF09 /* CardPartMultiSliderViewCardController.swift in Sources */,
 				9559FE45244FC2770089A2F6 /* UIModuleCell.swift in Sources */,
-				93DC35D1244E9F4D00D702EC /* NoteCardController.swift in Sources */,
-				9333956A243D8B3A0064CF09 /* CardPartTextViewCardController.swift in Sources */,
-				93339580243D8B3A0064CF09 /* CardPartRadioButtonCardController.swift in Sources */,
-				93339582243D8B3A0064CF09 /* CardPartBorderViewController.swift in Sources */,
-				93339575243D8B3A0064CF09 /* CardPartSwitchViewCardController.swift in Sources */,
-				93339563243D8B3A0064CF09 /* CardPartPagedViewCardController.swift in Sources */,
 				93DC35D9244EAA7C00D702EC /* UIGradeItemCell.swift in Sources */,
 				A8BCAFB1244FFD3E000BBE81 /* DuedateCell.swift in Sources */,
-				9333957D243D8B3A0064CF09 /* ReactiveCardController.swift in Sources */,
-				93339571243D8B3A0064CF09 /* CardPartCenteredViewCardController.swift in Sources */,
 				A8E5770F244A48D000AEDE8B /* HomeLinksCardController.swift in Sources */,
-				93339572243D8B3A0064CF09 /* CardPartBottomSheetCardController.swift in Sources */,
-				93339570243D8B3A0064CF09 /* CardPartIconLabelCardController.swift in Sources */,
 				93BAEDDE244E62A700156FA7 /* GradesHelper.swift in Sources */,
 				9333953F243D8AD60064CF09 /* MainPageVC.swift in Sources */,
-				93DC35D5244E9F5C00D702EC /* MarkCardController.swift in Sources */,
+				93A1F7B424501CFA000478F0 /* SpacerCard.swift in Sources */,
 				A8B7DE882443FF10002A3D11 /* ContactUsVC.swift in Sources */,
-				93339573243D8B3A0064CF09 /* CardPartConfettiViewCardController.swift in Sources */,
 				A8E5770D244A332700AEDE8B /* CourseMainPageVC.swift in Sources */,
 				93A54800243C324A000423D1 /* UICoursesListCell.swift in Sources */,
 				93DC35D7244E9F7F00D702EC /* WebLoginVC.swift in Sources */,
 				93339579243D8B3A0064CF09 /* TitleCardController.swift in Sources */,
 				93C20ABD243BB2CB00FFB8D8 /* AppDelegate.swift in Sources */,
-				93339565243D8B3A0064CF09 /* CardPartSeparatorViewCardController.swift in Sources */,
 				A8B7DE842443BED8002A3D11 /* SettingTableVC.swift in Sources */,
-				93339567243D8B3A0064CF09 /* CardPartImageViewCardController.swift in Sources */,
-				9333957A243D8B3A0064CF09 /* CardPartAttributedTextViewController.swift in Sources */,
 				9559FE47244FC9D00089A2F6 /* UIDetailNoteListTable.swift in Sources */,
 				93C20ABF243BB2CB00FFB8D8 /* SceneDelegate.swift in Sources */,
 				93E40B3F244D137000A6612B /* UserInfoHelpers.swift in Sources */,
 				93FAD763244E962300B2F263 /* UICalcTableView.swift in Sources */,
-				93339564243D8B3A0064CF09 /* CardPartHistogramCardController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -660,14 +536,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = VBKGPA973P;
+				DEVELOPMENT_TEAM = Z8EC5FNESD;
 				INFOPLIST_FILE = MyStudySpace/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = wlu.ca.cp469.MyStudySpace;
+				PRODUCT_BUNDLE_IDENTIFIER = wlu.cp469.MyStudySpace;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -680,14 +556,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = VBKGPA973P;
+				DEVELOPMENT_TEAM = Z8EC5FNESD;
 				INFOPLIST_FILE = MyStudySpace/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = wlu.ca.cp469.MyStudySpace;
+				PRODUCT_BUNDLE_IDENTIFIER = wlu.cp469.MyStudySpace;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

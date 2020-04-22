@@ -90,7 +90,7 @@ struct Object: Codable {
     var AutoExportToGrades, IsActive: Bool
     var GradeItemId: Int?
     var IsAutoSetGraded: Bool
-    var Instructions, Description, Header, Footer: Description
+    var Instructions, Description, Header, Footer: Description?
     var StartDate, EndDate: String
     var DueDate: String?
     var DisplayInCalendar: Bool
@@ -149,8 +149,8 @@ struct AttemptsAllowed: Codable {
 
 // MARK: - Description
 struct Description: Codable {
-    var Text: Text
-    var IsDisplayed: Bool
+    var Text: Text?
+    var IsDisplayed: Bool?
 
     enum CodingKeys: String, CodingKey {
         case Text

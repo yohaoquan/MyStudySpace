@@ -9,7 +9,7 @@
 import Foundation
 import CardParts
 
-class TitleCardController: CardPartsViewController, TransparentCardTrait {
+class SpacerCard: CardPartsViewController, TransparentCardTrait {
     
     let possibleGradientColors: [UIColor] = [
         UIColor(red: 181.0 / 255.0, green: 152.0 / 255.0, blue: 235.0 / 255.0, alpha: 0.0),
@@ -45,11 +45,11 @@ class TitleCardController: CardPartsViewController, TransparentCardTrait {
 //        titleCP.textColor = .black
         setupCardParts([titleCP])
         
-        view.addConstraint(NSLayoutConstraint(item: view!, attribute: .height, relatedBy: .equal, toItem: nil, attribute: .notAnAttribute, multiplier: 1, constant: 20))
+        view.addConstraint(NSLayoutConstraint(item: view!, attribute: .height, relatedBy: .equal, toItem: nil, attribute: .notAnAttribute, multiplier: 1, constant: 0))
     }
 }
 
-extension TitleCardController: ShadowCardTrait {
+extension SpacerCard: ShadowCardTrait {
     func shadowOffset() -> CGSize {
         return CGSize(width: 1.0, height: 1.0)
     }
@@ -67,13 +67,13 @@ extension TitleCardController: ShadowCardTrait {
     }
 }
 
-extension TitleCardController: RoundedCardTrait {
+extension SpacerCard: RoundedCardTrait {
     func cornerRadius() -> CGFloat {
         return 40.0
     }
 }
 
-extension TitleCardController: GradientCardTrait {
+extension SpacerCard: GradientCardTrait {
     func gradientColors() -> [UIColor] {
         
         let color1: UIColor = self.possibleGradientColors[Int(arc4random_uniform(UInt32(self.possibleGradientColors.count)))]

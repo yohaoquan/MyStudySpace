@@ -61,6 +61,9 @@ func refreshDrops(orgUnit: OrgUnit){
                 }
                 res = try JSONDecoder().decode(Dropboxes.self, from: data)
                 for item in res{
+                    if item.DueDate == nil{
+                        continue
+                    }
                     someDueDate.append(DuedateItem(name:item.Name, type: 1, time:item.DueDate!))
                 }
                 let encoded = try? JSONEncoder().encode(someDueDate)

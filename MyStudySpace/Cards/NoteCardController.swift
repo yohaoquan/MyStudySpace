@@ -47,7 +47,7 @@ class NoteCardController: CardPartsViewController {
         super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
         self.cardTapped() {
             print("tapped")
-            self.parent!.performSegue(withIdentifier: "goToNoteFromCMPSeague", sender: self)
+            self.parent!.performSegue(withIdentifier: "goToNoteFromCMPSegue", sender: self)
         }
     }
     

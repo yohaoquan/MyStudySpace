@@ -31,7 +31,7 @@ class CourseMainPageVC: CardsViewController {
             if let dest = segue.destination as? UICalcTableView {
                 dest.orgUnit = self.orgUnit
             }
-        } else if segue.identifier == "goToNoteFromCMPSeague" {
+        } else if segue.identifier == "goToNoteFromCMPSegue" {
             if let dest = segue.destination as? NoteList {
                 dest.orgUnit = self.orgUnit
             }

@@ -60,7 +60,7 @@ class MarkCardController: CardPartsViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let spacer = CardPartSpacerView(height: 30.0)
+        let spacer = CardPartSpacerView(height: 10.0)
         
         let titleCP = CardPartTextView(type: .header)
         titleCP.text = ""

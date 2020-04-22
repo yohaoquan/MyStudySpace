@@ -2,9 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:/Users/xiaohuhe/CP469/MyStudySpace/MyStudySpace/DueMainPageVC.swift">
-   </FileRef>
-   <FileRef
       location = "group:MyStudySpace.xcodeproj">
    </FileRef>
    <FileRef

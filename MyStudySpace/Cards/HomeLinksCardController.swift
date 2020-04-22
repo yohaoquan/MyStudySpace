@@ -110,7 +110,7 @@ class HomeLinksCardController: CardPartsViewController {
         image4.contentMode = UIView.ContentMode.scaleAspectFit
         cardPartSV4.addArrangedSubview(image4)
         cardPartSV4.addArrangedSubview(linkToScheduleBtnView)
-        
+        view.addConstraint(NSLayoutConstraint(item: view!, attribute: .height, relatedBy: .equal, toItem: nil, attribute: .notAnAttribute, multiplier: 1, constant: 230))
         setupCardParts([titlePart, cardPartSV1, cardPartSV2, cardPartSV3, cardPartSV4])
     }
     

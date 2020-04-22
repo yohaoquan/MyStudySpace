@@ -88,7 +88,7 @@ struct Module: Codable {
     var Modules: [Module]?
     var Topics: [Topic]
     var LastModifiedDate: String
-    var Description: Description
+    var Description: Description2?
 
     enum CodingKeys: String, CodingKey {
         case IsHidden
@@ -109,8 +109,8 @@ struct Module: Codable {
 }
 
 // MARK: - Description
-struct Description: Codable {
-    var Text, Html: String
+struct Description2: Codable {
+    var Text, Html: String?
 
     enum CodingKeys: String, CodingKey {
         case Text
@@ -135,7 +135,7 @@ struct Topic: Codable {
     var ActivityType: Int
     var GradeItemId: Int?
     var LastModifiedDate: String
-    var Description: Description
+    var Description: Description2?
 
     enum CodingKeys: String, CodingKey {
         case IsExempt

@@ -56,6 +56,7 @@ class MainPageVC: CardsViewController {
             TitleCardController(title: " "),
             
             ThemedCardController(title: "Welcome to MyStudySpace!"),
+            SpacerCard(title: " "),
             HomeLinksCardController()
             //            ThemedCardController(title: "Are"),
             //            ThemedCardController(title: "Themed"),

@@ -1,15 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_5" orientation="portrait" appearance="light"/>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Data Source-->
+        <!--OnboardingScreen-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController storyboardIdentifier="OnboardingScreen" title="OnboardingScreen" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="OnboardingScreen" customModule="MyStudySpace" customModuleProvider="target" sceneMemberID="viewController">
@@ -161,22 +159,6 @@
             </objects>
             <point key="canvasLocation" x="3979.7101449275365" y="1354.6875"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="xkD-Jz-jvH">
-            <objects>
-                <viewController id="im7-CH-y0D" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="hSj-rY-xdL">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <viewLayoutGuide key="safeArea" id="xud-y9-lB9"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="zOC-wS-QIu"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="jaj-DA-ebC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="6099" y="-455"/>
-        </scene>
         <!--Grade Calculation-->
         <scene sceneID="ZCk-ZY-2LK">
             <objects>
@@ -209,7 +191,7 @@
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="fKg-Ea-2af">
-                                            <rect key="frame" x="18" y="59" width="378" height="30"/>
+                                            <rect key="frame" x="47" y="59" width="349" height="30"/>
                                             <connections>
                                                 <action selector="SliderValueChanged:" destination="ccP-es-oer" eventType="valueChanged" id="aMg-vA-rcR"/>
                                             </connections>
@@ -253,11 +235,11 @@
                                         <constraint firstItem="fKg-Ea-2af" firstAttribute="top" secondItem="Dx7-Jp-gRP" secondAttribute="bottom" constant="5" id="7D5-f9-1ff"/>
                                         <constraint firstItem="BO8-Yn-qJd" firstAttribute="top" secondItem="SKe-DR-gKN" secondAttribute="topMargin" constant="9" id="81s-KJ-qKp"/>
                                         <constraint firstItem="AK7-Mt-8aF" firstAttribute="leading" secondItem="CcN-4c-lbq" secondAttribute="trailing" id="FSP-23-Ltx"/>
-                                        <constraint firstItem="fKg-Ea-2af" firstAttribute="centerX" secondItem="YUS-9H-RGj" secondAttribute="centerX" id="JlJ-k7-2ve"/>
+                                        <constraint firstItem="fKg-Ea-2af" firstAttribute="centerX" secondItem="YUS-9H-RGj" secondAttribute="centerX" constant="14.5" id="JlJ-k7-2ve"/>
                                         <constraint firstItem="RyX-LL-18p" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="SKe-DR-gKN" secondAttribute="leading" constant="20" symbolic="YES" id="MFV-Gc-cPy"/>
                                         <constraint firstItem="rEB-mb-4tT" firstAttribute="leading" secondItem="SKe-DR-gKN" secondAttribute="leadingMargin" id="MTU-ph-WSj"/>
                                         <constraint firstItem="YUS-9H-RGj" firstAttribute="leading" secondItem="AK7-Mt-8aF" secondAttribute="trailing" constant="8" id="Pcj-cJ-zPI"/>
-                                        <constraint firstItem="fKg-Ea-2af" firstAttribute="leading" secondItem="rEB-mb-4tT" secondAttribute="leading" id="Pgk-gR-HDi"/>
+                                        <constraint firstItem="fKg-Ea-2af" firstAttribute="leading" secondItem="rEB-mb-4tT" secondAttribute="leading" constant="29" id="Pgk-gR-HDi"/>
                                         <constraint firstItem="fKg-Ea-2af" firstAttribute="top" secondItem="RyX-LL-18p" secondAttribute="bottom" constant="5" id="QOM-ih-i0s"/>
                                         <constraint firstItem="YUS-9H-RGj" firstAttribute="top" secondItem="SKe-DR-gKN" secondAttribute="topMargin" id="SsZ-yf-m3z"/>
                                         <constraint firstAttribute="bottomMargin" secondItem="fKg-Ea-2af" secondAttribute="bottom" constant="1" id="VHZ-9X-1kk"/>
@@ -293,7 +275,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="f6h-yx-Q74" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="6099" y="333"/>
+            <point key="canvasLocation" x="6098.5507246376819" y="332.8125"/>
         </scene>
         <!--Home View Controller-->
         <scene sceneID="RWp-3N-yBX">
@@ -327,14 +309,19 @@
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="90"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Test" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L8p-xe-rqL">
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Test" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L8p-xe-rqL">
                                             <rect key="frame" x="20" y="11" width="374" height="68"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="33"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
+                                    <constraints>
+                                        <constraint firstItem="L8p-xe-rqL" firstAttribute="top" secondItem="51r-CQ-hwe" secondAttribute="topMargin" id="bMi-2S-Ihv"/>
+                                        <constraint firstItem="L8p-xe-rqL" firstAttribute="bottom" secondItem="51r-CQ-hwe" secondAttribute="bottomMargin" id="fzf-HM-3TK"/>
+                                        <constraint firstItem="L8p-xe-rqL" firstAttribute="leading" secondItem="51r-CQ-hwe" secondAttribute="leadingMargin" id="msv-bk-lga"/>
+                                        <constraint firstItem="L8p-xe-rqL" firstAttribute="trailing" secondItem="51r-CQ-hwe" secondAttribute="trailingMargin" id="mzV-qs-gzk"/>
+                                    </constraints>
                                 </tableViewCellContentView>
                                 <connections>
                                     <outlet property="modulenamelabel" destination="L8p-xe-rqL" id="sKR-VO-JZ7"/>
@@ -347,7 +334,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ruz-6p-fPH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5586.9565217391309" y="-477.45535714285711"/>
+            <point key="canvasLocation" x="6501" y="-631"/>
         </scene>
         <!--Detail Note List Table-->
         <scene sceneID="diR-T6-Ygh">
@@ -359,10 +346,10 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="reuseIdentifier" id="Rqq-DF-kp0">
-                                <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
+                                <rect key="frame" x="0.0" y="28" width="414" height="43.666667938232422"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Rqq-DF-kp0" id="Uad-w0-dJ1">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.666667938232422"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                             </tableViewCell>
@@ -378,20 +365,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aUj-rJ-d4R" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="6306" y="-477"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="SCI-Ci-F4K">
-            <objects>
-                <navigationController id="w0L-Xu-AYZ" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="8x5-ce-Sx4">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="h4f-s0-CWt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="6829" y="-84"/>
+            <point key="canvasLocation" x="7493" y="-631"/>
         </scene>
         <!--UserIn View Controller-->
         <scene sceneID="nvU-cP-dMN">
@@ -526,8 +500,8 @@ hexx2400@mylaurier.ca</string>
                     <navigationItem key="navigationItem" title="Course Main Page" id="tIN-Yi-MHg"/>
                     <connections>
                         <segue destination="rO0-Y2-2XB" kind="show" identifier="toGradeCalc" destinationCreationSelector="toGradeCalc" id="Jhm-jv-ae0"/>
-                        <segue destination="im7-CH-y0D" kind="push" identifier="goToNoteFromCMPSegue" id="4RZ-Fu-QkA"/>
                         <segue destination="a0B-Q7-YRw" kind="push" identifier="goToDueFromCMPSegue" id="ztg-QJ-xr1"/>
+                        <segue destination="Tir-Bm-FjR" kind="show" identifier="goToNoteFromCMPSegue" id="Dka-Oi-L1a"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7zh-DA-KNA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -676,12 +650,12 @@ This application is not perfect. We are always finding a way to be better. If go
                                             <constraint firstItem="Rdv-QF-qpD" firstAttribute="centerX" secondItem="op2-GL-AIb" secondAttribute="centerX" constant="32" id="Msq-Im-qd8"/>
                                             <constraint firstItem="Xoj-gW-upX" firstAttribute="leading" secondItem="op2-GL-AIb" secondAttribute="leading" constant="87" id="Q9X-RH-pH2"/>
                                             <constraint firstItem="cfz-2l-KoL" firstAttribute="centerX" secondItem="op2-GL-AIb" secondAttribute="centerX" id="U3v-ug-JFk"/>
-                                            <constraint firstAttribute="trailing" secondItem="Rdv-QF-qpD" secondAttribute="trailing" id="VaQ-Th-Mpi"/>
+                                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Rdv-QF-qpD" secondAttribute="trailing" id="VaQ-Th-Mpi"/>
                                             <constraint firstAttribute="trailing" secondItem="cfz-2l-KoL" secondAttribute="trailing" constant="32" id="WAd-hL-qdG"/>
                                             <constraint firstAttribute="bottom" secondItem="Xoj-gW-upX" secondAttribute="bottom" constant="889" id="aHx-2i-FT1"/>
                                             <constraint firstItem="Xoj-gW-upX" firstAttribute="top" secondItem="op2-GL-AIb" secondAttribute="top" constant="61" id="c5C-Bt-aKQ"/>
                                             <constraint firstItem="cfz-2l-KoL" firstAttribute="top" secondItem="op2-GL-AIb" secondAttribute="top" constant="298" id="gV8-CS-duI"/>
-                                            <constraint firstItem="cfz-2l-KoL" firstAttribute="leading" secondItem="op2-GL-AIb" secondAttribute="leading" constant="32" id="kgZ-gv-V6v"/>
+                                            <constraint firstItem="cfz-2l-KoL" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="op2-GL-AIb" secondAttribute="leading" id="kgZ-gv-V6v"/>
                                             <constraint firstItem="Rdv-QF-qpD" firstAttribute="top" secondItem="op2-GL-AIb" secondAttribute="top" constant="242" id="lpu-JJ-rpc"/>
                                             <constraint firstAttribute="height" constant="1078" id="qc4-Vz-vIz"/>
                                             <constraint firstAttribute="bottom" secondItem="cfz-2l-KoL" secondAttribute="bottom" constant="82" id="qoQ-Zi-LVh"/>
@@ -911,13 +885,13 @@ This application is not perfect. We are always finding a way to be better. If go
     <resources>
         <image name="golden_hawk" width="1015" height="1000"/>
         <image name="haoquan" width="883" height="883"/>
-        <image name="home" width="32" height="32"/>
+        <image name="home" width="25" height="25"/>
         <image name="laurier" width="457" height="134"/>
-        <image name="person" catalog="system" width="64" height="58"/>
-        <image name="person.crop.circle.badge.minus" catalog="system" width="64" height="50"/>
+        <image name="person" catalog="system" width="128" height="117"/>
+        <image name="person.crop.circle.badge.minus" catalog="system" width="128" height="101"/>
         <image name="professor" width="288" height="288"/>
-        <image name="setting" width="32" height="32"/>
-        <image name="work" width="32" height="32"/>
+        <image name="setting" width="25" height="25"/>
+        <image name="work" width="25" height="25"/>
         <image name="xiaohu" width="540" height="540"/>
     </resources>
 </document>
