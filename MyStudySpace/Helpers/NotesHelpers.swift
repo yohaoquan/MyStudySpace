@@ -18,7 +18,7 @@ func getNotes(orgUnit: OrgUnit){
         }
         return
     }
-    let url1 = generateURLForRoute(route: "/d2l/api/le/1.34/" + String(orgUnit.Id) + "/content/root", method: .GET)
+    let url1 = generateURLForRoute(route: "/d2l/api/le/1.34/" + String(orgUnit.Id) + "/content/toc", method: .GET)
     var url2: URL!
     let semaphore = DispatchSemaphore(value: 0)
     URLSession.shared.dataTask(with: url1!) { data, response, error in
@@ -83,12 +83,12 @@ struct Module: Codable {
     var IsLocked: Bool
     var PacingStartDate, PacingEndDate: String?
     var DefaultPath: String
-    var ModuleID: Int
+    var ModuleId: Int
     var Title: String
-    var Modules: [Topic]?
+    var Modules: [Module]?
     var Topics: [Topic]
     var LastModifiedDate: String
-    var ModuleDescription: Description
+    var Description: Description
 
     enum CodingKeys: String, CodingKey {
         case IsHidden
@@ -99,12 +99,12 @@ struct Module: Codable {
         case PacingStartDate
         case PacingEndDate
         case DefaultPath
-        case ModuleID
+        case ModuleId
         case Title
         case Modules
         case Topics
         case LastModifiedDate
-        case ModuleDescription
+        case Description
     }
 }
 
@@ -124,18 +124,18 @@ struct Topic: Codable {
     var SortOrder: Int
     var StartDateTime, EndDateTime: String?
     var IsLocked, IsBroken: Bool
-    var ActivityID: String
-    var CompletionType, TopicID: Int
+    var ActivityId: String
+    var CompletionType, TopicId: Int
     var Identifier: String
     var TypeIdentifier: TypeIdentifier
     var Title: String
     var Bookmarked, Unread: Bool
     var Url: String
-    var ToolID, ToolItemID: Int?
+    var ToolId, ToolItemId: Int?
     var ActivityType: Int
-    var GradeItemID: Int?
+    var GradeItemId: Int?
     var LastModifiedDate: String
-    var TopicDescription: Description
+    var Description: Description
 
     enum CodingKeys: String, CodingKey {
         case IsExempt
@@ -145,21 +145,21 @@ struct Topic: Codable {
         case EndDateTime
         case IsLocked
         case IsBroken
-        case ActivityID
+        case ActivityId
         case CompletionType
-        case TopicID
+        case TopicId
         case Identifier
         case TypeIdentifier
         case Title
         case Bookmarked
         case Unread
         case Url
-        case ToolID
-        case ToolItemID
+        case ToolId
+        case ToolItemId
         case ActivityType
-        case GradeItemID
+        case GradeItemId
         case LastModifiedDate
-        case TopicDescription
+        case Description
     }
 }
 

@@ -65,6 +65,9 @@
 		93DC35D9244EAA7C00D702EC /* UIGradeItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93DC35D8244EAA7C00D702EC /* UIGradeItemCell.swift */; };
 		93E40B3F244D137000A6612B /* UserInfoHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93E40B3E244D137000A6612B /* UserInfoHelpers.swift */; };
 		93FAD763244E962300B2F263 /* UICalcTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93FAD762244E962300B2F263 /* UICalcTableView.swift */; };
+		9559FE41244FB7D00089A2F6 /* NoteList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9559FE40244FB7D00089A2F6 /* NoteList.swift */; };
+		9559FE45244FC2770089A2F6 /* UIModuleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9559FE44244FC2770089A2F6 /* UIModuleCell.swift */; };
+		9559FE47244FC9D00089A2F6 /* UIDetailNoteListTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9559FE46244FC9D00089A2F6 /* UIDetailNoteListTable.swift */; };
 		A8B7DE842443BED8002A3D11 /* SettingTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8B7DE832443BED7002A3D11 /* SettingTableVC.swift */; };
 		A8B7DE882443FF10002A3D11 /* ContactUsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8B7DE872443FF10002A3D11 /* ContactUsVC.swift */; };
 		A8B7DE8E244401AC002A3D11 /* AboutVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8B7DE8D244401AC002A3D11 /* AboutVC.swift */; };
@@ -133,6 +136,9 @@
 		93DC35D8244EAA7C00D702EC /* UIGradeItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIGradeItemCell.swift; sourceTree = "<group>"; };
 		93E40B3E244D137000A6612B /* UserInfoHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoHelpers.swift; sourceTree = "<group>"; };
 		93FAD762244E962300B2F263 /* UICalcTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UICalcTableView.swift; sourceTree = "<group>"; };
+		9559FE40244FB7D00089A2F6 /* NoteList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteList.swift; sourceTree = "<group>"; };
+		9559FE44244FC2770089A2F6 /* UIModuleCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIModuleCell.swift; sourceTree = "<group>"; };
+		9559FE46244FC9D00089A2F6 /* UIDetailNoteListTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIDetailNoteListTable.swift; sourceTree = "<group>"; };
 		A8B7DE832443BED7002A3D11 /* SettingTableVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingTableVC.swift; sourceTree = "<group>"; };
 		A8B7DE872443FF10002A3D11 /* ContactUsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactUsVC.swift; sourceTree = "<group>"; };
 		A8B7DE8D244401AC002A3D11 /* AboutVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutVC.swift; sourceTree = "<group>"; };
@@ -250,6 +256,7 @@
 		93C20ABB243BB2CB00FFB8D8 /* MyStudySpace */ = {
 			isa = PBXGroup;
 			children = (
+				9559FE3F244FB7AC0089A2F6 /* NoteList */,
 				93FAD761244E87D200B2F263 /* Grade Calculation Pages */,
 				93339540243D8AEB0064CF09 /* Cards */,
 				93B33210243BF1BC0036D9BA /* Helpers */,
@@ -281,6 +288,16 @@
 				93DC35D8244EAA7C00D702EC /* UIGradeItemCell.swift */,
 			);
 			path = "Grade Calculation Pages";
+			sourceTree = "<group>";
+		};
+		9559FE3F244FB7AC0089A2F6 /* NoteList */ = {
+			isa = PBXGroup;
+			children = (
+				9559FE40244FB7D00089A2F6 /* NoteList.swift */,
+				9559FE44244FC2770089A2F6 /* UIModuleCell.swift */,
+				9559FE46244FC9D00089A2F6 /* UIDetailNoteListTable.swift */,
+			);
+			path = NoteList;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -409,6 +426,7 @@
 				93BAEDDC244E5D7100156FA7 /* EnrollmentsHelpers.swift in Sources */,
 				A8B7DE8E244401AC002A3D11 /* AboutVC.swift in Sources */,
 				9333956D243D8B3A0064CF09 /* CardPartOrientedViewCardController.swift in Sources */,
+				9559FE41244FB7D00089A2F6 /* NoteList.swift in Sources */,
 				9333956F243D8B3A0064CF09 /* CardPartTitleViewCardController.swift in Sources */,
 				93C20AC1243BB2CB00FFB8D8 /* OnboardingScreen.swift in Sources */,
 				9333957E243D8B3A0064CF09 /* CardPartMapViewCardController.swift in Sources */,
@@ -427,6 +445,7 @@
 				93339581243D8B3A0064CF09 /* CardPartCollectionViewCardController.swift in Sources */,
 				93339578243D8B3A0064CF09 /* ThemedCardController.swift in Sources */,
 				9333956E243D8B3A0064CF09 /* CardPartMultiSliderViewCardController.swift in Sources */,
+				9559FE45244FC2770089A2F6 /* UIModuleCell.swift in Sources */,
 				93DC35D1244E9F4D00D702EC /* NoteCardController.swift in Sources */,
 				9333956A243D8B3A0064CF09 /* CardPartTextViewCardController.swift in Sources */,
 				93339580243D8B3A0064CF09 /* CardPartRadioButtonCardController.swift in Sources */,
@@ -453,6 +472,7 @@
 				A8B7DE842443BED8002A3D11 /* SettingTableVC.swift in Sources */,
 				93339567243D8B3A0064CF09 /* CardPartImageViewCardController.swift in Sources */,
 				9333957A243D8B3A0064CF09 /* CardPartAttributedTextViewController.swift in Sources */,
+				9559FE47244FC9D00089A2F6 /* UIDetailNoteListTable.swift in Sources */,
 				93C20ABF243BB2CB00FFB8D8 /* SceneDelegate.swift in Sources */,
 				93E40B3F244D137000A6612B /* UserInfoHelpers.swift in Sources */,
 				93FAD763244E962300B2F263 /* UICalcTableView.swift in Sources */,
