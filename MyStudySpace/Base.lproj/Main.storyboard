@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--OnboardingScreen-->
+        <!--Data Source-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController storyboardIdentifier="OnboardingScreen" title="OnboardingScreen" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="OnboardingScreen" customModule="MyStudySpace" customModuleProvider="target" sceneMemberID="viewController">
@@ -290,21 +290,74 @@
             </objects>
             <point key="canvasLocation" x="3979.7101449275365" y="-260.49107142857144"/>
         </scene>
-        <!--View Controller-->
+        <!--Notes-->
         <scene sceneID="QfB-Zc-PcQ">
             <objects>
-                <viewController id="Tir-Bm-FjR" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="b1E-Ia-Ygw">
+                <viewController id="Tir-Bm-FjR" customClass="NoteList" customModule="MyStudySpace" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="90" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="H4z-RQ-Z0N" customClass="NoteListTableView">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <viewLayoutGuide key="safeArea" id="YB3-cW-zYa"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="dTJ-ul-2oR"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="reuse" id="sV2-BA-4DQ" customClass="UIModuleCell" customModule="MyStudySpace" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="414" height="90"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="sV2-BA-4DQ" id="51r-CQ-hwe">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="90"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Test" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L8p-xe-rqL">
+                                            <rect key="frame" x="20" y="11" width="374" height="68"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="33"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="modulenamelabel" destination="L8p-xe-rqL" id="sKR-VO-JZ7"/>
+                                    <segue destination="RGw-Ul-yLY" kind="show" id="7vE-AB-sCV"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Notes" id="dTJ-ul-2oR"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ruz-6p-fPH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="6028" y="-958"/>
+            <point key="canvasLocation" x="5586.9565217391309" y="-477.45535714285711"/>
+        </scene>
+        <!--Detail Note List Table-->
+        <scene sceneID="diR-T6-Ygh">
+            <objects>
+                <tableViewController id="RGw-Ul-yLY" customClass="UIDetailNoteListTable" customModule="MyStudySpace" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="Qec-Ry-iin">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="reuseIdentifier" id="Rqq-DF-kp0">
+                                <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Rqq-DF-kp0" id="Uad-w0-dJ1">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="RGw-Ul-yLY" id="BqA-gX-PcL"/>
+                            <outlet property="delegate" destination="RGw-Ul-yLY" id="Qlt-aE-CrA"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="SiO-JX-kHA">
+                        <barButtonItem key="backBarButtonItem" title="Notes" id="VAf-p5-Fu1"/>
+                    </navigationItem>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aUj-rJ-d4R" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="6306" y="-477"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="SCI-Ci-F4K">
@@ -457,7 +510,7 @@ hexx2400@mylaurier.ca</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7zh-DA-KNA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5199" y="475"/>
+            <point key="canvasLocation" x="4686" y="342"/>
         </scene>
         <!--About View Controller-->
         <scene sceneID="EES-Xx-sSt">
@@ -750,8 +803,8 @@ This application is not perfect. We are always finding a way to be better. If go
         <image name="haoquan" width="883" height="883"/>
         <image name="home" width="32" height="32"/>
         <image name="laurier" width="457" height="134"/>
-        <image name="person" catalog="system" width="128" height="117"/>
-        <image name="person.crop.circle.badge.minus" catalog="system" width="128" height="101"/>
+        <image name="person" catalog="system" width="64" height="58"/>
+        <image name="person.crop.circle.badge.minus" catalog="system" width="64" height="50"/>
         <image name="professor" width="288" height="288"/>
         <image name="setting" width="32" height="32"/>
         <image name="work" width="32" height="32"/>
