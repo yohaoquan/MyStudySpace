@@ -23,23 +23,14 @@ struct WhoamiResponse: Codable {
     let ProfileIdentifier: String
 }
 
-
-// MARK: - Functions
-func convertJSONToDictionary(data: Data) -> [String: Any]? {
-    do {
-        return try JSONSerialization.jsonObject(with: data, options: []) as? [String: Any]
-    } catch {
-        print(error.localizedDescription)
-    }
-    return nil
-}
-
-
-
 enum HTTPRequestType {
     case GET
     case POST
 }
+
+// MARK: - Functions
+
+
 
 func generateURLForRoute(route: String, method:HTTPRequestType) -> URL? {
     if LoginHelper.sharedInstance.loginState!.isLoggedIn {

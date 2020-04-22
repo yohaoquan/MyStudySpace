@@ -40,14 +40,14 @@ class NoteCardController: CardPartsViewController {
         self.init(nibName: nil, bundle: nil)
         self._title = title
 
-
+        
     }
     
     override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
         super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
         self.cardTapped() {
-            print("NoteTapped")
-            self.parent!.performSegue(withIdentifier: "goToNoteFromCMPSegue", sender: self)
+            print("tapped")
+            self.parent!.performSegue(withIdentifier: "goToNoteFromCMPSeague", sender: self)
         }
     }
     
