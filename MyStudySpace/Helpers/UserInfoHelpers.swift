@@ -15,6 +15,7 @@ func refreshName(){
         return
     }
     let url1 = generateURLForRoute(route: "/d2l/api/lp/1.10/users/whoami", method: .GET)
+    print(url1?.absoluteString)
     var url2: URL!
     let semaphore = DispatchSemaphore(value: 0)
     URLSession.shared.dataTask(with: url1!) { data, response, error in

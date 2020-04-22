@@ -63,15 +63,16 @@
 		93DC35D7244E9F7F00D702EC /* WebLoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93DC35D6244E9F7E00D702EC /* WebLoginVC.swift */; };
 		93DC35D9244EAA7C00D702EC /* UIGradeItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93DC35D8244EAA7C00D702EC /* UIGradeItemCell.swift */; };
 		93E40B3F244D137000A6612B /* UserInfoHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93E40B3E244D137000A6612B /* UserInfoHelpers.swift */; };
-		A82DAA3F244E934000E52CC7 /* MarkCardController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A82DAA3E244E934000E52CC7 /* MarkCardController.swift */; };
-		A82DAA41244E935C00E52CC7 /* DueCardController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A82DAA40244E935C00E52CC7 /* DueCardController.swift */; };
-		A82DAA43244E93DF00E52CC7 /* NoteCardController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A82DAA42244E93DE00E52CC7 /* NoteCardController.swift */; };
+		93FAD763244E962300B2F263 /* UICalcTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93FAD762244E962300B2F263 /* UICalcTableView.swift */; };
+		A829F080244EFC2000F05449 /* DueQuizHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = A829F07F244EFC2000F05449 /* DueQuizHelper.swift */; };
+		A829F082244EFD0100F05449 /* DueDropHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = A829F081244EFD0100F05449 /* DueDropHelper.swift */; };
 		A82DAA45244EEC8F00E52CC7 /* UserInCardController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A82DAA44244EEC8F00E52CC7 /* UserInCardController.swift */; };
 		A82DAA47244EED5200E52CC7 /* UserMainPageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A82DAA46244EED5200E52CC7 /* UserMainPageVC.swift */; };
-		93FAD763244E962300B2F263 /* UICalcTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93FAD762244E962300B2F263 /* UICalcTableView.swift */; };
 		A8B7DE842443BED8002A3D11 /* SettingTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8B7DE832443BED7002A3D11 /* SettingTableVC.swift */; };
 		A8B7DE882443FF10002A3D11 /* ContactUsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8B7DE872443FF10002A3D11 /* ContactUsVC.swift */; };
 		A8B7DE8E244401AC002A3D11 /* AboutVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8B7DE8D244401AC002A3D11 /* AboutVC.swift */; };
+		A8BCAFAD244FFAF8000BBE81 /* DueMainPageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8BCAFAC244FFAF8000BBE81 /* DueMainPageVC.swift */; };
+		A8BCAFB1244FFD3E000BBE81 /* DuedateCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8BCAFB0244FFD3E000BBE81 /* DuedateCell.swift */; };
 		A8E5770D244A332700AEDE8B /* CourseMainPageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8E5770C244A332700AEDE8B /* CourseMainPageVC.swift */; };
 		A8E5770F244A48D000AEDE8B /* HomeLinksCardController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8E5770E244A48D000AEDE8B /* HomeLinksCardController.swift */; };
 /* End PBXBuildFile section */
@@ -135,15 +136,19 @@
 		93DC35D6244E9F7E00D702EC /* WebLoginVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebLoginVC.swift; sourceTree = "<group>"; };
 		93DC35D8244EAA7C00D702EC /* UIGradeItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIGradeItemCell.swift; sourceTree = "<group>"; };
 		93E40B3E244D137000A6612B /* UserInfoHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoHelpers.swift; sourceTree = "<group>"; };
+		93FAD762244E962300B2F263 /* UICalcTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UICalcTableView.swift; sourceTree = "<group>"; };
+		A829F07F244EFC2000F05449 /* DueQuizHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DueQuizHelper.swift; sourceTree = "<group>"; };
+		A829F081244EFD0100F05449 /* DueDropHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DueDropHelper.swift; sourceTree = "<group>"; };
 		A82DAA3E244E934000E52CC7 /* MarkCardController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarkCardController.swift; sourceTree = "<group>"; };
 		A82DAA40244E935C00E52CC7 /* DueCardController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DueCardController.swift; sourceTree = "<group>"; };
 		A82DAA42244E93DE00E52CC7 /* NoteCardController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteCardController.swift; sourceTree = "<group>"; };
 		A82DAA44244EEC8F00E52CC7 /* UserInCardController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInCardController.swift; sourceTree = "<group>"; };
 		A82DAA46244EED5200E52CC7 /* UserMainPageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserMainPageVC.swift; sourceTree = "<group>"; };
-		93FAD762244E962300B2F263 /* UICalcTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UICalcTableView.swift; sourceTree = "<group>"; };
 		A8B7DE832443BED7002A3D11 /* SettingTableVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingTableVC.swift; sourceTree = "<group>"; };
 		A8B7DE872443FF10002A3D11 /* ContactUsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactUsVC.swift; sourceTree = "<group>"; };
 		A8B7DE8D244401AC002A3D11 /* AboutVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutVC.swift; sourceTree = "<group>"; };
+		A8BCAFAC244FFAF8000BBE81 /* DueMainPageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DueMainPageVC.swift; path = /Users/xiaohuhe/CP469/MyStudySpace/MyStudySpace/DueMainPageVC.swift; sourceTree = "<absolute>"; };
+		A8BCAFB0244FFD3E000BBE81 /* DuedateCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DuedateCell.swift; sourceTree = "<group>"; };
 		A8E5770C244A332700AEDE8B /* CourseMainPageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseMainPageVC.swift; sourceTree = "<group>"; };
 		A8E5770E244A48D000AEDE8B /* HomeLinksCardController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeLinksCardController.swift; sourceTree = "<group>"; };
 		D3632DC430160B06D1F1EBB8 /* Pods-MyStudySpace.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyStudySpace.release.xcconfig"; path = "Target Support Files/Pods-MyStudySpace/Pods-MyStudySpace.release.xcconfig"; sourceTree = "<group>"; };
@@ -230,6 +235,8 @@
 		93B33210243BF1BC0036D9BA /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				A829F07F244EFC2000F05449 /* DueQuizHelper.swift */,
+				A829F081244EFD0100F05449 /* DueDropHelper.swift */,
 				93B33211243BF27A0036D9BA /* LoginHelper.swift */,
 				93C84082244C3D020041B58D /* NetworkHelpers.swift */,
 				93E40B3E244D137000A6612B /* UserInfoHelpers.swift */,
@@ -261,6 +268,7 @@
 		93C20ABB243BB2CB00FFB8D8 /* MyStudySpace */ = {
 			isa = PBXGroup;
 			children = (
+				A8BCAFAF244FFD18000BBE81 /* DueDatePage */,
 				93FAD761244E87D200B2F263 /* Grade Calculation Pages */,
 				93339540243D8AEB0064CF09 /* Cards */,
 				93B33210243BF1BC0036D9BA /* Helpers */,
@@ -269,7 +277,6 @@
 				93C20ABE243BB2CB00FFB8D8 /* SceneDelegate.swift */,
 				93C20AC2243BB2CB00FFB8D8 /* Main.storyboard */,
 				A82DAA46244EED5200E52CC7 /* UserMainPageVC.swift */,
-				A8E5770C244A332700AEDE8B /* CourseMainPageVC.swift */,
 				A8B7DE872443FF10002A3D11 /* ContactUsVC.swift */,
 				A8B7DE832443BED7002A3D11 /* SettingTableVC.swift */,
 				A8E5770C244A332700AEDE8B /* CourseMainPageVC.swift */,
@@ -294,6 +301,15 @@
 				93DC35D8244EAA7C00D702EC /* UIGradeItemCell.swift */,
 			);
 			path = "Grade Calculation Pages";
+			sourceTree = "<group>";
+		};
+		A8BCAFAF244FFD18000BBE81 /* DueDatePage */ = {
+			isa = PBXGroup;
+			children = (
+				A8BCAFAC244FFAF8000BBE81 /* DueMainPageVC.swift */,
+				A8BCAFB0244FFD3E000BBE81 /* DuedateCell.swift */,
+			);
+			path = DueDatePage;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -412,6 +428,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				93339576243D8B3A0064CF09 /* CardParthCustomMarginsCardController.swift in Sources */,
+				A8BCAFAD244FFAF8000BBE81 /* DueMainPageVC.swift in Sources */,
 				9350F20D243BE1D000F7E882 /* HomeVC.swift in Sources */,
 				93339574243D8B3A0064CF09 /* StateCardController.swift in Sources */,
 				93BAEDE0244E6B6A00156FA7 /* UIHelpers.swift in Sources */,
@@ -424,9 +441,11 @@
 				9333956D243D8B3A0064CF09 /* CardPartOrientedViewCardController.swift in Sources */,
 				9333956F243D8B3A0064CF09 /* CardPartTitleViewCardController.swift in Sources */,
 				93C20AC1243BB2CB00FFB8D8 /* OnboardingScreen.swift in Sources */,
+				A829F082244EFD0100F05449 /* DueDropHelper.swift in Sources */,
 				A82DAA47244EED5200E52CC7 /* UserMainPageVC.swift in Sources */,
 				9333957E243D8B3A0064CF09 /* CardPartMapViewCardController.swift in Sources */,
 				9333956C243D8B3A0064CF09 /* CardPartRoundedStackViewCardController.swift in Sources */,
+				A829F080244EFC2000F05449 /* DueQuizHelper.swift in Sources */,
 				93DC35D4244E9F5C00D702EC /* DueCardController.swift in Sources */,
 				9350F209243BB74000F7E882 /* onboardingView.swift in Sources */,
 				93339568243D8B3A0064CF09 /* CardPartStackViewCardController.swift in Sources */,
@@ -448,6 +467,7 @@
 				93339575243D8B3A0064CF09 /* CardPartSwitchViewCardController.swift in Sources */,
 				93339563243D8B3A0064CF09 /* CardPartPagedViewCardController.swift in Sources */,
 				93DC35D9244EAA7C00D702EC /* UIGradeItemCell.swift in Sources */,
+				A8BCAFB1244FFD3E000BBE81 /* DuedateCell.swift in Sources */,
 				9333957D243D8B3A0064CF09 /* ReactiveCardController.swift in Sources */,
 				93339571243D8B3A0064CF09 /* CardPartCenteredViewCardController.swift in Sources */,
 				A8E5770F244A48D000AEDE8B /* HomeLinksCardController.swift in Sources */,
